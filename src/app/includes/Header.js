@@ -7,7 +7,7 @@ export default function Header() {
                 <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-sm-black">
                     <div className="container">
                         {/* <!-- Logo --> */}
-                        <Link className="navbar-brand" href="/index.html">
+                        <Link className="navbar-brand" href="/">
                             <img src="/assets/images/ct-logo-new-2.png" alt="error" />
                         </Link>
 
@@ -20,22 +20,22 @@ export default function Header() {
                         {/* <!-- Desktop Menu --> */}
                         <div className="collapse navbar-collapse d-none d-lg-flex justify-content-center align-items-end">
                             <ul className="navbar-nav">
-                                <li className="nav-item"><Link className="nav-link" aria-current="page" href="#">Home</Link></li>
+                                <li className="nav-item"><Link className="nav-link" aria-current="page" href="/">Home</Link></li>
                                 <li className="nav-item dropdown">
                                     <Link className="nav-link" href="/">Services</Link>
                                     <ul className="dropdown-menu nav-item-children">
-                                        <li><Link className="dropdown-item" href="/explainer-video.html">Explainer Videos</Link></li>
-                                        <li><Link className="dropdown-item" href="/training-video.html">Training Videos</Link></li>
-                                        <li><Link className="dropdown-item" href="/app-demo-video.html">App Demo videos</Link></li>
-                                        <li><Link className="dropdown-item" href="/product">Product videos</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/explainer-videos">Explainer Videos</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/training-videos">Training Videos</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/app-demo-videos">App Demo videos</Link></li>
+                                        <li><Link className="dropdown-item" href="/services/product-videos">Product videos</Link></li>
                                     </ul>
                                 </li>
-                                <li className="nav-item"><Link className="nav-link" href="/protfolio.html">Portfolio</Link></li>
-                                <li className="nav-item"><Link className="nav-link" href="/process.html">Process</Link></li>
-                                <li className="nav-item"><Link className="nav-link" href="/about-us.html">About Us</Link></li>
-                                <li className="nav-item"><Link className="nav-link" href="/reviews.html">Reviews</Link></li>
+                                <li className="nav-item"><Link className="nav-link" href="/protfolio">Portfolio</Link></li>
+                                <li className="nav-item"><Link className="nav-link" href="/process">Process</Link></li>
+                                <li className="nav-item"><Link className="nav-link" href="/about-us">About Us</Link></li>
+                                <li className="nav-item"><Link className="nav-link" href="/reviews">Reviews</Link></li>
                             </ul>
-                            <button className="hero-btn btn-warning"><Link href="get-Link-quote.html" className="nav-link">Get Link
+                            <button className="hero-btn btn-warning"><Link href="get-Link-quote.html" className="nav-link">Get a
                                 Quote</Link></button>
                         </div>
                     </div>

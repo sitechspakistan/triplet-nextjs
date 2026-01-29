@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).Ready(function () {
   $('.your-class').slick({
     slidesToShow: 3,
     slidesToScroll: 1,

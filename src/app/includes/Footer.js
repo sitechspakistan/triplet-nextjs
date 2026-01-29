@@ -39,16 +39,16 @@ export default function Footer() {
                         <div className="col-xl-3">
                             <div className="row">
                                 <div className="col-xl-6">
-                                    <img src="assets/images/footer/clutch-1.svg" alt="" />
+                                    <img src="/assets/images/footer/clutch-1.svg" alt="" />
                                 </div>
                                 <div className="col-xl-6">
-                                    <img src="assets/images/footer/clutch-2.svg" alt="" />
+                                    <img src="/assets/images/footer/clutch-2.svg" alt="" />
                                 </div>
                                 <div className="col-xl-6">
-                                    <img src="assets/images/footer/clutch-3.svg" alt="" />
+                                    <img src="/assets/images/footer/clutch-3.svg" alt="" />
                                 </div>
                                 <div className="col-xl-6">
-                                    <img src="assets/images/footer/clutch-4.svg" alt="" />
+                                    <img src="/assets/images/footer/clutch-4.svg" alt="" />
                                 </div>
                             </div>
                         </div>

@@ -7,7 +7,7 @@ export default function ContactForm() {
                     <div className="row">
                         <div className="col-xl-6">
                             <h2 className="contact-heading">Book a meeting <br /> <span>and get a quote today.</span></h2>
-                            <img src="assets/images/contact/contact-bg-1-1.png" alt="" />
+                            <img src="/assets/images/contact/contact-bg-1-1.png" alt="" />
                         </div>
                         <div className="col-xl-6">
                             <form action="/">

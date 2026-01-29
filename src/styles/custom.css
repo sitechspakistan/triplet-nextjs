@@ -710,7 +710,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/assests/images/about-us/About-Us-Page-banner-1.png);
+    background-image: url(/assets/images/about-us/About-Us-Page-banner-1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1010,7 +1010,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/assests/images/process/process-banner-1.png);
+    background-image: url(/assets/images/process/process-banner-1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1070,7 +1070,10 @@ main {
 
 .service-hero-section {
     position: relative;
-    height: 560px;
+    height: 460px;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .service-content::before {
@@ -1097,7 +1100,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/assests/images/explainer-video/services_banner-black.jpg);
+    background-image: url(/assets/images/explainer-video/services_banner-black.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1210,6 +1213,7 @@ main {
 
 .section-shadow-left {
     position: relative;
+    overflow: hidden;
 }
 
 .process-shadow-left {
@@ -1255,7 +1259,7 @@ main {
     content: '';
     background: radial-gradient(#02b5bc30 10%, #000000c4 60%, transparent);
     display: block;
-    top: 0;
+    top: -65px;
     background-size: cover;
     position: absolute;
     left: -65%;
@@ -1268,14 +1272,14 @@ main {
 
 .section-shadow-left::before {
     content: '';
-    background: radial-gradient(#02b5bc30 10%, #000000c4 60%, transparent);
+    background: radial-gradient(#f99e1c4a 10%, #000000c4 60%, transparent);
     display: block;
-    top: 0;
+    top: -13%;
     background-size: cover;
     position: absolute;
-    left: -65%;
+    right: -42%;
     height: 560px;
-    width: 100%;
+    width: 60%;
     margin: auto;
     z-index: -1;
 }

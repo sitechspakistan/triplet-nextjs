@@ -4,6 +4,7 @@ import "../styles/custom.css"
 import "../styles/slick.css"
 import Header from "./includes/Header";
 import Footer from "./includes/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Backed by Top VCs. Loved by Founders. Built by Us.",
@@ -37,9 +38,9 @@ export default function RootLayout({ children }) {
                 Call Now: <span> +1 (817) 753 4447 </span>
               </a>
             </div>
-            <div className="s-bar"><a href="/book-a-meeting.html">
+            <div className="s-bar"><Link href="/book-a-metting">
               <span className="sidebar-icon two"> </span>
-              <span>Book a Meeting</span></a>
+              <span>Book a Meeting</span></Link>
               <div className="clear"></div>
             </div>
           </div>
