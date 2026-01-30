@@ -1,7 +1,6 @@
 import Script from "next/script";
 import "../styles/bootstrap.min.css"
 import "../styles/custom.css"
-import "../styles/slick.css"
 import Header from "./includes/Header";
 import Footer from "./includes/Footer";
 import Link from "next/link";
@@ -48,9 +47,11 @@ export default function RootLayout({ children }) {
         </div>
         {/* <!-- call and booking icon  --> */}
         <Script src="https://player.vimeo.com/api/player.js" strategy="afterInteractive" />
-        <Script src="/assets/bootstrap.bundle.min.js"></Script>
+        <Script
+          src="/assets/bootstrap.bundle.min.js"
+          strategy="afterInteractive"
+        />
         <Script src="/assets/custom.js"></Script>
-        <Script src="/assets/slick.js"></Script>
 
       </body>
     </html >

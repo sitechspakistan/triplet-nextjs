@@ -1,3 +1,5 @@
+import PhoneInput from "./PhoneInput";
+
 export default function ContactForm() {
     return (
         // <!-- contact-form  -->
@@ -20,7 +22,8 @@ export default function ContactForm() {
                                     </div>
 
                                     <div className="col-xl-6">
-                                        <input type="tel" className="form-input" placeholder="Phone" />
+                                        {/* <input type="tel" className="form-input" placeholder="Phone" /> */}
+                                        <PhoneInput />
                                     </div>
                                     <div className="col-xl-6">
                                         <select name="budget" id="budget" className="form-input">

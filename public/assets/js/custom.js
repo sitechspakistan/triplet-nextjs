@@ -1,23 +1,5 @@
 $(document).Ready(function () {
-  $('.your-class').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    infinite: true,
-    arrows: false,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 576,
-        settings: { slidesToShow: 1 }
-      }
-    ]
-  });
+
   // Initialize Isotope
   var iso = new Isotope('.portfolio-grid', {
     itemSelector: '.portfolio-item',

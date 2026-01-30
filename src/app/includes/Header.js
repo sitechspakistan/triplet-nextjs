@@ -35,7 +35,7 @@ export default function Header() {
                                 <li className="nav-item"><Link className="nav-link" href="/about-us">About Us</Link></li>
                                 <li className="nav-item"><Link className="nav-link" href="/reviews">Reviews</Link></li>
                             </ul>
-                            <button className="hero-btn btn-warning"><Link href="get-Link-quote.html" className="nav-link">Get a
+                            <button className="hero-btn btn-warning"><Link href="/get-a-quote" className="nav-link">Get a
                                 Quote</Link></button>
                         </div>
                     </div>

@@ -4,6 +4,15 @@ import ProcessHero from "../components/ProcessHero";
 import ProcessLeftConSec from "../components/ProcessLeftConSec";
 import ProcessRightConSec from "../components/ProcessRightConSec";
 
+export const metadata = {
+    title: "Process - Creative Triplet",
+    description: "Sit Back and Watch Your Animated Explainer Videos Come to Life Making awesome videos doesn’t have to be complicated. We’ve got a simple, step-by-step process that turns your ideas into reality. 01 Share Your Vision We start by getting to know you and your goals. Tell us about your ideas,what you want to achieve with [&hellip;]",
+    alternates: {
+        canonical: "https://creativetriplet.com/process/",
+    },
+
+};
+
 export default function Process() {
     return (
         <>

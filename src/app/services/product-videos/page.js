@@ -1,10 +1,19 @@
-import Carousel from "@/app/components/Carousel";
 import ContactForm from "@/app/components/ContactForm";
 import Faqs from "@/app/components/Faqs";
 import ServiceHero from "@/app/components/ServiceHero";
 import ShadowLeftSec from "@/app/components/ShadowLeftSec";
 import ShadowRightSec from "@/app/components/ShadowRightSec";
 import TextSec from "@/app/components/TextSec";
+import PortfolioSlider from "@/app/components/PortfolioSlider";
+
+export const metadata = {
+    title: "Product Videos - Creative Triplet",
+    alternates: {
+        canonical: "https://creativetriplet.com/product-videos/",
+    },
+
+};
+
 
 export default function ProductVideos() {
     return (
@@ -86,7 +95,7 @@ export default function ProductVideos() {
                     </>
                 }
             />
-            <Carousel />
+            <PortfolioSlider />
             <Faqs />
             <ContactForm />
 

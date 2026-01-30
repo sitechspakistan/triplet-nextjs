@@ -1,11 +1,28 @@
 @font-face {
     font-family: 'Coolvetica';
-    src: url('/assests/fonts/CoolveticaCompressedHv-Regular.woff2') format('woff2'),
-        url('/assests/fonts/CoolveticaCompressedHv-Regular.woff') format('woff');
+    src: url('/assets/font/CoolveticaRg.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+/* Italic (file name has spaces) */
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('/assets/font/"Coolvetica Rg It".otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* global.css ya app/globals.css me */
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('/assets/font/SpaceGrotesk-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /* :root{} */
 body {
@@ -34,6 +51,9 @@ body {
     transform: rotate(180deg);
 } */
 
+.navbar-nav {
+    padding-left: 170px;
+}
 
 .navbar-nav .nav-link {
     color: white;
@@ -41,8 +61,8 @@ body {
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 600;
     display: block;
-    padding: 15px 40px 15px 0;
-    margin: 0 10px 0 10px;
+    padding: 15px 0px 15px 0;
+    margin: 0 13px;
 
 }
 
@@ -109,7 +129,7 @@ body {
     border-radius: 5em;
     padding: 8px 22px;
     transition: all 0.3s ease;
-    margin-left: 24px;
+    margin-left: 50px;
 }
 
 .hero-btn:hover {
@@ -120,37 +140,36 @@ body {
 }
 
 .hero-section:before {
-    content: '';
-    /* background: radial-gradient(#523a30c2 10%, #000000c4 60%, transparent); */
-    background: radial-gradient(#02b5bc3d 10%, #000000c4 60%, transparent);
-    display: block;
-    top: -330px;
-    background-size: contain;
-    position: absolute;
-    left: -60%;
-    height: 861px;
-    width: 88%;
-    margin: auto;
+    content: "";
     z-index: -1;
+    background: radial-gradient(#02b5bc3d 10%, #000000c4 60%, #0000) 0 0 / contain;
+    width: 100%;
+    height: 861px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: -389px;
+    left: -60%;
 }
 
 .hero-section h1 {
-    font-family: "Coolvetica", Sans-serif;
-    font-size: 78px;
-    font-weight: bold;
-    /* font-style: normal; */
-    line-height: 1em;
-    letter-spacing: 4px;
-    padding: 50px 0px 0px 0px;
+    letter-spacing: -2px;
+    padding: 50px 0 0;
+    font-family: Coolvetica, sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.25em;
+    /* /* font-style: italic; */
 }
 
 .hero-section p {
-    font-family: "Coolvetica", Sans-serif;
-    font-size: 22px;
+    color: #fffc;
+    letter-spacing: 0.001rem;
     margin: 0 0 25px;
-    color: #FFFFFFCC;
-    letter-spacing: 1.5px;
+    font-family: "Coolvetica", sans-serif;
+    font-size: 16px;
     line-height: 20px;
+    font-weight: 600;
 }
 
 .hero-section ul {
@@ -175,7 +194,7 @@ body {
 }
 
 .hero-section ul li img {
-    width: 100%;
+    width: 170px;
     height: auto;
 }
 
@@ -265,18 +284,18 @@ body {
 }
 
 .pro-demo h2 {
-    font-family: "Coolvetica", Sans-serif;
-    font-size: 80px;
-    font-weight: bold;
-    letter-spacing: 1.8px;
+    letter-spacing: -2px;
+    font-family: Coolvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 800;
 }
 
 .pro-demo p {
-    font-size: 15px;
-    font-weight: bold;
-    font-family: "Be Vietnam Pro", Sans-serif;
     color: #c4c4c4;
     margin-top: 20px;
+    font-family: Be Vietnam Pro, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .pro-demo h3 {
@@ -290,9 +309,10 @@ body {
 }
 
 .proud-section h2 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 48px;
-    font-weight: bold;
+    font-family: Coolvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -2px;
 }
 
 .sel-project {
@@ -324,15 +344,19 @@ body {
 }
 
 .fortune h2 {
-    font-size: 48px;
-    font-weight: bold;
-
+    font-family: coolvectica, sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: -2px;
 }
 
 .fortune p {
-    font-size: 15px;
-    font-family: "Be Vietnam Pro", sans-serif;
     margin-bottom: 22px;
+    font-family: Be Vietnam Pro, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #c4c4c4;
+    letter-spacing: 0px;
 }
 
 .box {
@@ -364,6 +388,7 @@ body {
 .sel-project h3 {
     font-size: 18px;
     padding-top: 20px;
+    margin-bottom: 0;
 }
 
 .sel-project ul {
@@ -517,7 +542,9 @@ body {
 
 .fortune-two h3 {
     font-size: 40px;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .fortune-two p {
@@ -749,11 +776,11 @@ main {
 
 .quote-content {
     position: absolute;
-    top: -60px;
+    top: -30px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/assests/images/quote-form/quote-desktop-1.png);
+    background-image: url(/assets/images/quote-form/quote-desktop-1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -797,10 +824,10 @@ main {
     display: block;
 }
 
-#quoteStepOne ul li img:hover {
+/* #quoteStepOne ul li img:hover {
     border: 1px solid red;
-    /* border-radius: 2px; */
-}
+    /* border-radius: 2px;
+} */
 
 #quoteStepOne ul {
     display: flex;
@@ -811,7 +838,7 @@ main {
 
 #quoteStepOne ul li {
     margin: 10px 0px;
-    border: 1px solid white;
+    border: 1px solid red;
 
 }
 
@@ -825,8 +852,28 @@ main {
     margin-bottom: 0;
 }
 
-#quoteStepOne ul li:focus {
+#quoteStepOne ul li:hover {
     background-color: #F99E1C;
+    border: 2px solid #F99E1C;
+}
+
+#quoteStepOne ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#quoteStepOne ul li a h3:hover {
+    background-color: #F99E1C;
+}
+
+.quote-service.active {
+    border: 2px solid #F99E1C !important;
+
+}
+
+.quote-service.active h3 {
+    background-color: #fcaa39 !important;
+
 }
 
 .next-step {
@@ -1627,4 +1674,28 @@ main {
         display: block;
 
     }
+}
+
+.iti__country-list .iti__flag,
+.iti__country-name {
+    color: #000;
+}
+
+/* wrapper full width */
+.iti {
+    width: 100% !important;
+    margin-top: 10px;
+}
+
+/* input full width */
+.iti input {
+    width: 100% !important;
+    padding-left: 90px !important;
+    /* flag + dial code space */
+    box-sizing: border-box;
+}
+
+.iti--allow-dropdown input,
+.iti--separate-dial-code input {
+    width: 100% !important;
 }

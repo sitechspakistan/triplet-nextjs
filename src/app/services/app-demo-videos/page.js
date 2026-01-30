@@ -1,10 +1,20 @@
-import Carousel from "@/app/components/Carousel";
 import ContactForm from "@/app/components/ContactForm";
 import Faqs from "@/app/components/Faqs";
 import ServiceHero from "@/app/components/ServiceHero";
 import ShadowLeftSec from "@/app/components/ShadowLeftSec";
 import ShadowRightSec from "@/app/components/ShadowRightSec";
 import TextSec from "@/app/components/TextSec";
+import PortfolioSlider from "@/app/components/PortfolioSlider";
+
+export const metadata = {
+    title: "App Demo Videos - Creative Triplet",
+    description: "App Demo Videos That Get Downloads We’ll change your app’s features into an engaging story that leaves viewers eager to hit that download button. Don&#8217;t let your app get lost in the crowd. Our demo videos showcase its brilliance, which makes it easy for users to see its value and hit that download button. https://vimeo.com/602227121 [&hellip;]",
+    alternates: {
+        canonical: "https://creativetriplet.com/app-demo-videos/",
+    },
+
+};
+
 
 export default function AppDemoVideos() {
     return (
@@ -85,7 +95,7 @@ export default function AppDemoVideos() {
                 }
                 btnlink={"/"}
                 Btntxt={"Schedule Free Consultation"} />
-            <Carousel />
+            <PortfolioSlider />
             <Faqs />
             <ContactForm />
 

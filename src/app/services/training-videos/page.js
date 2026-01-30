@@ -1,10 +1,19 @@
-import Carousel from "@/app/components/Carousel";
 import ContactForm from "@/app/components/ContactForm";
 import Faqs from "@/app/components/Faqs";
 import ServiceHero from "@/app/components/ServiceHero";
 import ShadowLeftSec from "@/app/components/ShadowLeftSec";
 import ShadowRightSec from "@/app/components/ShadowRightSec";
 import TextSec from "@/app/components/TextSec";
+import PortfolioSlider from "@/app/components/PortfolioSlider";
+
+export const metadata = {
+    title: "Training Videos - Creative Triplet",
+    alternates: {
+        canonical: "https://creativetriplet.com/training-videos/",
+    },
+
+};
+
 
 export default function TrainingVideo() {
     return (
@@ -82,7 +91,7 @@ export default function TrainingVideo() {
                         gaining a dedicated partner invested in your training success.
                     </>}
                 btnlink={"/"} Btntxt={"Schedule Free Consultation"} />
-            <Carousel />
+            <PortfolioSlider />
             <Faqs />
             <ContactForm />
         </>

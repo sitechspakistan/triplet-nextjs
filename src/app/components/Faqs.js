@@ -1,4 +1,17 @@
+"use client";
+
+import { useEffect } from "react";
+import * as bootstrap from "bootstrap";
+
 export default function Faqs() {
+
+    useEffect(() => {
+        // Initialize all collapses inside accordions manually
+        const collapseElements = document.querySelectorAll(".accordion-collapse");
+        collapseElements.forEach(el => {
+            new bootstrap.Collapse(el, { toggle: false });
+        });
+    }, []);
     return (
         // < !--FAQS -- >
         <section>
@@ -75,9 +88,9 @@ export default function Faqs() {
                         </div>
                     </div>
                     <div className="accordion-item">
-                        <h2 className="accordion-header" id="panelsStayOpen-headinFive">
+                        <h2 className="accordion-header" id="panelsStayOpen-headingFive">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapsFive" aria-expanded="false"
+                                data-bs-target="#panelsStayOpen-collapseFive"
                                 aria-controls="panelsStayOpen-collapseFive">
                                 What industries do you have experience creating explainer videos for?
                             </button>

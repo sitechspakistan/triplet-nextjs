@@ -25,7 +25,7 @@ export default function Home() {
         compelling investment
         narrative — a video asset featured directly in their Series D deck.</p>
       <h3 className="pt-3">Results</h3>
-      <ul className="pb-3">
+      <ul className="pb-3 con-video">
         <li>Closed a $130M oversubscribed round, achieving unicorn status (~$1B valuation)</li>
         <li>Scaled from $0 to $125M ARR in four years, completed global rollout to 500K+ patients
         </li>
@@ -38,7 +38,7 @@ export default function Home() {
         dementia
         workflows—tailored for employers, health plans, and end users.</p>
       <h3 className="pt-3">Results</h3>
-      <ul className="pb-3">
+      <ul className="pb-3 con-video">
         <li>Aided expansion into enterprise channels post-$8M seed round</li>
         <li>Delivered measurable patient impact: 2.6x ROI in ER savings and 3.5x overall return for
           employers</li>
@@ -52,7 +52,7 @@ export default function Home() {
         predict behavior,
         automate campaigns, and drive giving.</p>
       <h3 className="pt-3">Results</h3>
-      <ul className="pb-3">
+      <ul className="pb-3 con-video">
         <li>Clients saw +20% more donations and 2× response rates</li>
         <li>Backed by Volta and BDC Capital with $300K+ raised</li>
         <li>$Positioned to disrupt the $500B+ nonprofit fundraising market</li>
@@ -68,7 +68,7 @@ export default function Home() {
         Produced an explainer showing how Schoox powers AI-driven skills mapping, microlearning, and
         analytics for global frontline teams.</p>
       <h3 className="pt-3">Results</h3>
-      <ul className="pb-3">
+      <ul className="pb-3 con-video">
         <li>3,500+ clients across 135+ countries</li>
         <li>25% YoY customer growth across frontline industries</li>
         <li>$8.5M+ raised, backed by Vista Equity Partners</li>
@@ -81,7 +81,7 @@ export default function Home() {
         Forecasting ML, and
         analytics — replacing legacy oil & gas research tools.</p>
       <h3 className="pt-3">Results</h3>
-      <ul className="pb-3">
+      <ul className="pb-3 con-video">
         <li>Closed enterprise deals with Shell, Fidelity, and more</li>
         <li>Scaled from $918K bootstrapped to $11M+ in funding</li>
         <li>Secured $35M PE round led by Invictus Growth</li>

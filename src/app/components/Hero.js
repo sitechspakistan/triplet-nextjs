@@ -10,7 +10,7 @@ export default function Hero() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
-                            <h1 className="text-white">Videos That Helped Raise <span className="content-color">$850M+</span>
+                            <h1 className="text-white">Videos That Helped Raise <span className="content-color">$850M+ </span>
                                 for VC-Backed Startups</h1>
                             <p className="pt-3 pb-2">From Seed to Series D, we help high-growth startups simplify their
                                 story, accelerate GTM,
@@ -25,7 +25,7 @@ export default function Hero() {
                                 <ClucthWidget />
                             </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 ps-5">
                             <div className=" mt-5 e-hosted-video elementor-wrapper elementor-open-inline">
                                 <video
                                     className="elementor-video"
