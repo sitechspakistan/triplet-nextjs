@@ -1,10 +1,13 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Portfolio() {
     const [filter, setFilter] = useState("all");
+    const [videoUrl, setVideoUrl] = useState("");
+    const [videoTitle, setVideoTitle] = useState("");
+
     const items = [
-        { id: 1, title: "Project A", category: "b2c", video: "https://player.vimeo.com/video/672297683", image: "/assets/images/portfolio/b2c/2.png" },
+        { id: 1, title: "Microsoft - Employee Devices I Explainer Video by Creative Triplet", category: "b2c", video: "https://player.vimeo.com/video/602215167?h=01d057ba98", image: "/assets/images/portfolio/b2c/2.png" },
         { id: 2, title: "Project B", category: "it", video: "https://player.vimeo.com/video/338241178", image: "/assets/images/portfolio/common/1.jpg" },
         { id: 3, title: "Project C", category: "healthcare", video: "https://player.vimeo.com/video/668278734", image: "/assets/images/portfolio/common/2.jpg" },
         { id: 4, title: "Project D", category: "b2b", video: "https://player.vimeo.com/video/602227121", image: "/assets/images/portfolio/b2b/1.jpg" },
@@ -19,11 +22,35 @@ export default function Portfolio() {
         filter === "all"
             ? items
             : items.filter((item) => item.category === filter);
+
+    useEffect(() => {
+        const modal = document.getElementById("portfolioModal");
+
+        const handleClose = () => {
+            setVideoUrl("");
+            setVideoTitle("");
+        };
+
+        modal?.addEventListener("hidden.bs.modal", handleClose);
+        return () =>
+        modal?.removeEventListener("hidden.bs.modal", handleClose);
+    }, []);
+
+    const openModal = (item) => {
+        setVideoUrl(item.video);
+        setVideoTitle(item.title);
+
+        const modal = new window.bootstrap.Modal(
+            document.getElementById("portfolioModal")
+        );
+        modal.show();
+    };
+
     return (
         <>
             <section className="portfolio-section">
-                <div className="container-fluid">
-                    <div className="row">
+                <div className="container-fluid g-0">
+                    <div className="row g-0">
                         <div className="col-12 text-center">
                             {/* Filters */}
                             <div className="portfolio-filters">
@@ -39,12 +66,12 @@ export default function Portfolio() {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-12">
+                    <div className="row g-0">
+                        <div className="col-12 g-0">
                             {/* Masonry */}
                             <div className="portfolio-masonry">
                                 {filteredItems.map((item) => (
-                                    <div key={item.id} className="portfolio-masonry-item">
+                                    <div key={item.id} className="portfolio-masonry-item" onClick={() => openModal(item)}>
                                         <img src={item.image} alt={item.title} />
                                     </div>
                                 ))}
@@ -52,8 +79,32 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-
             </section>
+
+            {/* Modal */}
+            <div
+                className="modal fade"
+                id="portfolioModal"
+                tabIndex="-1"
+                aria-hidden="true"
+            >
+                <div className="modal-dialog modal-xl modal-dialog-centered">
+                <div className="modal-content">
+                    <div className="modal-body p-0">
+                    {videoUrl && (
+                        <div className="ratio ratio-16x9">
+                        <iframe
+                            src={videoUrl}
+                            title={videoTitle}
+                            allow="autoplay; fullscreen; picture-in-picture"
+                            allowFullScreen
+                        />
+                        </div>
+                    )}
+                    </div>
+                </div>
+                </div>
+            </div>
 
         </>
     )
