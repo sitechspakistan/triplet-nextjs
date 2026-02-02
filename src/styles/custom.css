@@ -6,7 +6,6 @@
     font-display: swap;
 }
 
-/* Italic (file name has spaces) */
 @font-face {
     font-family: 'Coolvetica';
     src: url('/assets/font/"Coolvetica Rg It".otf') format('opentype');
@@ -15,10 +14,18 @@
     font-display: swap;
 }
 
-/* global.css ya app/globals.css me */
 @font-face {
     font-family: 'Space Grotesk';
     src: url('/assets/font/SpaceGrotesk-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('/assets/fonts/bevietnampro-qdvkstaylfyeg_idwvojmves_hwypac2db8ddw.woff2') format('woff2');
+    font-weight: 100 900;
+    /* variable font */
     font-style: normal;
     font-display: swap;
 }
@@ -73,7 +80,8 @@ body {
     /* hover color */
 }
 
-.nav-item {
+
+.nav-link.active .nav-item {
     position: relative;
     z-index: 9999;
 }
@@ -562,12 +570,15 @@ body {
     font-style: italic;
     padding-left: 80px;
     font-weight: 200;
+    font-size: 38px;
+    letter-spacing: -3px;
 }
 
 .contact-heading {
     font-size: 48px;
     padding-left: 20px;
     font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
 }
 
 .contact-form {
@@ -1069,6 +1080,22 @@ main {
     z-index: 99999;
 }
 
+.process-content h1 {
+    font-family: Space Grotesk, sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.process-content p {
+
+    font-family: Be Vietnam Pro, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #c4c4c4;
+    padding-top: 20px;
+}
+
 .process-num {
     font-size: 60px;
     color: #FAB855;
@@ -1080,8 +1107,10 @@ main {
 
 .content-left-sec .pro-heading {
     font-size: 35px;
-    line-height: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
     margin: 0em 0em 1em 0em;
+    letter-spacing: 1px;
     padding: 0;
 }
 
@@ -1331,10 +1360,25 @@ main {
     z-index: -1;
 }
 
+.content-RL h2 {
+    font-family: "Space Grotesk", Sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 1.2em;
+}
+
 .con-video {
     color: #c4c4c4;
     font-weight: 600;
     font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 15px;
+}
+
+.faqs h2 {
+    font-family: "Space Grotesk", Sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    letter-spacing: -2px;
 }
 
 .content-right-sec img {
@@ -1532,6 +1576,46 @@ main {
     background-position: center;
 }
 
+.service-hero-section h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.service-hero-section p {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 20px;
+    color: #c4c4c4;
+    letter-spacing: 2px;
+}
+
+.textsec {
+    font-size: 28px;
+    padding: 0 50px;
+    color: #c4c4c4;
+}
+
+.video-slide iframe {
+    width: 100%;
+}
+
+.about-content h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+}
+
+.about-content p {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #c4c4c4;
+}
+
+
+
 
 @media screen and (max-width: 576px) {
     .sticky-top {
@@ -1543,12 +1627,13 @@ main {
     }
 
     .hero-section h1 {
-        font-size: 40px;
+        font-size: 28px;
     }
 
     .hero-section p {
-        font-size: 18px;
         letter-spacing: 2px;
+        font-size: 12px;
+        font-weight: 500;
     }
 
     .hero-btns {
@@ -1580,13 +1665,18 @@ main {
     }
 
     .pro-demo h2 {
-        font-size: 50px;
-        letter-spacing: 1px;
-        line-height: 3.5rem;
+        letter-spacing: 0px;
+        font-size: 22px;
+        line-height: 0px;
     }
 
     .proud-section h2 {
-        font-size: 46px;
+        font-size: 30px;
+    }
+
+    .sel-project h2 {
+
+        font-size: 32px;
     }
 
     .brands ul {
@@ -1598,7 +1688,7 @@ main {
     }
 
     .fortune h2 {
-        font-size: 34px;
+        font-size: 30px;
         margin-bottom: 20px;
     }
 
@@ -1608,19 +1698,27 @@ main {
     }
 
     .fortune-two h3 {
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 700;
     }
 
     .fortune .numb {
-        right: 2px;
-        top: -54px;
-        font-size: 149px;
+        font-size: 120px;
+        top: -40px;
+        right: 25px;
     }
 
     .fortune-two-p {
         padding-top: 20px !important;
         padding-bottom: 20px;
+    }
+
+    .content-RL h2 {
+        font-size: 28px;
+    }
+
+    .con-video {
+        font-size: 14px;
     }
 
     .contact-form .boxx {
@@ -1634,6 +1732,11 @@ main {
 
     .contact-heading {
         font-size: 26px;
+    }
+
+    .contact-heading span {
+
+        font-size: 28px;
     }
 
     form {
@@ -1674,6 +1777,106 @@ main {
         display: block;
 
     }
+
+    .service-hero-section h1 {
+        font-family: Space Grotesk, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .service-hero-section p {
+
+        color: #c4c4c4;
+        font-size: 9px;
+        font-weight: 500;
+        letter-spacing: 0;
+
+    }
+
+    .textsec {
+
+        padding: 0 0px;
+        font-size: 14px;
+    }
+
+    .service-content {
+        padding-left: 0 !important;
+        top: 35px;
+        height: 60%;
+        color: white;
+    }
+
+    .service-hero-section {
+        height: 230px;
+    }
+
+    .process-content {
+        padding-left: 0;
+    }
+
+    .process-content h1 {
+        letter-spacing: -1px;
+        font-size: 22px;
+    }
+
+    .process-content p {
+        color: #c4c4c4;
+        padding-top: 20px;
+        font-family: Be Vietnam Pro, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .content-left-sec .about-img-two {
+        width: 100%;
+        height: auto;
+    }
+
+    .process-content {
+
+        height: 50%;
+        top: 30px;
+
+    }
+
+    .process-hero-section {
+        height: 250px;
+    }
+
+    .flag-img img {
+        width: 53px !important;
+        height: auto !important;
+    }
+
+    .content-left-sec .about-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-content {
+        padding-left: 0;
+        height: 50%;
+        top: 30px;
+    }
+
+    .about-content h1 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .about-content p {
+        letter-spacing: 0px;
+        color: rgb(196, 196, 196);
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .about-hero-section {
+        height: 250px;
+        /* width: 409px; */
+    }
+
 }
 
 .iti__country-list .iti__flag,

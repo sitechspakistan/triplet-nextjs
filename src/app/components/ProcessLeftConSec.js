@@ -1,6 +1,6 @@
 export default function ProcessLeftConSec({ image, heading, para, numb }) {
     return (
-        <section className="content-left-sec mt-5 mb-5 pb-5">
+        <section className="content-left-sec mt-5 mb-5 pb-2">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6">

@@ -1,6 +1,6 @@
 export default function ProcessRightConSec({ image, heading, para, numb, className = "" }) {
     return (
-        <section className={`content-left-sec mt-3 mb-5 pb-5 ${className}`}>
+        <section className={`content-left-sec mt-3 mb-5 pb-2 ${className}`}>
             <div className="container-fluid">
                 <div className="row gx-0">
                     <div className="col-xl-6">

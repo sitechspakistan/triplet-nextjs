@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function LeftContent({ videoUrl, heading, content, btntxt, btnlink }) {
     return (
-        <section className="mt-5">
+        <section className="content-RL mt-5">
             <div className="container">
                 <div className="row">
                     {/* Video Section */}

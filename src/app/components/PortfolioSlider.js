@@ -9,21 +9,29 @@ export default function PortfolioSlider() {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         infinite: true,
         arrows: false,
         dots: false,
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 992,
-                settings: { slidesToShow: 2 },
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
             },
             {
                 breakpoint: 576,
-                settings: { slidesToShow: 1 },
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
             },
         ],
     };
+
     return (
         // <!-- grab a snack!  -->
         <section className="mt-5 mb-5 snack section-shadow-left">
@@ -31,7 +39,7 @@ export default function PortfolioSlider() {
                 <h2 className="text-center mb-4">Grab A Snack!</h2>
                 <div className="porfolio-slider pb-5">
                     <Slider {...settings}>
-                        <div>
+                        <div className="video-slide">
                             <iframe
                                 src="https://player.vimeo.com/video/672297683"
                                 title="Video 1"
@@ -40,7 +48,7 @@ export default function PortfolioSlider() {
                             />
                         </div>
 
-                        <div>
+                        <div className="video-slide">
                             <iframe
                                 src="https://player.vimeo.com/video/338241178"
                                 title="Video 2"
@@ -49,7 +57,7 @@ export default function PortfolioSlider() {
                             />
                         </div>
 
-                        <div>
+                        <div className="video-slide">
                             <iframe
                                 src="https://player.vimeo.com/video/668278734"
                                 title="Video 3"
@@ -58,7 +66,7 @@ export default function PortfolioSlider() {
                             />
                         </div>
 
-                        <div>
+                        <div className="video-slide">
                             <iframe
                                 src="https://player.vimeo.com/video/602227121"
                                 title="Video 4"
@@ -67,7 +75,7 @@ export default function PortfolioSlider() {
                             />
                         </div>
 
-                        <div>
+                        <div className="video-slide">
                             <iframe
                                 src="https://player.vimeo.com/video/746877725"
                                 title="Video 5"

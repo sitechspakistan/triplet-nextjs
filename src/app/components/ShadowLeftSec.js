@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ShadowLeftSec({ VideoUrl, Heading, Description, btnlink, Btntxt }) {
     return (
-        <section className="section-shadow-left pb-3">
+        <section className="section-shadow-left pb-3 content-RL">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6">

@@ -14,7 +14,7 @@ export default function Faqs() {
     }, []);
     return (
         // < !--FAQS -- >
-        <section>
+        <section className="faqs pt-5">
             <div className="container">
                 <h2 className="text-center pt-2 pb-4">Frequenty Asked Questions</h2>
                 <div className="accordion" id="accordionPanelsStayOpenExample">

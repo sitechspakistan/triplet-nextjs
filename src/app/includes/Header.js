@@ -1,6 +1,11 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from "next/navigation";
 
 export default function Header() {
+    const pathname = usePathname();
+
     return (
         <>
             <header>
@@ -20,9 +25,11 @@ export default function Header() {
                         {/* <!-- Desktop Menu --> */}
                         <div className="collapse navbar-collapse d-none d-lg-flex justify-content-center align-items-end">
                             <ul className="navbar-nav">
-                                <li className="nav-item"><Link className="nav-link" aria-current="page" href="/">Home</Link></li>
+                                <li className="nav-item"><Link className={`nav-link ${pathname === "/" ? "active" : ""}`}
+                                    href="/" aria-current="page">Home</Link></li>
                                 <li className="nav-item dropdown">
-                                    <Link className="nav-link" href="/">Services</Link>
+                                    <Link className={`nav-link ${pathname === "/services" ? "active" : ""}`}
+                                        href="/services">Services</Link>
                                     <ul className="dropdown-menu nav-item-children">
                                         <li><Link className="dropdown-item" href="/services/explainer-videos">Explainer Videos</Link></li>
                                         <li><Link className="dropdown-item" href="/services/training-videos">Training Videos</Link></li>
@@ -31,9 +38,12 @@ export default function Header() {
                                     </ul>
                                 </li>
                                 <li className="nav-item"><Link className="nav-link" href="/protfolio">Portfolio</Link></li>
-                                <li className="nav-item"><Link className="nav-link" href="/process">Process</Link></li>
-                                <li className="nav-item"><Link className="nav-link" href="/about-us">About Us</Link></li>
-                                <li className="nav-item"><Link className="nav-link" href="/reviews">Reviews</Link></li>
+                                <li className="nav-item"><Link className={`nav-link ${pathname === "/process" ? "active" : ""}`}
+                                    href="/process">Process</Link></li>
+                                <li className="nav-item"><Link className={`nav-link ${pathname === "/about-us" ? "active" : ""}`}
+                                    href="/about-us">About Us</Link></li>
+                                <li className="nav-item"><Link className={`nav-link ${pathname === "/reviews" ? "active" : ""}`}
+                                    href="/reviews">Reviews</Link></li>
                             </ul>
                             <button className="hero-btn btn-warning"><Link href="/get-a-quote" className="nav-link">Get a
                                 Quote</Link></button>

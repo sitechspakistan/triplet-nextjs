@@ -4,7 +4,7 @@ export default function ServiceHero({ Heading, Paragraph }) {
             <div className="service-content">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-6 ">
+                        <div className="col-8 col-xl-6 ">
                             <h1>{Heading}</h1>
                             <p>{Paragraph}</p>
                         </div>

@@ -1,6 +1,6 @@
 export default function AboutLeftCon() {
     return (
-        <section className="content-left-sec">
+        <section className="content-left-sec content-RL">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6">

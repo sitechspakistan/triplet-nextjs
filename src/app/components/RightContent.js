@@ -2,13 +2,13 @@ import Link from "next/link";
 
 export default function RightContent({ videoUrl, title, content, btntxt, btnlink }) {
     return (
-        <section>
+        <section className="content-RL ">
             <div className="container">
                 <div className="row">
                     {/* <div className="col-xl-6">
                         <h2>{title}</h2> */}
                     {/* Content Section */}
-                    <div className="col-xl-6">
+                    <div className="col-xl-6 pb-3">
                         <h2 className="pt-3 pb-3">{title}</h2>
 
                         {/* Render passed React content */}

@@ -1,6 +1,6 @@
 export default function ContentRightFlags() {
     return (
-        <section className="content-left-sec mt-5 mb-5 pb-5">
+        <section className="content-left-sec mt-5 mb-5 pb-2">
             <div className="container-fluid">
                 <div className="row gx-0">
                     <div className="col-xl-6">

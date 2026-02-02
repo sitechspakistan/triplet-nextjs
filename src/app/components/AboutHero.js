@@ -4,7 +4,7 @@ export default function AboutHero() {
             <div className="about-content">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-6 ">
+                        <div className="col-8 col-xl-6 ">
                             <h1>The Creative Triplet Story</h1>
                             <p>A little animation studio that could (and did!)</p>
                         </div>

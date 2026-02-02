@@ -10,18 +10,18 @@ export default function Footer() {
                             <h2>Links</h2>
                             <ul>
                                 <li><Link href="/">Portfolio</Link></li>
-                                <li><Link href="/">Process</Link></li>
-                                <li><Link href="/">About Us</Link></li>
-                                <li><Link href="/">Reviews</Link></li>
+                                <li><Link href="/process">Process</Link></li>
+                                <li><Link href="/about-us">About Us</Link></li>
+                                <li><Link href="/reviews">Reviews</Link></li>
                             </ul>
                         </div>
                         <div className="col-xl-3">
                             <h2>Services</h2>
                             <ul>
-                                <li><Link href="/">Explainer Videos</Link></li>
-                                <li><Link href="/">App Demo Videos</Link></li>
-                                <li><Link href="/">Product Videos</Link></li>
-                                <li><Link href="/">Training Videos</Link></li>
+                                <li><Link href="/services/explainer-videos">Explainer Videos</Link></li>
+                                <li><Link href="/services/app-demo-videos">App Demo Videos</Link></li>
+                                <li><Link href="/services/product-videos">Product Videos</Link></li>
+                                <li><Link href="/services/training-videos">Training Videos</Link></li>
                             </ul>
                         </div>
                         <div className="col-xl-3">
