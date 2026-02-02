@@ -37,7 +37,7 @@ export default function Header() {
                                         <li><Link className="dropdown-item" href="/services/product-videos">Product videos</Link></li>
                                     </ul>
                                 </li>
-                                <li className="nav-item"><Link className="nav-link" href="/protfolio">Portfolio</Link></li>
+                                <li className="nav-item"><Link className="nav-link" href="/portfolio">Portfolio</Link></li>
                                 <li className="nav-item"><Link className={`nav-link ${pathname === "/process" ? "active" : ""}`}
                                     href="/process">Process</Link></li>
                                 <li className="nav-item"><Link className={`nav-link ${pathname === "/about-us" ? "active" : ""}`}

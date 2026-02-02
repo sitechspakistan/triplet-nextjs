@@ -1902,3 +1902,33 @@ main {
 .iti--separate-dial-code input {
     width: 100% !important;
 }
+
+/* Portfolio Page */
+.portfolio-masonry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  .portfolio-masonry-item {
+    break-inside: avoid;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .portfolio-masonry {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-masonry {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio-masonry {
+      grid-template-columns: 1fr;
+    }
+  }
