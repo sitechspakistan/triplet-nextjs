@@ -1961,3 +1961,26 @@ main {
         column-count: 1;
     }
 }
+
+/* Services Page */
+.service-page-item {
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.service-item-content {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-image: linear-gradient(45deg, black, transparent);
+}
+
+.service-item-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.service-item-content p {
+    color: #c4c4c4;
+}
