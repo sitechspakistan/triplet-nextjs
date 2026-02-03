@@ -19,7 +19,7 @@ export default function ExplainerVideos() {
         <>
             <ServiceHero Heading={"Videos That Don't Just Explain, They Engage & Convert."}
                 Paragraph="We’ll break down your complex products, services, or ideas into bite- sized,
-                                easy-to-understand animated explainer videos that engage and convert." />
+                                easy-to-understand animated explainer videos that engage and convert." bgImage={"/assets/images/explainer-video/services_banner-black.jpg"} />
             <TextSec heading="Stop losing potential customers to confusion. Sometimes simple text and static
                     images just don’t
                     cut. Explainer videos are a proven, strategic marketing tool to simplify complex messages, engage

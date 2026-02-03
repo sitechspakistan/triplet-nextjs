@@ -1,6 +1,6 @@
-import ProcessHero from "../components/ProcessHero";
 import Portfolio from "../components/Portfolio";
 import ContactForm from "../components/ContactForm";
+import ServiceHero from "../components/ServiceHero";
 
 export const metadata = {
     title: "Portfolio - Creative Triplet",
@@ -11,10 +11,13 @@ export const metadata = {
 
 };
 
-export default function Process() {
+export default function PortFolio() {
     return (
         <>
-            <ProcessHero />
+            <ServiceHero
+                bgImage={"/assets/images/portfolio/portfolio-banner-1.png"}
+                Heading={"A Showcase of Our Finest Work"}
+                Paragraph="From global brands to local heroes, we’ve helped countless businesses achieve their goals through the power of video. Explore our animated explainer video company portfolio and see the results for yourself." />
             <Portfolio />
             <ContactForm />
         </>

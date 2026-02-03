@@ -1,7 +1,8 @@
-export default function ServiceHero({ Heading, Paragraph }) {
+export default function ServiceHero({ Heading, Paragraph, bgImage }) {
     return (
         <section className="service-hero-section mt-3">
-            <div className="service-content">
+            <div className="service-content" style={{ backgroundImage: `url(${bgImage})` }}>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-8 col-xl-6 ">

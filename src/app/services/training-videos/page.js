@@ -18,7 +18,7 @@ export const metadata = {
 export default function TrainingVideo() {
     return (
         <>
-            <ServiceHero Heading={"Training Videos That Make Learning Fun & Effective"}
+            <ServiceHero bgImage={"/assets/images/explainer-video/services_banner-black.jpg"} Heading={"Training Videos That Make Learning Fun & Effective"}
                 Paragraph="We’l turn your dry training manuals and yawn-inducing presentations into animated
                                 training videos that educate, engage, and inspire action"/>
             <TextSec heading="Forget those snooze-inducing training sessions! Our animated training videos

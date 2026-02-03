@@ -18,7 +18,7 @@ export const metadata = {
 export default function ProductVideos() {
     return (
         <>
-            <ServiceHero Heading={"Product Demo Videos That Don't Just Show, They Sell, Convert & Grow"}
+            <ServiceHero bgImage={"/assets/images/explainer-video/services_banner-black.jpg"} Heading={"Product Demo Videos That Don't Just Show, They Sell, Convert & Grow"}
                 Paragraph="We’ll convert your product’s story into an engaging video that leaves viewers wanting
                                 more." />
             <TextSec

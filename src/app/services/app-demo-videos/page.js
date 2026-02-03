@@ -19,7 +19,7 @@ export const metadata = {
 export default function AppDemoVideos() {
     return (
         <>
-            <ServiceHero Heading={"App Demo Videos That Get Downloads"}
+            <ServiceHero bgImage={"/assets/images/explainer-video/services_banner-black.jpg"} Heading={"App Demo Videos That Get Downloads"}
                 Paragraph="We’ll change your app’s features into an engaging story that leaves viewers eager to hit
                                 that download button." />
             <TextSec heading="Don’t let your app get lost in the crowd. Our demo videos showcase its
