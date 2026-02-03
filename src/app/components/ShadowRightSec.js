@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function ShadowRightSec({ VideoUrl, Heading, Description, btnlink, Btntxt }) {
     return (
-        <section className="section-shadow-right content-RL mt-3 pb-5">
+        <section className="section-shadow-right content-RL pt-5 pb-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-xl-6 mt-5 mb-5">
+                    <div className="col-xl-6 mt-2 mb-3">
                         <div style={{ padding: "56.25% 0 0 0", position: "relative", }}>
                             <iframe
                                 src={VideoUrl}
@@ -17,7 +17,7 @@ export default function ShadowRightSec({ VideoUrl, Heading, Description, btnlink
                         </div>
                     </div>
                     <div className="col-xl-6">
-                        <h2 className="pt-5 pb-3">
+                        <h2 className="pb-3">
                             {Heading}
                         </h2>
                         <p className="con-video pb-3">{Description}</p>

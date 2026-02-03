@@ -5,6 +5,7 @@ import Header from "./includes/Header";
 import Footer from "./includes/Footer";
 import Link from "next/link";
 
+
 export const metadata = {
   title: "Backed by Top VCs. Loved by Founders. Built by Us.",
   description: "Creative Triplet is the #1 animated explainer video production company that makes your message unforgettable with videos that drive action",
@@ -20,6 +21,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+      </head>
       <body>
         <Header />
 

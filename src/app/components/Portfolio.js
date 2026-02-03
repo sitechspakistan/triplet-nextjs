@@ -8,17 +8,17 @@ export default function Portfolio() {
 
     const items = [
         { id: 1, title: "Microsoft - Employee Devices I Explainer Video by Creative Triplet", category: "B2C", video: "https://player.vimeo.com/video/602215167?h=01d057ba98", image: "/assets/images/portfolio/b2c/2.png" },
-        { id: 2, title: "Project B", category: "Information Technology", video: "https://player.vimeo.com/video/338241178", image: "/assets/images/portfolio/b2b/1.jpg" },
-        { id: 3, title: "Project C", category: "Health Care", video: "https://player.vimeo.com/video/668278734", image: "/assets/images/portfolio/common/4.webp" },
-        { id: 4, title: "Project D", category: "B2b", video: "https://vimeo.com/602227121", image: "/assets/images/portfolio/common/1.jpg" },
-        { id: 5, title: "Project E", category: "B2B", video: "https://player.vimeo.com/video/602227121", image: "/assets/images/portfolio/common/3.jpg" },
-        { id: 6, title: "Project F", category: "B2B", video: "https://player.vimeo.com/video/602227121", image: "/assets/images/portfolio/common/5.png" },
-        { id: 7, title: "Project G", category: "B2B", video: "https://player.vimeo.com/video/602227121", image: "/assets/images/portfolio/common/2.jpg" },
-        { id: 8, title: "Project H", category: "B2B", video: "https://player.vimeo.com/video/602227121", image: "/assets/images/portfolio/b2b/2.jpg" },
-        { id: 9, title: "Project I", category: "Information Technology", video: "https://vimeo.com/336123110", image: "/assets/images/portfolio/common/6.jpg" },
-        { id: 10, title: "Project K", category: "B2B", video: "https://player.vimeo.com/video/602227121", image: "/assets/images/portfolio/common/7.jpg" },
-        { id: 11, title: "Project J", category: "Information Technology", video: "https://vimeo.com/746865222", image: "/assets/images/portfolio/b2b/3.jpg" },
-        { id: 12, title: "Project L", category: "B2C", video: "https://vimeo.com/696057141", image: "/assets/images/portfolio/common/8.jpg" },
+        { id: 2, title: "Project B", category: "Information Technology", video: "https://player.vimeo.com/video/746877725", image: "/assets/images/portfolio/b2b/1.jpg" },
+        { id: 3, title: "Project C", category: "Health Care", video: "https://player.vimeo.com/video/376859283", image: "/assets/images/portfolio/common/4.webp" },
+        { id: 4, title: "Project D", category: "B2b", video: "https://player.vimeo.com/video/602227121", image: "/assets/images/portfolio/common/1.jpg" },
+        { id: 5, title: "Project E", category: "B2B", video: "https://player.vimeo.com/video/376859283", image: "/assets/images/portfolio/common/3.jpg" },
+        { id: 6, title: "Project F", category: "B2B", video: "https://player.vimeo.com/video/602213469", image: "/assets/images/portfolio/common/5.png" },
+        { id: 7, title: "Project G", category: "B2B", video: "https://player.vimeo.com/video/602225850", image: "/assets/images/portfolio/common/2.jpg" },
+        { id: 8, title: "Project H", category: "B2B", video: "https://player.vimeo.com/video/605842193", image: "/assets/images/portfolio/b2b/2.jpg" },
+        { id: 9, title: "Project I", category: "Information Technology", video: "https://player.vimeo.com/video/336123110", image: "/assets/images/portfolio/common/6.jpg" },
+        { id: 10, title: "Project K", category: "B2B", video: "https://player.vimeo.com/video/602256340", image: "/assets/images/portfolio/common/7.jpg" },
+        { id: 11, title: "Project J", category: "Information Technology", video: "https://player.vimeo.com/video/746865222", image: "/assets/images/portfolio/b2b/3.jpg" },
+        { id: 12, title: "Project L", category: "B2C", video: "https://player.vimeo.com/video/696057141", image: "/assets/images/portfolio/common/8.jpg" },
 
 
 

@@ -2,11 +2,11 @@ import Link from "next/link";
 
 export default function LeftContent({ videoUrl, heading, content, btntxt, btnlink }) {
     return (
-        <section className="content-RL mt-5">
+        <section className="content-RL">
             <div className="container">
                 <div className="row">
                     {/* Video Section */}
-                    <div className="col-xl-6 mt-5 mb-5">
+                    <div className="col-xl-6 mt-3 mb-5">
                         <div
                             style={{
                                 padding: "56.25% 0 0 0",

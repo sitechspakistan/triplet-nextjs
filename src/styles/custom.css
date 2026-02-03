@@ -30,6 +30,9 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* :root{} */
 body {
@@ -661,11 +664,11 @@ main {
 }
 
 .foot-styl {
-
+    height: 500px;
     position: sticky;
     bottom: 0;
     overflow: hidden;
-    z-index: -1;
+    /* z-index: -1; */
     background-color: transparent;
     background-image: linear-gradient(170deg, #2D3140 0%, #19272C 100%);
     padding: 60px 60px;
@@ -1614,7 +1617,16 @@ main {
     color: #c4c4c4;
 }
 
+.bg-dark {
+    background-color: rgb(31, 31, 31) !important;
+}
 
+/* Dropdown items ki spacing mobile mein */
+.offcanvas .collapse .dropdown-item {
+    color: #ccc;
+    padding-left: 20px;
+    font-size: 0.9rem;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -1667,7 +1679,7 @@ main {
     .pro-demo h2 {
         letter-spacing: 0px;
         font-size: 22px;
-        line-height: 0px;
+        line-height: 20px;
     }
 
     .proud-section h2 {
@@ -1761,8 +1773,11 @@ main {
         border: none;
         padding-left: 15px;
         display: none;
+        background-color: black;
         /* Bootstrap toggle handle karega */
     }
+
+
 
     .offcanvas .dropdown-menu.show {
         display: block;
@@ -1771,7 +1786,14 @@ main {
     .offcanvas .dropdown-item {
         color: #fff;
         padding: 8px 0;
+        background-color: rgb(31, 31, 31) !important;
     }
+
+    .navbar-nav {
+        padding-left: 0px;
+
+    }
+
 
     .navbar .dropdown:hover .dropdown-menu {
         display: block;
@@ -1877,6 +1899,34 @@ main {
         /* width: 409px; */
     }
 
+    .foot-styl {
+        padding: 50px 10px;
+        margin: 0 auto;
+        height: 800px;
+        position: relative;
+    }
+
+    .foot-styl ul li a {
+        font-size: 12px;
+    }
+
+    .foot-styl i {
+        color: #ffffff73;
+        margin: 10px 10px;
+        font-size: 24px !important;
+
+    }
+
+    .service-item-content p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .pro-demo h3 {
+        font-size: 18px;
+
+    }
+
 }
 
 .iti__country-list .iti__flag,
@@ -1916,11 +1966,11 @@ main {
 }
 
 .portfolio-filters button.active {
-    color: #ffa700;
+    color: #ff8400;
 }
 
 .portfolio-section .portfolio-filters button:hover {
-    color: #ffa700;
+    color: #ff8400;
 }
 
 

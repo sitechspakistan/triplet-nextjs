@@ -32,7 +32,7 @@ export default function AppDemoVideos() {
                             storytelling, and a clear message, we turn curious browsers into loyal users. Our optimized,
                             platform-specific videos help your app stand out in crowded app stores and inspire
                             downloads. Elevate your app marketing with a demo that sticks."
-                btnlink={"/"}
+                btnlink={"/get-a-quote"}
                 Btntxt={"See How We Boost Your Downloads"} />
 
             <ShadowLeftSec
@@ -54,7 +54,7 @@ export default function AppDemoVideos() {
                         This kind of transparency does more than inform — it instills confidence and makes
                         downloading your app the next natural step.
                     </>}
-                btnlink={"/"}
+                btnlink={"/book-a-metting"}
                 Btntxt={"Get Start Today"} />
             <ShadowRightSec
                 VideoUrl={"https://player.vimeo.com/video/338239964?badge=0&autopause=0&player_id=0&app_id=58479/embed"}
@@ -68,7 +68,7 @@ export default function AppDemoVideos() {
                     educate and inspire.
                 </>
                 }
-                btnlink={"/"}
+                btnlink={"/book-a-metting"}
                 Btntxt={"Lets's Talks"}
             />
             <ShadowLeftSec VideoUrl={"/assets/images/explainer-video/explainer-image2.png"}
@@ -93,7 +93,7 @@ export default function AppDemoVideos() {
                     user base, invest in an app demo video. It's a smart move that'll pay off in the long run.
                 </>
                 }
-                btnlink={"/"}
+                btnlink={"/book-a-metting"}
                 Btntxt={"Schedule Free Consultation"} />
             <PortfolioSlider />
             <Faqs />

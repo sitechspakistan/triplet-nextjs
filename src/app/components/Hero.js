@@ -17,8 +17,8 @@ export default function Hero() {
                                 and drive adoption — with videos built to convert, not just impress.</p>
 
                             <div className="hero-btns">
-                                <button className="btn-red me-3">Get A Quote</button>
-                                <button className="btn-yellow">Free Consutlation</button>
+                                <a href="/get-a-quote" className="btn-red me-3">Get A Quote</a>
+                                <a href="/book-a-metting" className="btn-yellow text-decoration-none">Free Consutlation</a>
                             </div>
                             <div className="d-flex">
                                 <img src="/assets/images/turspilot.png" alt="" />

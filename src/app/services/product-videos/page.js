@@ -37,7 +37,7 @@ export default function ProductVideos() {
                         measurable results.
                     </>
                 }
-                btnlink={"/"}
+                btnlink={"/get-a-quote"}
                 Btntxt={"Let's help your product shine."} />
 
             <ShadowLeftSec VideoUrl={"/assets/images/explainer-video/explainer-image11.png"}
@@ -58,7 +58,7 @@ export default function ProductVideos() {
                         we're the partner you've been looking for.
                     </>
                 }
-                btnlink={"/"}
+                btnlink={"/book-a-metting"}
                 Btntxt={"Schedule a free consultation Today"} />
             <ShadowRightSec
                 VideoUrl={"https://player.vimeo.com/video/602267009?badge=0&autopause=0&player_id=0&app_id=58479/embed"}

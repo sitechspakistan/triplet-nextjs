@@ -39,7 +39,7 @@ export default function ServicesPage() {
                         </div>
                         <div className="col-lg-6">
                             <div className="service-page-item">
-                                <VimeoLazy videoId="1042932806" hash="3e82a9d1a3" />                            
+                                <VimeoLazy videoId="173401376" hash="3e82a9d1a3" />
                                 <div className="service-item-content">
                                     <h3 className="pt-3"><Link href="/services/product-videos">Product Videos</Link></h3>
                                     <p>Make your product stand out with captivating videos that increase sales and engagement.</p>

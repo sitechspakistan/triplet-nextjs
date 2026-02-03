@@ -2,9 +2,18 @@
 
 import Link from 'next/link'
 import { usePathname } from "next/navigation";
+import { useEffect } from "react"; // 1. useEffect import karein
 
 export default function Header() {
     const pathname = usePathname();
+
+    useEffect(() => {
+        // 2. Bootstrap JS ko client-side par load karein
+        typeof document !== "undefined"
+            ? require("bootstrap/dist/js/bootstrap.bundle.min.js")
+            : null;
+    }, []);
+
 
     return (
         <>
@@ -62,22 +71,23 @@ export default function Header() {
                         <ul className="navbar-nav">
                             <li className="nav-item"><Link className="nav-link" href="/">Home</Link></li>
                             <li>
-                                <Link className="nav-link" data-bs-toggle="collapse" data-bs-target="#servicesCollapse" href="#"
+                                <Link className="nav-link" data-bs-toggle="collapse" data-bs-target="#servicesCollapse" href="/"
                                     role="button" aria-expanded="false">
                                     Services
+                                    <i className="ps-2 fa fa-chevron-down" style={{ fontSize: '12px' }}></i> {/* <-- Carrot Icon */}
                                 </Link>
                                 <ul className="collapse" id="servicesCollapse">
-                                    <li><Link className="dropdown-item" href="/explainer-video.html">Explainer Videos</Link></li>
-                                    <li><Link className="dropdown-item" href="/training-video.html">Training Videos</Link></li>
-                                    <li><Link className="dropdown-item" href="/app-demo-video.html">App Demo Videos</Link></li>
-                                    <li><Link className="dropdown-item" href="/product-video.html">Product Videos</Link></li>
+                                    <li><Link className="dropdown-item" href="/services/explainer-videos">Explainer Videos</Link></li>
+                                    <li><Link className="dropdown-item" href="/services/training-videos">Training Videos</Link></li>
+                                    <li><Link className="dropdown-item" href="/services/app-demo-videos">App Demo Videos</Link></li>
+                                    <li><Link className="dropdown-item" href="/services/product-videos">Product Videos</Link></li>
                                 </ul>
                             </li>
 
-                            <li className="nav-item"><Link className="nav-link" href="/">Portfolio</Link></li>
-                            <li className="nav-item"><Link className="nav-link" href="/">Process</Link></li>
-                            <li className="nav-item"><Link className="nav-link" href="/about-us.html">About Us</Link></li>
-                            <li className="nav-item"><Link className="nav-link" href="/reviews.html">Reviews</Link></li>
+                            <li className="nav-item"><Link className="nav-link" href="/portfolio">Portfolio</Link></li>
+                            <li className="nav-item"><Link className="nav-link" href="/process">Process</Link></li>
+                            <li className="nav-item"><Link className="nav-link" href="/about-us">About Us</Link></li>
+                            <li className="nav-item"><Link className="nav-link" href="/reviews">Reviews</Link></li>
                             <li><button className="hero-btn btn-warning w-100">Get Link Quote</button></li>
                         </ul>
                     </div>

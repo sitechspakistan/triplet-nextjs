@@ -10,7 +10,7 @@ export default function AboutRightCon() {
                         </div>
                     </div>
                     <div className="col-xl-6">
-                        <p className="con-video">
+                        <p className="con-video pb-3">
 
                             In the beginning, there was just an idea. A simple one, really: videos can do what words
                             alone can’t. They can ignite excitement, simplify the complicated, and bring people together
@@ -35,7 +35,7 @@ export default function AboutRightCon() {
                             having on the world. And trust us, we’re just getting started. Creative Triplet is all about
                             tripling the impact with creativity.
                         </p>
-                        <button className="btn-red mb-3">Partner with Us</button>
+                        <a href="#conform" className="btn-red mb-3">Partner with Us</a>
                     </div>
 
                 </div>

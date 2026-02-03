@@ -33,7 +33,7 @@ export default function ExplainerVideos() {
                             we craft stories that convert visitors into customers. Transform your business with
                             high-impact explainer videos tailored to inspire, educate, and sell. Ready to see the
                             difference we can make?"
-                btnlink={"/"} Btntxt={"Free Creative Session"} />
+                btnlink={"/get-a-quote"} Btntxt={"Free Creative Session"} />
 
             <ShadowLeftSec VideoUrl={"/assets/images/explainer-video/explainer-image11.png"}
                 Heading={"Why Choose Creative Triplet?"}
@@ -54,8 +54,8 @@ export default function ExplainerVideos() {
                             create fits perfectly with your brand and connects with your target audience. We're
                             committed to going above and beyond, delivering results that not only meet but exceed your
                             expectations."
-                btnlink={"/"}
-                Btntxt={"Free Creative Session"} />
+                btnlink={"/get-a-quote"}
+                Btntxt={"Start Your Video Journey Today"} />
 
             <ShadowRightSec VideoUrl={"https://player.vimeo.com/video/602215167?badge=0&autopause=0&player_id=0&app_id=58479/embed"}
                 Heading={"Stress-Free Video Creation"}
@@ -65,7 +65,7 @@ export default function ExplainerVideos() {
                             just 4-6 weeks, you'll receive a custom-made explainer video that wows your audience. We
                             manage every detail, ensuring your video stands out with stunning visuals and strategic
                             messaging. Let us handle the hard work while you focus on your business."
-                btnlink={"/"} Btntxt={"Free Creative Session"} />
+            />
             <ShadowLeftSec VideoUrl={"/assets/images/explainer-video/explainer-image2.png"}
                 Heading={"Keep Inspiring Your Audience for Years to Come"}
                 Description="Traditional marketing tactics often need constant tweaking to stay relevant, which can get
@@ -81,8 +81,7 @@ export default function ExplainerVideos() {
                             Our explainer videos are built to last. They're not just about grabbing attention today,
                             they're about clearly communicating your message and driving results for years down the
                             road."
-                btnlink={"/"}
-                Btntxt={"Free Creative Session"} />
+            />
 
             <PortfolioSlider />
             <Faqs />

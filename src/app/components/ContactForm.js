@@ -3,7 +3,7 @@ import PhoneInput from "./PhoneInput";
 export default function ContactForm() {
     return (
         // <!-- contact-form  -->
-        <section className="contact-form pb-5">
+        <section className="contact-form pb-5" id="conform">
             <div className="container">
                 <div className="boxx">
                     <div className="row">
@@ -12,7 +12,7 @@ export default function ContactForm() {
                             <img src="/assets/images/contact/contact-bg-1-1.png" alt="" />
                         </div>
                         <div className="col-xl-6">
-                            <form action="/">
+                            <form action="/" >
                                 <div className="row">
                                     <div className="col-xl-6">
                                         <input type="text" className="form-input has-error" placeholder="Name" />

@@ -33,7 +33,7 @@ export default function TrainingVideo() {
                             65% with visually rich, engaging narratives. From crafting customized strategies to tracking
                             engagement and performance improvements, we ensure your training videos deliver real
                             results. Transform employee learning with captivating videos that educate and inspire."
-                btnlink={"/"} Btntxt={"Get In Touch"} />
+                btnlink={"/get-a-quote"} Btntxt={"Get In Touch"} />
             <ShadowLeftSec Heading={"Partner with a Team Trusted by Global Giants"}
                 VideoUrl={"/assets/images/explainer-video/explainer-image11.png"}
                 Description={
@@ -48,7 +48,7 @@ export default function TrainingVideo() {
                         onboarding, or communicating key messages, our videos deliver results.
                     </>
                 }
-                btnlink={"/"} Btntxt={"Book Your Consultation Now"} />
+                btnlink={"/book-a-metting"} Btntxt={"Book Your Consultation Now"} />
             <ShadowRightSec VideoUrl={"https://player.vimeo.com/video/616253550?badge=0&autopause=0&player_id=0&app_id=58479/embed"}
                 Heading={"Why Creative Triplet is Your Perfect Training Video Partner"}
                 Description={
@@ -69,7 +69,7 @@ export default function TrainingVideo() {
                         knowledge retention, and even on- the-job performance improvements.
                     </>
                 }
-                btnlink={"/"} Btntxt={"Get Started With a Free consultation"} />
+                btnlink={"/book-a-metting"} Btntxt={"Get Started With a Free consultation"} />
             <ShadowLeftSec VideoUrl={"/assets/images/explainer-video/explainer-image2.png"}
                 Heading={"Our Proven Engaging Training Videos Process"}
                 Description={
@@ -90,7 +90,7 @@ export default function TrainingVideo() {
                         With Creative Triplet, you're not just getting internal training video services, you're
                         gaining a dedicated partner invested in your training success.
                     </>}
-                btnlink={"/"} Btntxt={"Schedule Free Consultation"} />
+                btnlink={"/book-a-metting"} Btntxt={"Schedule Free Consultation"} />
             <PortfolioSlider />
             <Faqs />
             <ContactForm />

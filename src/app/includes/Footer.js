@@ -6,16 +6,16 @@ export default function Footer() {
             <footer className="foot-styl">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-3">
+                        <div className="col-6 col-xl-3">
                             <h2>Links</h2>
                             <ul>
-                                <li><Link href="/">Portfolio</Link></li>
+                                <li><Link href="/portfolio">Portfolio</Link></li>
                                 <li><Link href="/process">Process</Link></li>
                                 <li><Link href="/about-us">About Us</Link></li>
                                 <li><Link href="/reviews">Reviews</Link></li>
                             </ul>
                         </div>
-                        <div className="col-xl-3">
+                        <div className="col-6 col-xl-3">
                             <h2>Services</h2>
                             <ul>
                                 <li><Link href="/services/explainer-videos">Explainer Videos</Link></li>
@@ -24,7 +24,7 @@ export default function Footer() {
                                 <li><Link href="/services/training-videos">Training Videos</Link></li>
                             </ul>
                         </div>
-                        <div className="col-xl-3">
+                        <div className="col-12 col-xl-3">
                             <ul>
                                 <h2>Call us Directly</h2>
                                 <li><Link href="tel:+18177534447">+1 (817) 753 4447</Link></li>
@@ -36,27 +36,27 @@ export default function Footer() {
                                 <li><Link href="">Fort Worth, Texas, United States of America</Link></li>
                             </ul>
                         </div>
-                        <div className="col-xl-3">
+                        <div className="col-12 col-xl-3">
                             <div className="row">
-                                <div className="col-xl-6">
+                                <div className="col-xl-6 col-6">
                                     <img src="/assets/images/footer/clutch-1.svg" alt="" />
                                 </div>
-                                <div className="col-xl-6">
+                                <div className="col-xl-6 col-6">
                                     <img src="/assets/images/footer/clutch-2.svg" alt="" />
                                 </div>
-                                <div className="col-xl-6">
+                                <div className="col-6 col-xl-6">
                                     <img src="/assets/images/footer/clutch-3.svg" alt="" />
                                 </div>
-                                <div className="col-xl-6">
+                                <div className=" col-6 col-xl-6">
                                     <img src="/assets/images/footer/clutch-4.svg" alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className="mt-5 d-flex justify-content-between">
+                    <div className="mt-5 d-xl-flex justify-content-xl-between">
                         <span className="text-start">© 2026 CreativeTriplet. All Rights Reserved.</span>
-                        <div className="text-end">
+                        <div className="text-xl-end text-start">
                             <i className="fa fa-facebook"></i>
                             <i className="fa fa-instagram"></i>
                             <i className="fa fa-youtube"></i>
