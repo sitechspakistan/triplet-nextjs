@@ -57,11 +57,11 @@ export default function Footer() {
                     <div className="mt-5 d-xl-flex justify-content-xl-between">
                         <span className="text-start">© 2026 CreativeTriplet. All Rights Reserved.</span>
                         <div className="text-xl-end text-start">
-                            <i className="fa fa-facebook"></i>
-                            <i className="fa fa-instagram"></i>
-                            <i className="fa fa-youtube"></i>
-                            <i className="fa fa-linkedin"></i>
-                            <i className="fa fa-vimeo"></i>
+                            <a href="https://www.facebook.com/creativetriplet/" target="blank"><i className="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/creativetriplet/" target="blank"><i className="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@CreativeTriplet" target="blank"><i className="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.linkedin.com/company/creativetriplet/" target="blank"><i className="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://vimeo.com/creativetriplet" target="blank"><i className="fa-brands fa-vimeo-v"></i></a>
                         </div>
                     </div>
                 </div>

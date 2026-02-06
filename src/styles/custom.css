@@ -130,24 +130,55 @@ body {
     color: #f7973e !important;
 }
 
-
 .hero-btn {
-    background-color: #F99E1C;
-    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    padding: 8px 26px;
     font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    overflow: hidden;
     color: #FFFFFF;
+    background-color: #F99E1C;
     border: none;
     border-radius: 5em;
-    padding: 8px 22px;
-    transition: all 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
     margin-left: 50px;
+    text-align: center;
+}
+
+.hero-btn .btntxt {
+    display: block;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn::after {
+    content: attr(data-hover);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transform: translateY(0);
+    transition: transform 0.5s ease, top 0.5s ease;
+}
+
+.hero-btn:hover .btntxt {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.hero-btn:hover::after {
+    top: 0;
+    transform: translateY(30%);
 }
 
 .hero-btn:hover {
     background-color: rgb(242, 98, 62);
     box-shadow: rgba(0, 0, 0, 0.11) 0px 10.7px 25px;
-    transform: translateY(-2px);
-    color: #FFFFFF;
 }
 
 .hero-section:before {
@@ -209,51 +240,75 @@ body {
     height: auto;
 }
 
-.btn-red {
-    font-size: 16px;
-    padding: 17px 30px;
-    font-weight: bold;
-    background-color: #184341;
-    color: #FFFFFF;
-    font-family: "Be Vietnam Pro", sans-serif;
-    border-radius: 20px 20px 20px 20px;
-    border: 1px solid #F15B42;
+.btn-anim {
+    position: relative;
+    display: inline-block;
+    padding: 15px 40px;
+    font-weight: 700;
+    font-size: 18px;
     text-decoration: none;
-}
-
-.btn-red:hover {
-    color: #FFFFFF;
-    fill: #FFFFFF;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #F15B42;
-    background-color: #F15B42;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+    color: white;
+    background-color: #184341;
+    border: 1px solid #F15B42;
+    border-radius: 20px;
+    /* default background */
+    cursor: pointer;
 }
 
 .btn-yellow {
-    font-size: 16px;
-    font-weight: bold;
-    padding: 17px 30px;
     background-color: #184341;
-    color: #FFFFFF;
-    font-family: "Be Vietnam Pro", sans-serif;
-    border-radius: 20px 20px 20px 20px;
-    border: 1px solid #F99E1C;
+    color: white;
+    padding: 15px 50px;
+}
+
+.btn-anim .btn-text {
+    display: block;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.3s ease, color 0.3s ease;
+}
+
+/* Create pseudo-element for the "incoming" text */
+.btn-anim::after {
+    content: attr(data-hover);
+    /* text to show on hover */
+    position: absolute;
+    top: 100%;
+    /* start below the button */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    /* color of hover text */
+    transform: translateY(0);
+    transition: transform 0.2s ease, top 0.4s ease;
+}
+
+/* Hover effect */
+.btn-anim:hover .btn-text {
+    transform: translateY(-180%);
+    /* move original text up */
+    opacity: 0;
+}
+
+.btn-anim:hover::after {
+    top: 0;
+    /* move hover text into view */
+    transform: translateY(55%);
+}
+
+/* Optional: Different hover colors for buttons */
+.btn-red:hover {
+    background-color: #F15B42;
+    border: 1px solid transparent;
 }
 
 .btn-yellow:hover {
-    text-transform: capitalize;
-    color: #FFFFFF;
-    fill: #FFFFFF;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #F99E1C;
     background-color: #F99E1C;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 20px 20px 20px 20px;
+    color: white;
+    border: 1px solid transparent;
 }
+
 
 .hero-section img {
     width: 148px;
@@ -354,6 +409,27 @@ body {
     font-weight: 600;
 }
 
+.fortune {
+    position: relative;
+    overflow: hidden;
+}
+
+.fortune::before {
+    content: '';
+    /* background: radial-gradient(#05803c42 10%, #000000c4 60%, transparent); */
+    background: radial-gradient(#02b5bc30 10%, #000000c4 60%, transparent);
+    display: block;
+    top: 10%;
+    background-size: cover;
+    position: absolute;
+    right: -46%;
+    height: 600px;
+    width: 73%;
+    margin: auto;
+    z-index: -1;
+
+}
+
 .fortune h2 {
     font-family: coolvectica, sans-serif;
     font-size: 44px;
@@ -388,6 +464,48 @@ body {
     border-radius: 0px 0px 30px 30px;
 
 
+}
+
+.brands ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 5px 35px;
+    align-items: center;
+
+    margin-top: -10px;
+    margin-bottom: 120px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 21px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* background-image: linear-gradient(180deg, #000000 0%, #25271F 100%); */
+}
+
+
+.brands ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.brands ul li img {
+    height: auto;
+    width: 100%;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.brands ul li img:hover {
+    filter: none;
+}
+
+#unique {
+    filter: none;
 }
 
 .sel-project h2 {
@@ -485,49 +603,6 @@ body {
     transform: scale(1);
 }
 
-
-
-.brands ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    gap: 5px 35px;
-    align-items: center;
-
-    margin-top: -10px;
-    margin-bottom: 120px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 21px;
-    padding-left: 30px;
-    padding-right: 30px;
-    /* background-image: linear-gradient(180deg, #000000 0%, #25271F 100%); */
-}
-
-
-.brands ul li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-.brands ul li img {
-    height: auto;
-    width: 100%;
-    filter: brightness(0) invert(1);
-    transition: filter 0.3s ease;
-}
-
-.brands ul li img:hover {
-    filter: none;
-}
-
-#unique {
-    filter: none;
-}
 
 .fortune .numb {
     display: block;
@@ -1067,7 +1142,7 @@ main {
 
 .process-content {
     position: absolute;
-    top: -60px;
+    top: -20px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1138,21 +1213,41 @@ main {
 }
 
 .content-left-sec .about-img {
-    width: 630px;
+    width: 100%;
     height: 512px;
 }
 
 .content-left-sec .about-img-two {
-    width: 680px;
-    height: 415px;
+    width: 100%;
+    height: auto;
 }
 
 .service-hero-section {
     position: relative;
-    height: 460px;
+    height: 512px;
     width: 100%;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+.pro-demo {
+    position: relative;
+    overflow: hidden;
+}
+
+.pro-demo::before {
+    content: '';
+    /* background: radial-gradient(#00904259 10%, #000000c4 60%, transparent); */
+    background: radial-gradient(#f25b424a 10%, #000000c4 60%, transparent);
+    display: block;
+    top: 30%;
+    background-size: cover;
+    position: absolute;
+    right: -46%;
+    height: 600px;
+    width: 73%;
+    margin: auto;
+    z-index: -1;
 }
 
 .service-content::before {
@@ -1175,7 +1270,7 @@ main {
 
 .service-content {
     position: absolute;
-    top: -60px;
+    top: -10px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1592,6 +1687,7 @@ main {
     padding-top: 20px;
     color: #c4c4c4;
     letter-spacing: 2px;
+    padding-right: 40px;
 }
 
 .textsec {
@@ -1626,6 +1722,34 @@ main {
     color: #ccc;
     padding-left: 20px;
     font-size: 0.9rem;
+}
+
+.form-select {
+
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #483ea3;
+    padding-right: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5l6 6 6-6' stroke='%23ffffff' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 14px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+
+.form-select:focus {
+    border-color: white;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+.transparent {
+    background-color: transparent;
 }
 
 
@@ -1822,14 +1946,15 @@ main {
     }
 
     .service-content {
+        color: #fff;
+        height: auto;
+        top: 5px;
         padding-left: 0 !important;
-        top: 35px;
-        height: 60%;
-        color: white;
     }
 
     .service-hero-section {
-        height: 230px;
+        height: 124px;
+        /* z-index: 1; */
     }
 
     .process-content {
@@ -1925,6 +2050,12 @@ main {
     .pro-demo h3 {
         font-size: 18px;
 
+    }
+
+    .portfolio-masonry-item img {
+        width: 98% !important;
+        height: auto;
+        margin: 0 auto !important;
     }
 
 }

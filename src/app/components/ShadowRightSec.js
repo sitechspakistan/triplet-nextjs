@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ShadowRightSec({ VideoUrl, Heading, Description, btnlink, Btntxt }) {
+export default function ShadowRightSec({ VideoUrl, Heading, Description, btnlink, Btntxt, datahov }) {
     return (
         <section className="section-shadow-right content-RL pt-5 pb-5">
             <div className="container">
@@ -23,8 +23,8 @@ export default function ShadowRightSec({ VideoUrl, Heading, Description, btnlink
                         <p className="con-video pb-3">{Description}</p>
 
                         {btnlink && (
-                            <Link href={btnlink} className="btn-red mb-5">
-                                {Btntxt}
+                            <Link href={btnlink} className="btn-anim btn-red me-3" data-hover={datahov}>
+                                <span className="btn-text">{Btntxt}</span>
                             </Link>
                         )}
                     </div>

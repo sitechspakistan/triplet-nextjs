@@ -18,7 +18,7 @@ export default function Header() {
     return (
         <>
             <header>
-                <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-sm-black">
+                <nav className="navbar navbar-expand-lg sticky-top bg-sm-black bg-transparent">
                     <div className="container">
                         {/* <!-- Logo --> */}
                         <Link className="navbar-brand" href="/">
@@ -54,8 +54,8 @@ export default function Header() {
                                 <li className="nav-item"><Link className={`nav-link ${pathname === "/reviews" ? "active" : ""}`}
                                     href="/reviews">Reviews</Link></li>
                             </ul>
-                            <button className="hero-btn btn-warning"><Link href="/get-a-quote" className="nav-link">Get a
-                                Quote</Link></button>
+                            <Link href="/get-a-quote" className="nav-link hero-btn" data-hover="Get a Quote">
+                                <span className="btntxt">Get a Quote</span></Link>
                         </div>
                     </div>
                 </nav>

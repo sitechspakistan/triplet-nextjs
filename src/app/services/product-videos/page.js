@@ -38,7 +38,7 @@ export default function ProductVideos() {
                     </>
                 }
                 btnlink={"/get-a-quote"}
-                Btntxt={"Let's help your product shine."} />
+                Btntxt={"Let's help your product shine."} datahov={"Let's help your product shine."} />
 
             <ShadowLeftSec VideoUrl={"/assets/images/explainer-video/explainer-image11.png"}
                 Heading={"Why Top Brands Choose Creative Triplet"}
@@ -59,7 +59,8 @@ export default function ProductVideos() {
                     </>
                 }
                 btnlink={"/book-a-metting"}
-                Btntxt={"Schedule a free consultation Today"} />
+                Btntxt={"Schedule a free consultation Today"}
+                datahov={"Schedule a free consultation Today"} />
             <ShadowRightSec
                 VideoUrl={"https://player.vimeo.com/video/602267009?badge=0&autopause=0&player_id=0&app_id=58479/embed"}
                 Heading={"Our Simple 3-Step Process"}

@@ -1,6 +1,6 @@
 export default function ProcessHero() {
     return (
-        <section className="process-hero-section mt-5 mb-2">
+        <section className="process-hero-section">
             <div className="process-content">
                 <div className="container">
                     <div className="row">

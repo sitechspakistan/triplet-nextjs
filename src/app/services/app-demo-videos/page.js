@@ -33,7 +33,7 @@ export default function AppDemoVideos() {
                             platform-specific videos help your app stand out in crowded app stores and inspire
                             downloads. Elevate your app marketing with a demo that sticks."
                 btnlink={"/get-a-quote"}
-                Btntxt={"See How We Boost Your Downloads"} />
+                Btntxt={"See How We Boost Your Downloads"} datahov={"See How We Boost Your Downloads"} />
 
             <ShadowLeftSec
                 VideoUrl={"/assets/images/explainer-video/explainer-image11.png"}
@@ -55,7 +55,7 @@ export default function AppDemoVideos() {
                         downloading your app the next natural step.
                     </>}
                 btnlink={"/book-a-metting"}
-                Btntxt={"Get Start Today"} />
+                Btntxt={"Get Start Today"} datahov={"Get Start Today"} />
             <ShadowRightSec
                 VideoUrl={"https://player.vimeo.com/video/338239964?badge=0&autopause=0&player_id=0&app_id=58479/embed"}
                 Heading={"Videos That Motivate and Educate"}
@@ -69,7 +69,7 @@ export default function AppDemoVideos() {
                 </>
                 }
                 btnlink={"/book-a-metting"}
-                Btntxt={"Lets's Talks"}
+                Btntxt={"Lets's Talks"} datahov={"Lets's Talks"}
             />
             <ShadowLeftSec VideoUrl={"/assets/images/explainer-video/explainer-image2.png"}
                 Heading={"Invest in an App Demo Video, Reap the Rewards for Years"}
@@ -94,7 +94,8 @@ export default function AppDemoVideos() {
                 </>
                 }
                 btnlink={"/book-a-metting"}
-                Btntxt={"Schedule Free Consultation"} />
+                Btntxt={"Schedule Free Consultation"}
+                datahov={"Schedule Free Consultation"} />
             <PortfolioSlider />
             <Faqs />
             <ContactForm />

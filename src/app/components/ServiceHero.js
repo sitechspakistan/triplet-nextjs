@@ -1,6 +1,6 @@
 export default function ServiceHero({ Heading, Paragraph, bgImage }) {
     return (
-        <section className="service-hero-section mt-3">
+        <section className="service-hero-section">
             <div className="service-content" style={{ backgroundImage: `url(${bgImage})` }}>
 
                 <div className="container">

@@ -104,7 +104,7 @@ export default function Home() {
         paragraph="We transformed their ultra-complex molecular-counting tech into a
 							compelling investment
 							narrative — a video asset featured directly in their Series D deck."
-        content={content_1} btntxt={"Let's Talk"} btnlink={"/book-a-metting"}
+        content={content_1} btntxt={"Let's Talk"} btnlink={"/book-a-metting"} btndata={"Let's Talk"}
       />
 
       <RightSection videoUrl="https://player.vimeo.com/video/1098292166?h=e7a6dfbf56&autoplay=1&loop=1&muted=1&background=1"
@@ -114,14 +114,14 @@ export default function Home() {
 							analytics for global frontline teams.
 							Produced an explainer showing how Schoox powers AI-driven skills mapping, microlearning, and
 							analytics for global frontline teams."
-        content={content_right} btntxt={"Let's Talk"} btnlink={"/book-a-metting"} />
+        content={content_right} btntxt={"Let's Talk"} btnlink={"/book-a-metting"} btndata={"Let's Talk"} />
 
       <LeftSection videoUrl="https://player.vimeo.com/video/1098292977?h=af5a72a31b&autoplay=1&loop=1&muted=1&background=1"
         heading={"Neura Health – $8M seed (+$2.2M pre-seed), $23.8M total to date"}
         paragraph="Developed a suite of care-pipeline videos—from migraine treatment to
 							dementia
 							workflows—tailored for employers, health plans, and end users."
-        content={content_2} btntxt={"Book a Meeting"} btnlink={"/book-a-metting"}
+        content={content_2} btntxt={"Book a Meeting"} btnlink={"/book-a-metting"} btndata={"Book a Meeting"}
       />
 
       <RightSection videoUrl="https://player.vimeo.com/video/1098286335?h=64b067f8f8&autoplay=1&loop=1&muted=1&background=1"
@@ -129,12 +129,12 @@ export default function Home() {
         description="Produced a 3-part video suite visualizing Novi’s Insight Engine,
 							Forecasting ML, and
 							analytics — replacing legacy oil & gas research tools."
-        content={content_right2} btntxt={"Let's Do It!"} btnlink={"/book-a-metting"}
+        content={content_right2} btntxt={"Let's Do It!"} btnlink={"/book-a-metting"} btndata={"Let's Do It"}
       />
 
       <LeftSection videoUrl="https://player.vimeo.com/video/1098295340?h=32c1973467&autoplay=1&loop=1&muted=1&background=1"
         heading={"Fundmetric – $300K+ Raised; AI-first Fundraising for Higher Ed & Nonprofits"}
-        content={content_3} btntxt={"Let's Do It!"} btnlink={"/book-a-metting"}
+        content={content_3} btntxt={"Let's Do It!"} btnlink={"/book-a-metting"} btndata={"Let's Do It!"}
       />
 
       <ContactForm />

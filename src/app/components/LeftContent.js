@@ -1,11 +1,13 @@
+"use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
-export default function LeftContent({ videoUrl, heading, content, btntxt, btnlink }) {
+export default function LeftContent({ videoUrl, heading, content, btntxt, btnlink, btndata }) {
     return (
         <section className="content-RL">
             <div className="container">
                 <div className="row">
-                    {/* Video Section */}
+                    {/* Video Section - Left */}
                     <div className="col-xl-6 mt-3 mb-5">
                         <div
                             style={{
@@ -30,8 +32,14 @@ export default function LeftContent({ videoUrl, heading, content, btntxt, btnlin
                         </div>
                     </div>
 
-                    {/* Content Section */}
-                    <div className="col-xl-6">
+                    {/* Content Section - Right (Fade from right) */}
+                    <motion.div
+                        className="col-xl-6"
+                        initial={{ opacity: 0, x: 50 }}  // start slightly right
+                        whileInView={{ opacity: 1, x: 0 }} // fade into original position
+                        viewport={{ once: true, amount: 0.5 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                    >
                         <h2 className="pt-3 pb-3">{heading}</h2>
 
                         {/* Render passed React content */}
@@ -39,11 +47,14 @@ export default function LeftContent({ videoUrl, heading, content, btntxt, btnlin
 
                         {/* Conditional Button */}
                         {btntxt && (
-                            <Link href={btnlink} className="btn-red mb-3">
-                                {btntxt}
+                            // <a href="#conform"  data-hover="Let's Start Something Amazing">
+                            //     Let's Start Something Amazing</span>
+                            // </a>
+                            <Link href={btnlink} className="btn-anim btn-red me-3" data-hover={btndata}>
+                                <span className="btn-text">{btntxt}</span>
                             </Link>
                         )}
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

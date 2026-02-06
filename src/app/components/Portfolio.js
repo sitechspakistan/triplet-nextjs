@@ -5,6 +5,7 @@ export default function Portfolio() {
     const [filter, setFilter] = useState("All");
     const [videoUrl, setVideoUrl] = useState("");
     const [videoTitle, setVideoTitle] = useState("");
+    const categories = ["All", "B2B", "B2C", "Education and Training", "Health Care", "Information Technology"];
 
     const items = [
         { id: 1, title: "Microsoft - Employee Devices I Explainer Video by Creative Triplet", category: "B2C", video: "https://player.vimeo.com/video/602215167?h=01d057ba98", image: "/assets/images/portfolio/b2c/2.png" },
@@ -58,17 +59,38 @@ export default function Portfolio() {
                     <div className="row g-0">
                         <div className="col-12 text-center">
                             {/* Filters */}
-                            <div className="portfolio-filters">
-                                {["All", "B2B", "B2C", "Education and Training", "Health Care", "Information Technology"].map((cat) => (
-                                    <button
-                                        key={cat}
-                                        onClick={() => setFilter(cat)}
-                                        className={filter === cat ? "active" : ""}
+                            <div className="portfolio-filters text-center">
+
+                                {/* Desktop Buttons */}
+                                <div className="d-none d-md-block">
+                                    {categories.map((cat) => (
+                                        <button
+                                            key={cat}
+                                            onClick={() => setFilter(cat)}
+                                            className={filter === cat ? "active" : ""}
+                                        >
+                                            {cat}
+                                        </button>
+                                    ))}
+                                </div>
+
+                                {/* Mobile Dropdown */}
+                                <div className="d-block d-md-none">
+                                    <select
+                                        className="form-select"
+                                        value={filter}
+                                        onChange={(e) => setFilter(e.target.value)}
                                     >
-                                        {cat}
-                                    </button>
-                                ))}
+                                        {categories.map((cat) => (
+                                            <option key={cat} value={cat}>
+                                                {cat}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
+
                             </div>
+
                         </div>
                     </div>
                     <div className="row g-0">
