@@ -45,9 +45,11 @@ export default function RootLayout({ children }) {
                 Call Now: <span> +1 (817) 753 4447 </span>
               </a>
             </div>
-            <div className="s-bar"><Link href="/book-a-metting">
-              <span className="sidebar-icon two"> </span>
-              <span>Book a Meeting</span></Link>
+            <div className="s-bar">
+              <Link href="/book-a-metting" className="d-flex align-items-center text-decoration-none">
+                <span className="sidebar-icon two"></span>
+                <span className="ms-2">Book a Meeting</span>
+              </Link>
               <div className="clear"></div>
             </div>
           </div>

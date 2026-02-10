@@ -116,6 +116,39 @@ export default function Hero() {
                     </motion.div>
 
                 </div>
+                <div className="container">
+                    <motion.div
+                        initial="hidden"
+                        animate="visible"
+                        variants={{
+                            hidden: {},
+                            visible: {
+                                transition: { staggerChildren: 0.3 } // images ke beech delay
+                            },
+                        }}
+                    >
+                        <ul>
+                            {[
+                                "assets/images/homepage/6-5.png",
+                                "assets/images/homepage/4-2.png",
+                                "assets/images/homepage/5-1-2048x270.png",
+                                "assets/images/homepage/3-1.png",
+                                "assets/images/homepage/pngegg-2048x584.png",
+                                "assets/images/homepage/new2-2.png",
+                            ].map((src, index) => (
+                                <motion.li
+                                    key={index}
+                                    initial={{ opacity: 0, x: 50 }}  // start from right
+                                    animate={{ opacity: 1, x: 0 }}   // fade in to original position
+                                    transition={{ duration: 1.5 }}   // animation speed (change kar sakte ho)
+                                >
+                                    <img src={src} alt="" />
+                                </motion.li>
+                            ))}
+                        </ul>
+                    </motion.div>
+                </div>
+
             </div>
         </section>
     );

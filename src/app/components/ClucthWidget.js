@@ -1,38 +1,42 @@
 "use client";
 
-import { useEffect } from "react";
 import Script from "next/script";
+import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 export default function ClutchWidget() {
     const pathname = usePathname();
 
     useEffect(() => {
-        // Remove previously injected iframe (important)
-        const oldIframe = document.querySelector(".clutch-widget iframe");
-        if (oldIframe) oldIframe.remove();
-
-        // Force Clutch to re-scan DOM
-        const initWidget = () => {
-            if (window?.CLUTCH_WIDGET) {
-                window.CLUTCH_WIDGET.init();
+        // Function jo Clutch ko dobara initialize karega
+        const refreshClutch = () => {
+            if (window.CLUTCHCO && typeof window.CLUTCHCO.Init === "function") {
+                window.CLUTCHCO.Init();
             }
         };
 
-        // Delay is REQUIRED (Clutch bug)
-        const timeout = setTimeout(initWidget, 300);
+        // Jab bhi pathname change ho (page change ho), 500ms baad refresh karo
+        // Delay zaroori hai taaki Next.js ka DOM puri tarah load ho jaye
+        const timer = setTimeout(refreshClutch, 500);
 
-        return () => clearTimeout(timeout);
-    }, [pathname]); // 🔥 runs on every navigation
+        return () => clearTimeout(timer);
+    }, [pathname]);
 
     return (
-        <>
+        <section className="container">
+            {/* Script ko sirf ek baar load hona chahiye poori app mein */}
             <Script
+                id="clutch-script"
                 src="https://widget.clutch.co/static/js/widget.js"
                 strategy="afterInteractive"
+                onLoad={() => {
+                    if (window.CLUTCHCO) window.CLUTCHCO.Init();
+                }}
             />
 
             <div
+                // Key change hone se React is element ko fresh treat karega
+                key={pathname}
                 className="clutch-widget mt-5 ps-4"
                 data-url="https://widget.clutch.co"
                 data-widget-type="1"
@@ -42,6 +46,6 @@ export default function ClutchWidget() {
                 data-scale="100"
                 data-clutchcompany-id="1672818"
             />
-        </>
+        </section>
     );
 }

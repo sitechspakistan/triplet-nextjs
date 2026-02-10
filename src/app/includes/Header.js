@@ -5,6 +5,19 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react"; // 1. useEffect import karein
 
 export default function Header() {
+    useEffect(() => {
+        const handleScroll = () => {
+            const nav = document.querySelector('nav.fixed-top');
+            if (window.scrollY > 50) { // scroll threshold
+                nav.style.backgroundColor = '#000000';
+            } else {
+                nav.style.backgroundColor = 'transparent';
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     const pathname = usePathname();
 
     useEffect(() => {
@@ -17,8 +30,8 @@ export default function Header() {
 
     return (
         <>
-            <header>
-                <nav className="navbar navbar-expand-lg sticky-top bg-sm-black bg-transparent">
+            <header className='pb-5'>
+                <nav className="navbar navbar-expand-lg fixed-top bg-sm-black">
                     <div className="container">
                         {/* <!-- Logo --> */}
                         <Link className="navbar-brand" href="/">
@@ -71,7 +84,7 @@ export default function Header() {
                         <ul className="navbar-nav">
                             <li className="nav-item"><Link className="nav-link" href="/">Home</Link></li>
                             <li>
-                                <Link className="nav-link" data-bs-toggle="collapse" data-bs-target="#servicesCollapse" href="/"
+                                <Link className="nav-link" data-bs-toggle="collapse" data-bs-target="#servicesCollapse" href="/services"
                                     role="button" aria-expanded="false">
                                     Services
                                     <i className="ps-2 fa fa-chevron-down" style={{ fontSize: '12px' }}></i> {/* <-- Carrot Icon */}

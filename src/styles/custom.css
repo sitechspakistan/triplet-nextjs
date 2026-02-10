@@ -44,6 +44,11 @@ body {
     color: #EF6625;
 }
 
+header nav.fixed-top {
+    transition: background-color 0.5s ease;
+}
+
+
 .navbar-brand img {
     width: 150px;
     height: 75px;
@@ -56,10 +61,6 @@ body {
     margin-top: 0;
 }
 
-/* Arrow rotate (optional) */
-/* .navbar .dropdown:hover>.dropdown-toggle::after {
-    transform: rotate(180deg);
-} */
 
 .navbar-nav {
     padding-left: 170px;
@@ -179,6 +180,10 @@ body {
 .hero-btn:hover {
     background-color: rgb(242, 98, 62);
     box-shadow: rgba(0, 0, 0, 0.11) 0px 10.7px 25px;
+}
+
+.hero-section {
+    padding-top: 50px;
 }
 
 .hero-section:before {
@@ -1142,7 +1147,7 @@ main {
 
 .process-content {
     position: absolute;
-    top: -20px;
+    top: 10px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1226,7 +1231,7 @@ main {
     position: relative;
     height: 512px;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     margin-top: 0;
 }
 
@@ -1270,7 +1275,7 @@ main {
 
 .service-content {
     position: absolute;
-    top: -10px;
+    top: 30px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -1754,8 +1759,22 @@ main {
 
 
 @media screen and (max-width: 576px) {
-    .sticky-top {
+    .fixed-top {
         background-color: #000;
+        z-index: 1;
+    }
+
+    header {
+        padding-bottom: 10px !important;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+        height: 60px;
+    }
+
+    .hero-section {
+        padding-top: 0;
     }
 
     .hero-btn {
@@ -1764,6 +1783,7 @@ main {
 
     .hero-section h1 {
         font-size: 28px;
+        padding: 0;
     }
 
     .hero-section p {
@@ -1940,125 +1960,122 @@ main {
     }
 
     .textsec {
-
-        padding: 0 0px;
+        padding: 50px 5px;
         font-size: 14px;
     }
+}
 
-    .service-content {
-        color: #fff;
-        height: auto;
-        top: 5px;
-        padding-left: 0 !important;
-    }
-
-    .service-hero-section {
-        height: 124px;
-        /* z-index: 1; */
-    }
-
-    .process-content {
-        padding-left: 0;
-    }
-
-    .process-content h1 {
-        letter-spacing: -1px;
-        font-size: 22px;
-    }
-
-    .process-content p {
-        color: #c4c4c4;
-        padding-top: 20px;
-        font-family: Be Vietnam Pro, sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-    }
-
-    .content-left-sec .about-img-two {
-        width: 100%;
-        height: auto;
-    }
-
-    .process-content {
-
-        height: 50%;
-        top: 30px;
-
-    }
-
-    .process-hero-section {
-        height: 250px;
-    }
-
-    .flag-img img {
-        width: 53px !important;
-        height: auto !important;
-    }
-
-    .content-left-sec .about-img {
-        width: 100%;
-        height: auto;
-    }
-
-    .about-content {
-        padding-left: 0;
-        height: 50%;
-        top: 30px;
-    }
-
-    .about-content h1 {
-        font-size: 18px;
-        margin-top: 20px;
-    }
-
-    .about-content p {
-        letter-spacing: 0px;
-        color: rgb(196, 196, 196);
-        font-family: "Be Vietnam Pro", sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-    }
-
-    .about-hero-section {
-        height: 250px;
-        /* width: 409px; */
-    }
-
-    .foot-styl {
-        padding: 50px 10px;
-        margin: 0 auto;
-        height: 800px;
-        position: relative;
-    }
-
-    .foot-styl ul li a {
-        font-size: 12px;
-    }
-
-    .foot-styl i {
-        color: #ffffff73;
-        margin: 10px 10px;
-        font-size: 24px !important;
-
-    }
-
-    .service-item-content p {
-        font-size: 12px;
-        margin: 0;
-    }
-
-    .pro-demo h3 {
-        font-size: 18px;
-
-    }
-
-    .portfolio-masonry-item img {
-        width: 98% !important;
-        height: auto;
-        margin: 0 auto !important;
-    }
+.service-content {
+    color: #fff;
+    height: 500px;
+    width: 100%;
+    top: 50px !important;
+    padding-left: 0 !important;
 
 }
+
+.process-content {
+    padding-left: 0;
+}
+
+.process-content h1 {
+    letter-spacing: -1px;
+    font-size: 22px;
+}
+
+.process-content p {
+    color: #c4c4c4;
+    padding-top: 20px;
+    font-family: Be Vietnam Pro, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.content-left-sec .about-img-two {
+    width: 100%;
+    height: auto;
+}
+
+.process-content {
+
+    height: 50%;
+    top: 30px;
+
+}
+
+.process-hero-section {
+    height: 250px;
+}
+
+.flag-img img {
+    width: 53px !important;
+    height: auto !important;
+}
+
+.content-left-sec .about-img {
+    width: 100%;
+    height: auto;
+}
+
+.about-content {
+    padding-left: 0;
+    height: 50%;
+    top: 30px;
+}
+
+.about-content h1 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.about-content p {
+    letter-spacing: 0px;
+    color: rgb(196, 196, 196);
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.about-hero-section {
+    height: 250px;
+    /* width: 409px; */
+}
+
+.foot-styl {
+    padding: 50px 10px;
+    margin: 0 auto;
+    height: 800px;
+    position: relative;
+}
+
+.foot-styl ul li a {
+    font-size: 12px;
+}
+
+.foot-styl i {
+    color: #ffffff73;
+    margin: 10px 10px;
+    font-size: 24px !important;
+
+}
+
+.service-item-content p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.pro-demo h3 {
+    font-size: 18px;
+
+}
+
+.portfolio-masonry-item img {
+    width: 98% !important;
+    height: auto;
+    margin: 0 auto !important;
+}
+
+
 
 .iti__country-list .iti__flag,
 .iti__country-name {
