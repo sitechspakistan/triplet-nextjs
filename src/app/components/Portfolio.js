@@ -59,7 +59,7 @@ export default function Portfolio() {
                     <div className="row g-0">
                         <div className="col-12 text-center">
                             {/* Filters */}
-                            <div className="portfolio-filters text-center">
+                            <div className="portfolio-filters mt-md-0 mt-6 text-center">
 
                                 {/* Desktop Buttons */}
                                 <div className="d-none d-md-block">

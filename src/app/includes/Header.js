@@ -30,7 +30,7 @@ export default function Header() {
 
     return (
         <>
-            <header className='pb-5'>
+            <header className='pb-md-5'>
                 <nav className="navbar navbar-expand-lg fixed-top bg-sm-black">
                     <div className="container">
                         {/* <!-- Logo --> */}
