@@ -28,7 +28,7 @@ export default function ClutchWidgetFull() {
     };
 
     return (
-        <section>
+        <section className="clucthFull">
             <div className="container">
                 <Script
                     key="clutch-script"

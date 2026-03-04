@@ -53,13 +53,14 @@ export default function Header() {
                                     <Link className={`nav-link ${pathname === "/services" ? "active" : ""}`}
                                         href="/services">Services</Link>
                                     <ul className="dropdown-menu nav-item-children">
-                                        <li><Link className="dropdown-item" href="/services/explainer-videos">Explainer Videos</Link></li>
-                                        <li><Link className="dropdown-item" href="/services/training-videos">Training Videos</Link></li>
-                                        <li><Link className="dropdown-item" href="/services/app-demo-videos">App Demo videos</Link></li>
-                                        <li><Link className="dropdown-item" href="/services/product-videos">Product videos</Link></li>
+                                        <li><Link className={`dropdown-item ${pathname === "/services/explainer-videos" ? "active" : ""}`} href="/services/explainer-videos">Explainer Videos</Link></li>
+                                        <li><Link className={`dropdown-item ${pathname === "/services/training-videos" ? "active" : ""}`} href="/services/training-videos">Training Videos</Link></li>
+                                        <li><Link className={`dropdown-item ${pathname === "/services/app-demo-videos" ? "active" : ""}`} href="/services/app-demo-videos">App Demo videos</Link></li>
+                                        <li><Link className={`dropdown-item ${pathname === "/services/product-videos" ? "active" : ""}`} href="/services/product-videos">Product videos</Link></li>
                                     </ul>
                                 </li>
-                                <li className="nav-item"><Link className="nav-link" href="/portfolio">Portfolio</Link></li>
+                                <li className="nav-item"><Link className={`nav-link ${pathname === "/portfolio" ? "active" : ""}`}
+                                    href="/portfolio">Portfolio</Link></li>
                                 <li className="nav-item"><Link className={`nav-link ${pathname === "/process" ? "active" : ""}`}
                                     href="/process">Process</Link></li>
                                 <li className="nav-item"><Link className={`nav-link ${pathname === "/about-us" ? "active" : ""}`}
@@ -84,10 +85,10 @@ export default function Header() {
                         <ul className="navbar-nav">
                             <li className="nav-item"><Link className="nav-link" href="/">Home</Link></li>
                             <li>
-                                <Link className="nav-link" data-bs-toggle="collapse" data-bs-target="#servicesCollapse" href="/services"
+                                <Link className="nav-link" href="/services"
                                     role="button" aria-expanded="false">
                                     Services
-                                    <i className="ps-2 fa fa-chevron-down" style={{ fontSize: '12px' }}></i> {/* <-- Carrot Icon */}
+                                    <i className="ps-2 fa fa-chevron-down" data-bs-toggle="collapse" data-bs-target="#servicesCollapse" style={{ fontSize: '12px' }}></i> {/* <-- Carrot Icon */}
                                 </Link>
                                 <ul className="collapse" id="servicesCollapse">
                                     <li><Link className="dropdown-item" href="/services/explainer-videos">Explainer Videos</Link></li>

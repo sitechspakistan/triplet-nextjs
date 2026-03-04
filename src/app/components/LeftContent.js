@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function LeftContent({ videoUrl, heading, content, btntxt, btnlink, btndata }) {
     return (
-        <section className="content-RL">
+        <section className="content-RL overflow-hidden">
             <div className="container">
                 <div className="row">
                     {/* Video Section - Left */}
@@ -35,10 +35,11 @@ export default function LeftContent({ videoUrl, heading, content, btntxt, btnlin
                     {/* Content Section - Right (Fade from right) */}
                     <motion.div
                         className="col-xl-6"
-                        initial={{ opacity: 0, x: 50 }}  // start slightly right
-                        whileInView={{ opacity: 1, x: 0 }} // fade into original position
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        style={{ willChange: "transform" }}   // ✅ ADD THIS
                     >
                         <h2 className="pt-3 pb-3">{heading}</h2>
 

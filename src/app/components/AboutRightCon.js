@@ -24,7 +24,7 @@ export default function AboutRightCon() {
                             </div>
                         </div>
                         <div className="col-xl-6 pb-4">
-                            <p className="con-video pb-3">
+                            <p className="con-video pb-3 text-xl-start text-center">
                                 In the beginning, there was just an idea. A simple one, really: videos can do what words
                                 alone can’t. They can ignite excitement, simplify the complicated, and bring people together
                                 over shared knowledge.<br /><br />

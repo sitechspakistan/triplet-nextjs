@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
         {/* <!-- call and booking icon  --> */}
         <Script src="https://player.vimeo.com/api/player.js" strategy="afterInteractive" />
         <Script
-          src="/assets/bootstrap.bundle.min.js"
+          src="/assets/js/bootstrap.bundle.min.js"
           strategy="afterInteractive"
         />
         <Script src="/assets/custom.js"></Script>
