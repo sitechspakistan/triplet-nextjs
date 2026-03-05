@@ -13,7 +13,7 @@ export const metadata = {
     canonical: "https://creativetriplet.com/",
   },
   icons: {
-    icon: "/assets/images/ct-favicon.png",
+    icon: "/favicon.ico",
     // shortcut: "/assets/images/ct-favicon.png",
   },
 };
@@ -29,17 +29,16 @@ export default function RootLayout({ children }) {
 
       </head>
       <body>
+
         <Header />
-
         <main> {children} </main>
-
         <Footer />
 
         {/* <!-- call and booking icon  --> */}
         <div>
-          <div className="side-bars hidden-phone" style={{ zIndex: 9, }}>
+          <div className="side-bars hidden-phone" style={{ zIndex: 10, }}>
             <div className="s-bar bar-number normal-n">
-              <a className="lchat normal-n" title="Call Now" href="/tel:+1 (817) 753 4447" target="_self"
+              <a className="lchat normal-n" title="Call Now" href="tel:+1 (817) 753 4447" target="_self"
                 rel="noopener noreferrer">
                 <span className="sidebar-icon two call"> </span>
                 Call Now: <span> +1 (817) 753 4447 </span>
@@ -61,7 +60,7 @@ export default function RootLayout({ children }) {
           src="/assets/js/bootstrap.bundle.min.js"
           strategy="afterInteractive"
         />
-        <Script src="/assets/custom.js"></Script>
+        {/* <Script src="/assets/custom.js"></Script> */}
 
       </body>
     </html >

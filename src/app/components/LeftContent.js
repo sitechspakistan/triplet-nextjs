@@ -51,7 +51,7 @@ export default function LeftContent({ videoUrl, heading, content, btntxt, btnlin
                             // <a href="#conform"  data-hover="Let's Start Something Amazing">
                             //     Let's Start Something Amazing</span>
                             // </a>
-                            <Link href={btnlink} className="btn-anim btn-red me-3" data-hover={btndata}>
+                            <Link href={btnlink} className="btn-anim btn-red me-3 mb-2" data-hover={btndata}>
                                 <span className="btn-text">{btntxt}</span>
                             </Link>
                         )}

@@ -8,6 +8,7 @@ import PortfolioSlider from "@/app/components/PortfolioSlider";
 
 export const metadata = {
     title: "Training Videos - Creative Triplet",
+    Description: "Training Videos That Make Learning Fun & Effective We’l turn your dry training manuals and yawn-inducing presentations into animated training videos that educate, engage, and inspire action. Forget those snooze-inducing training sessions! Our animated training videos turn even the driest topics into engaging, easy-to- follow lessons. Your team will actually enjoy learning, and you’ll see […]",
     alternates: {
         canonical: "https://creativetriplet.com/training-videos/",
     },

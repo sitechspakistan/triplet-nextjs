@@ -25,15 +25,15 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="col-12 col-xl-3">
-                            <ul>
-                                <h2>Call us Directly</h2>
-                                <li><Link href="tel:+18177534447">+1 (817) 753 4447</Link></li>
+                            <ul className="text-white">
+                                <h2 className="mb-0">Call us Directly</h2>
+                                <li className="pb-3"><Link href="tel:+18177534447">+1 (817) 753 4447</Link></li>
 
-                                <h2>Email us Directly</h2>
-                                <li><Link href="mailto:hello@creativetriplet.com">hello@creativetriplet.com</Link></li>
+                                <h2 className="mb-0">Email us Directly</h2>
+                                <li className="pb-3"><Link href="mailto:hello@creativetriplet.com">hello@creativetriplet.com</Link></li>
 
-                                <h2>Address</h2>
-                                <li><Link href="">Fort Worth, Texas, United States of America</Link></li>
+                                <h2 className="mb-0">Address</h2>
+                                <li className="pb-3"><Link href="#">Fort Worth, Texas, United States of America</Link></li>
                             </ul>
                         </div>
                         <div className="col-12 col-xl-3">
@@ -55,7 +55,7 @@ export default function Footer() {
                     </div>
 
                     <div className="mt-5 d-xl-flex justify-content-xl-between">
-                        <span className="text-start">© 2026 CreativeTriplet. All Rights Reserved.</span>
+                        <span className="text-start fw-medium">© 2026 CreativeTriplet. All Rights Reserved.</span>
                         <div className="text-xl-end text-start">
                             <a href="https://www.facebook.com/creativetriplet/" target="blank"><i className="fa-brands fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/creativetriplet/" target="blank"><i className="fa-brands fa-instagram"></i></a>

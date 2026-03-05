@@ -99,7 +99,7 @@ header nav.fixed-top {
 .nav-item-children .dropdown-item:hover {
     background: none;
     color: #f7973e;
-    text-shadow: 0 0 7px #F9B854, 0 0 10px #F9B854;
+    /* text-shadow: 0 0 7px #F9B854, 0 0 10px #F9B854; */
 }
 
 .nav-item-children {
@@ -774,6 +774,7 @@ main {
 .foot-styl span {
     color: #FFFFFF73;
     font-weight: 600;
+
 }
 
 .foot-styl i {
@@ -813,6 +814,7 @@ main {
 .foot-styl h2 {
     font-size: 12px;
     color: #FFFFFF73;
+    font-family: Space Grotesk, sans-serif;
 }
 
 
@@ -1831,12 +1833,31 @@ main {
     .hero-section ul li img {
         width: 100%;
         height: auto;
+        margin-top: 10px;
+    }
+
+    .hero-section ul {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-flow: row;
+        place-items: center;
+        gap: 10px;
+        margin: 0px 0 0;
+        padding: 0px;
+        list-style: none;
+        display: grid;
+        margin-top: 25px;
+        /* align-items: center; */
     }
 
     .pro-demo h2 {
         letter-spacing: 0px;
         font-size: 22px;
         line-height: 20px;
+    }
+
+    .proud-section {
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .proud-section h2 {
@@ -1854,6 +1875,7 @@ main {
         width: 100%;
         gap: 30px 35px;
         height: auto;
+        margin-bottom: 40px;
     }
 
     .fortune h2 {
@@ -2086,10 +2108,18 @@ main {
 
     .contact-form {
         margin-top: 30px;
+        margin-bottom: 10px;
     }
 
     .pro-demo {
-        margin: 30px 0;
+        margin: 0px 0;
+        padding-top: 40px !important;
+        padding-bottom: 0px !important;
+    }
+
+    .fortune {
+        margin-top: 10px !important;
+        /* margin-bottom: 20px !important; */
     }
 
 }
@@ -2262,4 +2292,13 @@ main {
 
 .service-item-content p {
     color: #c4c4c4;
+}
+
+.modal {
+    z-index: none !important;
+    background: #00000094;
+}
+
+.modal-backdrop {
+    z-index: 0 !important;
 }

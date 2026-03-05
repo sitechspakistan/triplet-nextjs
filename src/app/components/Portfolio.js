@@ -109,7 +109,6 @@ export default function Portfolio() {
         { id: 96, title: "Project 70", category: ["Education", "Health Care"], video: "https://player.vimeo.com/video/602244262", image: "/assets/images/portfolio/common/56.jpg" },
         { id: 97, title: "Project 71", category: ["Health Care"], video: "https://player.vimeo.com/video/613686658", image: "/assets/images/portfolio/health/1.jpg" },
         { id: 98, title: "Project 72", category: ["Health Care"], video: "https://player.vimeo.com/video/696056314", image: "/assets/images/portfolio/health/4.jpg" },
-        { id: 99, title: "Project 73", category: ["Health Care"], video: "https://player.vimeo.com/video/602249799", image: "/assets/images/portfolio/health/8.jpg" },
         { id: 100, title: "Project 74", category: ["Health Care"], video: "https://player.vimeo.com/video/696058349", image: "/assets/images/portfolio/health/10.jpg" },
         { id: 101, title: "Project 75", category: ["Education", "Health Care"], video: "https://player.vimeo.com/video/376526533", image: "/assets/images/portfolio/common/57.jpg" },
         { id: 102, title: "Project 76", category: ["Education", "Health Care"], video: "https://player.vimeo.com/video/191621806", image: "/assets/images/portfolio/common/58.jpg" },

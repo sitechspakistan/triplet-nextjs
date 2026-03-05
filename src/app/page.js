@@ -16,6 +16,7 @@ export const metadata = {
     canonical: "https://creativetriplet.com/",
   },
 
+
 };
 
 export default function Home() {

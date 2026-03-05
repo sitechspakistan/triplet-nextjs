@@ -8,6 +8,7 @@ import PortfolioSlider from "@/app/components/PortfolioSlider";
 
 export const metadata = {
     title: "Explainer Videos - Creative Triplet",
+    description: "Videos That Don’t Just Explain, They Engage & Convert. We’ll break down your complex products, services, or ideas into bite- sized, easy-to-understand animated explainer videos that engage and convert. Videos That Don’t Just Explain, They Engage & Convert. We’ll break down your complex products, services, or ideas into bite- sized, easy-to-understand animated explainer videos that […]",
     alternates: {
         canonical: "https://creativetriplet.com/explainer-videos/",
     },

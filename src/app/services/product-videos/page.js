@@ -8,6 +8,7 @@ import PortfolioSlider from "@/app/components/PortfolioSlider";
 
 export const metadata = {
     title: "Product Videos - Creative Triplet",
+    Description: "Product Demo Videos That Don’t Just Show, They Sell, Convert & Grow We’ll convert your product’s story into an engaging video that leaves viewers wanting more. Our product videos break down complex features into bite-sized, visually appealing stories. We’ll showcase your product’s benefits in a way that’s clear, engaging, and impossible to ignore. The result? […]",
     alternates: {
         canonical: "https://creativetriplet.com/product-videos/",
     },
