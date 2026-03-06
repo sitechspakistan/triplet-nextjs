@@ -7,9 +7,7 @@ export default function Portfolio() {
     const [videoTitle, setVideoTitle] = useState("");
     const categories = ["All", "B2B", "B2C", "Education", "Health Care", "Information Technology"];
 
-    // useEffect(() => {
-    //     import("p/js/bootstrap.bundle.min.js");
-    // }, []);
+
     const items = [
         { id: 1, title: "Microsoft - Employee Devices I Explainer Video by Creative Triplet", category: "B2C", video: "https://player.vimeo.com/video/602215167?h=01d057ba98", image: "/assets/images/portfolio/b2c/2.png" },
         { id: 2, title: "Project B", category: "Information Technology", video: "https://player.vimeo.com/video/746877725", image: "/assets/images/portfolio/b2b/1.jpg" },
@@ -142,18 +140,18 @@ export default function Portfolio() {
         { id: 130, title: "Project 104", category: ["Education"], video: "https://player.vimeo.com/video/649641438", image: "/assets/images/portfolio/education/20.jpg" },
         { id: 131, title: "Project 105", category: ["Education"], video: "https://player.vimeo.com/video/748664039", image: "/assets/images/portfolio/education/21.jpg" },
         { id: 132, title: "Project 106", category: ["Education"], video: "https://player.vimeo.com/video/702846036", image: "/assets/images/portfolio/education/22.jpeg" },
-        { id: 133, title: "Project 107", category: ["Information Technology"], video: "https://player.vimeo.com/video/1035226010", image: "/assets/images/portfolio/it/5.jpg" },
+        { id: 133, title: "Project 107", category: ["Information Technology"], video: "https://player.vimeo.com/video/1035226010?h=3189332ea6", image: "/assets/images/portfolio/it/5.jpg" },
         { id: 134, title: "Project 108", category: ["Education"], video: "https://player.vimeo.com/video/1035230432", image: "/assets/images/portfolio/education/23.jpg" },
         { id: 135, title: "Project 109", category: ["Health"], video: "https://player.vimeo.com/video/1055318085", image: "/assets/images/portfolio/health/2.png" },
-        { id: 136, title: "Project 110", category: ["Health"], video: "https://player.vimeo.com/video/1035226010", image: "/assets/images/portfolio/health/3.png" },
-        { id: 137, title: "Project 111", category: ["Education", "Information Technology"], video: "https://player.vimeo.com/video/1055986558", image: "/assets/images/portfolio/common/62.png" },
-        { id: 138, title: "Project 112", category: ["Information Technology"], video: "https://player.vimeo.com/video/1055985754", image: "/assets/images/portfolio/it/6.png" },
-        { id: 139, title: "Project 113", category: ["Information Technology"], video: "https://player.vimeo.com/video/1055329035", image: "/assets/images/portfolio/it/7.png" },
-        { id: 140, title: "Project 114", category: ["B2C", "Information Technology"], video: "https://player.vimeo.com/video/1055326964", image: "/assets/images/portfolio/common/63.png" },
-        { id: 141, title: "Project 115", category: ["Information Technology"], video: "https://player.vimeo.com/video/1055325678", image: "/assets/images/portfolio/it/8.png" },
-        { id: 142, title: "Project 116", category: ["Information Technology"], video: "https://player.vimeo.com/video/1055325179", image: "/assets/images/portfolio/it/9.png" },
-        { id: 143, title: "Project 117", category: ["Information Technology"], video: "https://player.vimeo.com/video/1055320580", image: "/assets/images/portfolio/it/10.png" },
-        { id: 144, title: "Project 118", category: ["Information Technology"], video: "https://player.vimeo.com/video/1042932806", image: "/assets/images/portfolio/it/11.jpg" },
+        { id: 136, title: "Project 110", category: ["Health"], video: "https://player.vimeo.com/video/1035226010?h=3189332ea6", image: "/assets/images/portfolio/health/3.png" },
+        { id: 137, title: "Project 111", category: ["Education", "Information Technology"], video: "https://player.vimeo.com/video/1055986558?h=60faed8255", image: "/assets/images/portfolio/common/62.png" },
+        { id: 138, title: "Project 112", category: ["Information Technology"], video: "https://player.vimeo.com/video/1055985754?h=17f2047c47", image: "/assets/images/portfolio/it/6.png" },
+        { id: 139, title: "Project 113", category: ["Information Technology"], video: "https://player.vimeo.com/video/1055329035?h=5470dd428d", image: "/assets/images/portfolio/it/7.png" },
+        { id: 140, title: "Project 114", category: ["B2C", "Information Technology"], video: "https://player.vimeo.com/video/1055326964?h=1f4d4163d0", image: "/assets/images/portfolio/common/63.png" },
+        { id: 141, title: "Project 115", category: ["Information Technology"], video: "https://player.vimeo.com/video/1055325678?h=36dd9ef20d", image: "/assets/images/portfolio/it/8.png" },
+        { id: 142, title: "Project 116", category: ["Information Technology"], video: "https://player.vimeo.com/video/1055325179?h=b23c91e5b0", image: "/assets/images/portfolio/it/9.png" },
+        { id: 143, title: "Project 117", category: ["Information Technology"], video: "https://player.vimeo.com/video/1055320580?h=40a35618ce", image: "/assets/images/portfolio/it/10.png" },
+        { id: 144, title: "Project 118", category: ["Information Technology"], video: "https://player.vimeo.com/video/1042932806?h=3e82a9d1a3", image: "/assets/images/portfolio/it/11.jpg" },
 
 
 
@@ -278,4 +276,4 @@ export default function Portfolio() {
 
         </>
     )
-}
+}    

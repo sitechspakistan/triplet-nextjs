@@ -20,12 +20,23 @@ export default function Header() {
 
     const pathname = usePathname();
 
+    // useEffect(() => {
+    //     // 2. Bootstrap JS ko client-side par load karein
+    //     typeof document !== "undefined"
+    //         ? require("bootstrap/dist/js/bootstrap.bundle.min.js")
+    //         : null;
+    // }, []);
+
     useEffect(() => {
-        // 2. Bootstrap JS ko client-side par load karein
-        typeof document !== "undefined"
-            ? require("bootstrap/dist/js/bootstrap.bundle.min.js")
-            : null;
-    }, []);
+        const offcanvasElement = document.getElementById("mobileOffcanvas");
+
+        if (offcanvasElement && window.bootstrap) {
+            const offcanvas = window.bootstrap.Offcanvas.getInstance(offcanvasElement);
+            if (offcanvas) {
+                offcanvas.hide();
+            }
+        }
+    }, [pathname]);
 
 
     return (

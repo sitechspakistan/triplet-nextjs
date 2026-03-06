@@ -71,7 +71,7 @@ export default function HomeServices() {
                         Sell, and Scale - Fast
                     </h2>
                     <p className="text-center pb-5">
-                        We craft high-conversion video assets used in million-dollar pitch decks...
+                        We craft high-conversion video assets used in million-dollar pitch decks, high-stakes product launches, and onboarding flows that drive real adoption, not vanity views
                     </p>
                 </motion.div>
 

@@ -62,8 +62,7 @@ export default function Hero() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 2.2, duration: 0.8 }} // Pehle typing khatam ho phir ye aaye
                         >
-                            From Seed to Series D, we help high-growth startups simplify their
-                            story, accelerate GTM, and drive adoption — with videos built to convert.
+                            From Seed to Series D, we help high-growth startups simplify their story, accelerate GTM, and drive adoption - with videos built to convert, not just impress.
                         </motion.p>
 
                         <motion.div
@@ -97,7 +96,7 @@ export default function Hero() {
 
                     {/* RIGHT COLUMN (Video) */}
                     <motion.div
-                        className="col-md-6 ps-5"
+                        className="col-md-6"
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
