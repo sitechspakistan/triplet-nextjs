@@ -118,7 +118,7 @@ export default function HomePortfolio() {
                 tabIndex="-1"
                 aria-hidden="true"
             >
-                <div className="modal-dialog modal-lg modal-dialog-centered">
+                <div className="modal-dialog modal-lg modal-md  modal-dialog-centered">
                     <div className="modal-content">
                         <div className="modal-body p-0">
                             {videoUrl && (

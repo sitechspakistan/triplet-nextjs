@@ -86,14 +86,14 @@ export default function Header() {
                 </nav>
 
                 {/* <!-- Offcanvas for Mobile --> */}
-                <div className="offcanvas offcanvas-end d-lg-none bg-dark" tabIndex="-1" id="mobileOffcanvas"
+                <div className="offcanvas offcanvas-end d-lg-none bg-dark " tabIndex="-1" id="mobileOffcanvas"
                     aria-labelledby="mobileOffcanvasLabel">
                     <div className="offcanvas-header">
                         <button type="button" className="btn-close text-reset text-end" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
-                        <ul className="navbar-nav">
+                        <ul className="navbar-nav d-lg-flex align-items-lg-center">
                             <li className="nav-item"><Link className="nav-link" href="/">Home</Link></li>
                             <li>
                                 <Link className="nav-link" href="/services"

@@ -24,7 +24,7 @@ export default function Footer() {
                                 <li><Link href="/services/training-videos">Training Videos</Link></li>
                             </ul>
                         </div>
-                        <div className="col-12 col-xl-3">
+                        <div className="col-12 col-xl-3 info-sec">
                             <ul className="text-white">
                                 <h2 className="mb-0">Call us Directly</h2>
                                 <li className="pb-3"><Link href="tel:+18177534447">+1 (817) 753 4447</Link></li>
@@ -54,7 +54,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="mt-5 d-xl-flex justify-content-xl-between">
+                    <div className="mt-5 d-xl-flex justify-content-xl-between align-items-center">
                         <span className="text-start fw-medium">© 2026 CreativeTriplet. All Rights Reserved.</span>
                         <div className="text-xl-end text-start">
                             <a href="https://www.facebook.com/creativetriplet/" target="blank"><i className="fa-brands fa-facebook-f"></i></a>
