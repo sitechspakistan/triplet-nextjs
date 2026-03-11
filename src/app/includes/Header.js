@@ -48,7 +48,7 @@ export default function Header() {
                         </button>
 
                         {/* <!-- Desktop Menu --> */}
-                        <div className="collapse navbar-collapse d-none d-lg-flex justify-content-center align-items-end">
+                        <div className="collapse navbar-collapse d-none d-lg-flex justify-content-center align-items-center">
                             <ul className="navbar-nav">
                                 <li className="nav-item"><Link className={`nav-link ${pathname === "/" ? "active" : ""}`}
                                     href="/" aria-current="page">Home</Link></li>

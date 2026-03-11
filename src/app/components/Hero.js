@@ -34,26 +34,16 @@ export default function Hero() {
 
                     <div className="col-md-6">
                         <motion.h1
-                            className="text-white"
-                            variants={containerVariants}
-                            initial="hidden"
-                            animate="visible"
+                            className="pt-3 pb-2"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 2.2, duration: 0.8 }}
                         >
-                            {sentence1.split("").map((char, index) => (
-                                <motion.span key={index} variants={letterVariants} className="typing-span">
-                                    {char}
-                                </motion.span>
-                            ))}
-
+                            {sentence1}
                             <motion.span className="content-color typing-span" variants={letterVariants}>
                                 {highlight}
                             </motion.span>
-
-                            {sentence2.split("").map((char, index) => (
-                                <motion.span key={index + 50} variants={letterVariants} className="typing-span">
-                                    {char}
-                                </motion.span>
-                            ))}
+                            {sentence2}
                         </motion.h1>
 
                         <motion.p

@@ -1,3 +1,6 @@
+"use client"
+import { motion } from "framer-motion";
+
 export default function ServiceHero({ Heading, Paragraph, bgImage, paraclass }) {
     return (
         <section className="service-hero-section mt-5">
@@ -6,8 +9,24 @@ export default function ServiceHero({ Heading, Paragraph, bgImage, paraclass }) 
                 <div className="container">
                     <div className="row">
                         <div className="col-8 col-xl-6 ">
-                            <h1>{Heading}</h1>
-                            <p className={`${paraclass}`}>{Paragraph}</p>
+                            <motion.h1
+                                className="pt-3 pb-2"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 2.2, duration: 0.8 }}
+                            >
+                                {Heading}
+
+                            </motion.h1>
+                            <motion.p
+                                className={`${paraclass} pt-3 pb-2`}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 2.2, duration: 0.8 }}
+                            >
+                                {Paragraph}
+                            </motion.p>
+                            {/* <p className={ }></p> */}
                         </div>
                     </div>
                 </div>
