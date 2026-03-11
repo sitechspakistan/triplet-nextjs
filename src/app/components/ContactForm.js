@@ -27,11 +27,11 @@ export default function ContactForm() {
                                     </div>
                                     <div className="col-xl-6">
                                         <select name="budget" id="budget" className="form-input">
-                                            <option value="">Select Budget</option>
-                                            <option value="$1500-$3000">$1500 – $3000</option>
-                                            <option value="$3000-$700">$3000 – $7000</option>
-                                            <option value="$7000-$10000">$7000 – $10000</option>
-                                            <option value="$2000+">$10000+</option>
+                                            <option value="">Select your budget</option>
+                                            <option value="$1500-$3000">$1,500 – $3,000</option>
+                                            <option value="$3000-$700">$3,000 – $7,000</option>
+                                            <option value="$7000-$10000">$7,000 – $1,0000</option>
+                                            <option value="$2000+">$10,000+</option>
                                         </select>
                                     </div>
                                     <div className="col-xl-12">
@@ -41,7 +41,8 @@ export default function ContactForm() {
 
                                     </div>
                                 </div>
-                                <button className="btn-form">Send Message</button>
+                                <a href="/" className="btn-form" data-hover="Send Message">
+                                    <span className="btntxt">Send Message</span></a>
                             </form>
                         </div>
                     </div>

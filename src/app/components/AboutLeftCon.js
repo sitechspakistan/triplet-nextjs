@@ -16,7 +16,7 @@ export default function AboutLeftCon() {
                         viewport={{ once: true, amount: 0.3 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        <h2 className="pt-5 pb-3">We're on Team ‘You’</h2>
+                        <h2 className="pt-xl-5 pb-xl-3">We're on Team ‘You’</h2>
 
                         <p className="con-video pb-3 text-xl-start">
                             We’re all about high-fives and happy clients. We believe in doing things right, and that

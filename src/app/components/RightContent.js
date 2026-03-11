@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import VimeoLazy from "./VimeoLazy";
 
-export default function RightContent({ videoUrl, title, content, btntxt, btnlink, btndata }) {
+export default function RightContent({ videoUrl, videohash, title, content, btntxt, btnlink, btndata }) {
     return (
-        <section className="content-RL">
+        <section className="content-RL right-revs">
             <div className="container">
                 <div className="row">
 
@@ -34,7 +35,8 @@ export default function RightContent({ videoUrl, title, content, btntxt, btnlink
 
                     {/* Right Column - Video */}
                     <div className="col-xl-6">
-                        <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                        <VimeoLazy videoId={videoUrl} hash={videohash} />
+                        {/* <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
                             <iframe
                                 src={videoUrl}
                                 frameBorder="0"
@@ -42,7 +44,7 @@ export default function RightContent({ videoUrl, title, content, btntxt, btnlink
                                 style={{ position: "absolute", top: "0", left: "0", width: "100%", height: "100%" }}
                                 title={title}
                             ></iframe>
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

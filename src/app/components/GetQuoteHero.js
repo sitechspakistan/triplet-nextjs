@@ -1,12 +1,14 @@
 export default function GetQuoteHero() {
     return (
         <section className="quote-hero-section mt-5 mb-2">
+
             <div className="quote-content">
                 <div className="container">
+                    {/* <img src="/assets/images/quote-form/quote-desktop-1.png"></img> */}
                     <div className="row">
                         <div className="col-xl-6 ">
                             <h1>In need of video?</h1>
-                            <p>Our production team can answer your questions
+                            <p>Our production team can answer your questions<br />
                                 and create custom plans that fit your needs.<br /><br />
                                 We’ll even produce a script for your video – for free.</p>
                         </div>

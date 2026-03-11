@@ -49,7 +49,7 @@ export default function ShadowRightSec({
                         viewport={{ once: true }}
                     >
                         <h2 className="pb-3">{Heading}</h2>
-                        <p className="con-video pb-3">{Description}</p>
+                        <div className="con-video pb-3">{Description}</div>
 
                         {btnlink && (
                             <Link

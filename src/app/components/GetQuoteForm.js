@@ -2,30 +2,32 @@
 
 import { useState } from "react";
 import PhoneInput from "./PhoneInput";
+import LoadingBar from "./LoadingBar";
 
 export default function GetQuoteForm() {
     const [step, setStep] = useState(1);
     const [service, setService] = useState("");
-
+    const [attempted, setAttempted] = useState(false);
+    const progress = step === 1 ? 0 : 50;
     const handleServiceSelect = (e) => {
         e.preventDefault();
 
         const value = e.currentTarget.getAttribute("data-value");
         setService(value);
 
-        // remove active from all
         document.querySelectorAll(".quote-service").forEach(li => {
             li.classList.remove("active");
         });
 
-        // add active to current li
         e.currentTarget.closest(".quote-service").classList.add("active");
     };
 
     return (
         <section className="get-a-quote">
+
             <div className="container quote-content-two">
-                <h2>What Do You Need?</h2>
+                <LoadingBar progress={progress} />
+                <h2>Project Info</h2>
                 <p>(Please Select A Style)</p>
 
                 <form id="getQuoteForm">
@@ -42,39 +44,77 @@ export default function GetQuoteForm() {
                                         { img: "Product.jpg", title: "Product Video" },
                                         { img: "App1.jpg", title: "App Demo Video" },
                                         { img: "suggestion.jpg", title: "Want Us To Suggest?" },
-                                    ].map((item, i) => (
-                                        <div className="col-xl-4" key={i}>
-                                            <li className="quote-service">
+                                    ].map((item, i) => {
+
+                                        const isSelected = service === item.title;
+                                        return <div className="col-xl-4" key={i}>
+                                            <li className={`quote-service ${isSelected ? "active" : ""}`} style={{
+                                                border: attempted && !service
+                                                    ? "2px solid red"
+                                                    : "2px solid transparent",
+                                                borderRadius: "8px",
+                                                transition: "border 0.2s ease"
+                                            }}>
                                                 <a
                                                     href="javascript:;"
                                                     className="select-service"
                                                     data-value={item.title}
                                                     onClick={handleServiceSelect}
+                                                    required
                                                 >
                                                     <img src={`/assets/images/quote-form/${item.img}`} />
                                                     <h3>{item.title}</h3>
                                                 </a>
                                             </li>
                                         </div>
-                                    ))}
+
+                                    }
+
+
+
+                                    )}
                                 </div>
                             </ul>
 
-                            <button
-                                type="button"
-                                className="next-step"
-                                disabled={!service}
-                                onClick={() => setStep(2)}
-                            >
-                                Next
-                            </button>
+
+                            <div>
+
+                                {attempted && !service && (
+                                    <p style={{
+                                        color: "red",
+                                        marginTop: "10px",
+                                        fontWeight: "500",
+                                        fontSize: "14px",
+                                        display: "inline-block"
+                                    }}>
+                                        Please select a service first before proceeding.
+                                    </p>
+                                )}
+                                {/* <LoadingBar progress={progress} /> */}
+                                <button
+                                    type="button"
+                                    className="next-step"
+                                    // disabled={!service}
+                                    onClick={() => {
+                                        if (!service) {
+                                            setAttempted(true); // red border + message dikhao
+                                            return
+                                        }
+                                        setStep(2);
+                                        // handleNext();
+
+                                    }}
+                                >
+                                    Next
+                                </button>
+                            </div>
                         </div>
                     )}
 
                     {/* STEP TWO */}
                     {step === 2 && (
+
                         <div id="quoteStepTwo">
-                            <h2>Project Info</h2>
 
                             <div className="row">
                                 <div className="col-xl-6">
@@ -122,7 +162,13 @@ export default function GetQuoteForm() {
                             <button
                                 type="button"
                                 className="previous-btn"
-                                onClick={() => setStep(1)}
+                                onClick={() => {
+                                    setStep(1);
+                                    setAttempted(false);
+
+                                    // handleNext(0);
+
+                                }}
                             >
                                 Previous
                             </button>
@@ -130,6 +176,7 @@ export default function GetQuoteForm() {
                             <button type="submit" className="req-quote">
                                 Request Quote
                             </button>
+
                         </div>
                     )}
 

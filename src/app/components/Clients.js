@@ -74,11 +74,11 @@ export default function Clients() {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                 >
-                    <div className="row">
+                    <div className="row ">
                         <div className="col-lg-4">
                             <span className="numb">1</span>
                             <h3 className="pb-3">Diagnose the Gap</h3>
-                            <p className="fortune-two-p pt-5">
+                            <p className="fortune-two-p ">
                                 We don’t waste time with bloated discovery calls. In a focused session, we zero in on what’s
                                 holding your narrative back — whether it's investor clarity, user comprehension, or onboarding
                                 friction. We align fast on your audience, growth goals, and product positioning.
@@ -87,7 +87,7 @@ export default function Clients() {
                         <div className="col-lg-4">
                             <span className="numb">2</span>
                             <h3 className="pb-3">Craft the Narrative</h3>
-                            <p className="fortune-two-p pt-5">
+                            <p className="fortune-two-p">
                                 This isn’t just a script — it’s a fundraising asset or GTM weapon. We map your story to what investors, buyers, or users
                                 actually need to hear to move. Every storyboard is built with conversion in mind: funding, activation, or close.
                             </p>
@@ -95,7 +95,7 @@ export default function Clients() {
                         <div className="col-lg-4">
                             <span className="numb">3</span>
                             <h3 className="pb-3">Bring It to Life</h3>
-                            <p className="fortune-two-p pt-5">
+                            <p className="fortune-two-p third-para">
                                 Custom design. High-velocity motion. Fast turnaround. No freelancers. No fluff. Every frame is purpose-built
                                 by a core team that understands what’s at stake — whether you’re weeks from demo day or onboarding your first enterprise client.
                             </p>

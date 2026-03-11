@@ -1,21 +1,25 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import VimeoLazy from "./VimeoLazy";
 
-export default function LeftContent({ videoUrl, heading, content, btntxt, btnlink, btndata }) {
+export default function LeftContent({ videoUrl, videoHash, heading, content, btntxt, btnlink, btndata }) {
     return (
         <section className="content-RL overflow-hidden">
             <div className="container">
                 <div className="row">
                     {/* Video Section - Left */}
+
                     <div className="col-xl-6 mt-3 mb-5">
-                        <div
+                        <VimeoLazy videoId={videoUrl} hash={videoHash} />
+                        {/* <div
                             style={{
                                 padding: "56.25% 0 0 0",
                                 position: "relative",
                                 objectFit: "contain",
                             }}
                         >
+                           
                             <iframe
                                 src={videoUrl}
                                 frameBorder="0"
@@ -29,7 +33,7 @@ export default function LeftContent({ videoUrl, heading, content, btntxt, btnlin
                                 }}
                                 title="Explainer Video"
                             />
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Content Section - Right (Fade from right) */}

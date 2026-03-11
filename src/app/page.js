@@ -100,7 +100,7 @@ export default function Home() {
       <ProudSec />
       <Selected />
       <Fortune />
-      <LeftSection videoUrl="https://player.vimeo.com/video/1098294723?h=dc0162c167&autoplay=1&loop=1&muted=1&background=1"
+      <LeftSection videoUrl="1098294723" videoHash="dc0162c167"
         heading={"BillionToOne – $130M+ Series D (YC S17 graduate)"}
         paragraph="We transformed their ultra-complex molecular-counting tech into a
 							compelling investment
@@ -108,7 +108,7 @@ export default function Home() {
         content={content_1} btntxt={"Let's Talk"} btnlink={"/book-a-metting"} btndata={"Let's Talk"}
       />
 
-      <RightSection videoUrl="https://player.vimeo.com/video/1098292166?h=e7a6dfbf56&autoplay=1&loop=1&muted=1&background=1"
+      <RightSection videoUrl="1098292166" videohash={"e7a6dfbf56"}
         title={"Schoox – $8.5M raised; Vista-backed to Scale Enterprise Learning"}
         description="Produced an explainer showing how Schoox powers AI-driven skills mapping,
 							microlearning, and
@@ -117,7 +117,7 @@ export default function Home() {
 							analytics for global frontline teams."
         content={content_right} btntxt={"Let's Talk"} btnlink={"/book-a-metting"} btndata={"Let's Talk"} />
 
-      <LeftSection videoUrl="https://player.vimeo.com/video/1098292977?h=af5a72a31b&autoplay=1&loop=1&muted=1&background=1"
+      <LeftSection videoUrl="1098292977" videoHash="af5a72a31b"
         heading={"Neura Health – $8M seed (+$2.2M pre-seed), $23.8M total to date"}
         paragraph="Developed a suite of care-pipeline videos—from migraine treatment to
 							dementia
@@ -125,7 +125,7 @@ export default function Home() {
         content={content_2} btntxt={"Book a Meeting"} btnlink={"/book-a-metting"} btndata={"Book a Meeting"}
       />
 
-      <RightSection videoUrl="https://player.vimeo.com/video/1098286335?h=64b067f8f8&autoplay=1&loop=1&muted=1&background=1"
+      <RightSection videoUrl="1098286335" videohash={"64b067f8f8"}
         title={"Novi Labs – $11M+ raised; $35M PE to scale AI for energy"}
         description="Produced a 3-part video suite visualizing Novi’s Insight Engine,
 							Forecasting ML, and
@@ -133,7 +133,8 @@ export default function Home() {
         content={content_right2} btntxt={"Let's Do It!"} btnlink={"/book-a-metting"} btndata={"Let's Do It"}
       />
 
-      <LeftSection videoUrl="https://player.vimeo.com/video/1098295340?h=32c1973467&autoplay=1&loop=1&muted=1&background=1"
+      <LeftSection videoUrl="1098295340" videoHash="32c1973467"
+        // videoUrl="https://player.vimeo.com/video/1098295340?h=32c1973467&autoplay=1&loop=1&muted=1&background=1"
         heading={"Fundmetric – $300K+ Raised; AI-first Fundraising for Higher Ed & Nonprofits"}
         content={content_3} btntxt={"Let's Do It!"} btnlink={"/book-a-metting"} btndata={"Let's Do It!"}
       />

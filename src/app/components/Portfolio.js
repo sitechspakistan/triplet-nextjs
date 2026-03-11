@@ -239,8 +239,11 @@ export default function Portfolio() {
                             {/* Masonry */}
                             <div className="portfolio-masonry">
                                 {filteredItems.map((item) => (
-                                    <div key={item.id} className="portfolio-masonry-item" onClick={() => openModal(item)}>
+                                    <div key={item.id} className="portfolio-masonry-item video-thumb" onClick={() => openModal(item)}>
                                         <img src={item.image} alt={item.title} />
+                                        <span className="play-btn">
+                                            <i className="play-icon"></i>
+                                        </span>
                                     </div>
                                 ))}
                             </div>

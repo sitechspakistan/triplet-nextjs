@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function PortfolioSlider() {
     const settings = {
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,

@@ -5,6 +5,7 @@ import ShadowLeftSec from "@/app/components/ShadowLeftSec";
 import ShadowRightSec from "@/app/components/ShadowRightSec";
 import TextSec from "@/app/components/TextSec";
 import PortfolioSlider from "@/app/components/PortfolioSlider";
+import faqs from "@/data/faqs/productFaqs.json"
 
 export const metadata = {
     title: "Product Videos - Creative Triplet",
@@ -98,7 +99,7 @@ export default function ProductVideos() {
                 }
             />
             <PortfolioSlider />
-            <Faqs />
+            <Faqs faqs={faqs} />
             <ContactForm />
 
 

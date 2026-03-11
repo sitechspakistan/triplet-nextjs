@@ -5,6 +5,7 @@ import ShadowLeftSec from "@/app/components/ShadowLeftSec";
 import ShadowRightSec from "@/app/components/ShadowRightSec";
 import TextSec from "@/app/components/TextSec";
 import PortfolioSlider from "@/app/components/PortfolioSlider";
+import faqs from "@/data/faqs/appFaqs.json"
 
 export const metadata = {
     title: "App Demo Videos - Creative Triplet",
@@ -97,7 +98,7 @@ export default function AppDemoVideos() {
                 Btntxt={"Schedule Free Consultation"}
                 datahov={"Schedule Free Consultation"} />
             <PortfolioSlider />
-            <Faqs />
+            <Faqs faqs={faqs} />
             <ContactForm />
 
         </>

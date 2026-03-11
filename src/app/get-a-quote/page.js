@@ -1,5 +1,6 @@
 import GetQuoteForm from "../components/GetQuoteForm";
 import GetQuoteHero from "../components/GetQuoteHero";
+import LoadingBar from "../components/LoadingBar";
 
 export const metadata = {
     title: "Get a Quote - Creative Triplet",
@@ -14,6 +15,7 @@ export default function GetAQuote() {
     return (
         <>
             <GetQuoteHero />
+            {/* <LoadingBar /> */}
             <GetQuoteForm />
 
         </>

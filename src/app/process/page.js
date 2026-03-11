@@ -1,8 +1,8 @@
 import ContactForm from "../components/ContactForm";
 import ContentRightFlags from "../components/ContentRightFlags";
-import ProcessHero from "../components/ProcessHero";
 import ProcessLeftConSec from "../components/ProcessLeftConSec";
 import ProcessRightConSec from "../components/ProcessRightConSec";
+import ServiceHero from "../components/ServiceHero";
 
 export const metadata = {
     title: "Process - Creative Triplet",
@@ -16,7 +16,9 @@ export const metadata = {
 export default function Process() {
     return (
         <>
-            <ProcessHero />
+            <ServiceHero Heading={"Sit Back and Watch Your Animated Explainer Videos Come to Life"}
+                Paragraph="Making awesome videos doesn’t have to be complicated. We’ve got a simple, step-by-step process that turns your ideas into reality."
+                bgImage={"/assets/images/process/process-banner-1.png"} />
             <ProcessRightConSec
                 image={"/assets/images/process/content-img/01-left-1024x599.png"}
                 heading={"Share Your Vision"}

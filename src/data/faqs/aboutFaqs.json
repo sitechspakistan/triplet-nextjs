@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "question": "Why should I choose an animation for my video?",
+        "answer": "Animation offers endless possibilities for creativity and storytelling. It can simplify complex ideas, evoke emotions, and capture attention in a way that live-action footage often can't. Plus, it's a versatile medium that works across various industries and platforms."
+    },
+    {
+        "id": 2,
+        "question": "What kind of animated video services do you offer?",
+        "answer": "We create a range of animated videos, including explainer videos, product demos, educational content, and more. We'll work with you to find the perfect style and format to match your message and goals."
+    },
+    {
+        "id": 3,
+        "question": "How involved will I be in the animation process?",
+        "answer": "We believe in collaboration. You'll be involved every step of the way, from initial concept development to final approvals. We value your feedback and want to ensure the final product reflects your vision."
+    },
+    {
+        "id": 4,
+        "question": "How long does it take to create an animated video?",
+        "answer": "It depends on the complexity and length of your video. Typically, our animated videos take 4-6 weeks to complete. We'll provide a more accurate estimate after discussing your specific needs."
+    },
+    {
+        "id": 5,
+        "question": "I have a specific style in mind for my animation. Can you match it?",
+        "answer": "Absolutely! We're adaptable and can create animations in a variety of styles, from 2D and 3D to motion graphics and whiteboard animation. We'll work with you to achieve the look and feel you envision."
+    }
+]

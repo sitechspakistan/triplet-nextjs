@@ -3,13 +3,14 @@ import { useEffect, useRef, useState } from "react";
 
 export default function VimeoLazy({ videoId, hash }) {
   const wrapperRef = useRef(null);
-  const [loadVideo, setLoadVideo] = useState(false);
+  const [showIframe, setShowIframe] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setLoadVideo(true);
+          setShowIframe(true);
           observer.disconnect();
         }
       },
@@ -29,27 +30,48 @@ export default function VimeoLazy({ videoId, hash }) {
     <div
       ref={wrapperRef}
       style={{
-        position: "relative",
         padding: "56.25% 0 0 0",
-        background: "#000", // prevents white flash
-        overflow: "hidden",
+        position: "relative",
         borderRadius: "10px",
-      }}
-    >
-      {loadVideo && (
-        <iframe
-          src={`https://player.vimeo.com/video/${videoId}?h=${hash}&autoplay=1&loop=1&muted=1&background=1`}
-          frameBorder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
+        overflow: "hidden"
+      }}>
+
+      {/* Poster */}
+      {!videoReady && (
+        <img
+          src={`/assets/images/Posters/${videoId}.jpg`}
+          alt="Creative Triplet"
           style={{
             position: "absolute",
-            inset: 0,
+            top: 0,
+            left: 0,
             width: "100%",
             height: "100%",
+            objectFit: "cover"
           }}
         />
       )}
+
+      {/* Vimeo iframe */}
+      {showIframe && (
+        <iframe
+          src={`https://player.vimeo.com/video/${videoId}?h=${hash}&background=1&autoplay=1&muted=1`}
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          onLoad={() => setVideoReady(true)}
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            opacity: videoReady ? 1 : 0,
+            transition: "opacity 0.4s ease"
+          }}
+          title="Vimeo video"
+        />
+      )}
+
     </div>
   );
 }

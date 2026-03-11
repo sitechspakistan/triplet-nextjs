@@ -8,12 +8,11 @@ export default function ClucthReviews() {
     const pathname = usePathname();
 
     useEffect(() => {
-        // Har baar page change hone par Clutch ko refresh karein
         const timer = setTimeout(() => {
             if (window.CLUTCHCO && typeof window.CLUTCHCO.Init === "function") {
                 window.CLUTCHCO.Init();
             }
-        }, 600); // Framer motion ki animation khatam hone ka intezar karein
+        }, 600);
 
         return () => clearTimeout(timer);
     }, [pathname]);
@@ -31,16 +30,16 @@ export default function ClucthReviews() {
                     We're Proud of the Smiles We've Created
                 </motion.h2>
 
-                {/* Widget Container: Framer Motion sirf Wrapper par lagayein */}
+
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                 >
-                    {/* Clutch Widget - Isko simple rakhein, motion.div ke andar */}
+
                     <div
-                        key={pathname} // React ko refresh force karne ke liye
+                        key={pathname}
                         className="clutch-widget"
                         data-nofollow="true"
                         data-primary-color="#FAB855"
@@ -51,8 +50,6 @@ export default function ClucthReviews() {
                         data-clutchcompany-id="1672818"
                     />
                 </motion.div>
-
-                {/* Next.js Script component use karein standard script ki jagah */}
                 <Script
                     id="clutch-script-main"
                     src="https://widget.clutch.co/static/js/widget.js"

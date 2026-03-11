@@ -1,24 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
-
-export default function Faqs() {
-    //   useEffect(() => {
-    //     let bootstrap;
-
-    //     (async () => {
-    //       bootstrap = await import("bootstrap");
-
-    //       const collapseElements = document.querySelectorAll(
-    //         ".accordion-collapse"
-    //       );
-
-    //       collapseElements.forEach((el) => {
-    //         new bootstrap.Collapse(el, { toggle: false });
-    //       });
-    //     })();
-    //   }, []);
-
+export default function Faqs({ faqs }) {
+    // if (!faqs || !Array.isArray(faqs)) return null;
     return (
         <section className="faqs pt-5">
             <div className="container">
@@ -26,24 +9,25 @@ export default function Faqs() {
 
                 <div className="accordion" id="accordionPanelsStayOpenExample">
 
-                    <div className="accordion-item">
-                        <h2 className="accordion-header" id="panelsStayOpen-headingOne">
-                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseOne">
-                                Why should I choose Creative Triplet for my explainer videos?
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse"
-                            aria-labelledby="panelsStayOpen-headingOne">
-                            <div className="accordion-body">
-                                We're focused on results, not just flashy videos. We take the time to understand your
-                                business so we can create videos that grab attention and get people excited. Plus, we
-                                make the whole process easy and stress-free, so you can focus on what you do best.
+                    {faqs?.map(faq => (
+
+                        <div className="accordion-item" key={faq.id}>
+                            <h2 className="accordion-header" id="panelsStayOpen-headingOne">
+                                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target={`#faq${faq.id}`} aria-expanded="false"
+                                    aria-controls={`collapse${faq.id}`}>
+                                    {faq.question}
+                                </button>
+                            </h2>
+                            <div id={`faq${faq.id}`} className="accordion-collapse collapse"
+                                aria-labelledby={`heading${faq.id}`}>
+                                <div className="accordion-body">
+                                    {faq.answer}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="accordion-item">
+                    ))}
+                    {/* <div className="accordion-item">
                         <h2 className="accordion-header" id="panelsStayOpen-headingTwo">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
@@ -59,8 +43,8 @@ export default function Faqs() {
                                 captures your brand's personality and message.
                             </div>
                         </div>
-                    </div>
-                    <div className="accordion-item">
+                    </div> */}
+                    {/* <div className="accordion-item">
                         <h2 className="accordion-header" id="panelsStayOpen-headingThree">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
@@ -76,8 +60,8 @@ export default function Faqs() {
                                 us know your timeline upfront, and we'll work with you to find a solution.
                             </div>
                         </div>
-                    </div>
-                    <div className="accordion-item">
+                    </div> */}
+                    {/* <div className="accordion-item">
                         <h2 className="accordion-header" id="panelsStayOpen-headingFour">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
@@ -94,8 +78,8 @@ export default function Faqs() {
                                 forward.
                             </div>
                         </div>
-                    </div>
-                    <div className="accordion-item">
+                    </div> */}
+                    {/* <div className="accordion-item">
                         <h2 className="accordion-header" id="panelsStayOpen-headingFive">
                             <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseFive"
@@ -111,8 +95,11 @@ export default function Faqs() {
                                 fits with your target audience.
                             </div>
                         </div>
-                    </div>
+
+                    </div> */}
+
                 </div>
+
             </div>
         </section>
     );

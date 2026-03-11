@@ -14,7 +14,7 @@ export default function AboutRightCon() {
             <div className="overflow-hidden">
                 <div className="container overflow-hidden">
                     <div className="row">
-                        <div className="col-xl-6 pb-5 mt-5">
+                        <div className="col-xl-6 pb-xl-5 mt-xl-5">
                             <div>
                                 <img
                                     className="about-img"
@@ -23,7 +23,7 @@ export default function AboutRightCon() {
                                 />
                             </div>
                         </div>
-                        <div className="col-xl-6 pb-4">
+                        <div className="col-xl-6 pt-5 pb-4">
                             <p className="con-video pb-3 text-xl-start text-center">
                                 In the beginning, there was just an idea. A simple one, really: videos can do what words
                                 alone can’t. They can ignite excitement, simplify the complicated, and bring people together

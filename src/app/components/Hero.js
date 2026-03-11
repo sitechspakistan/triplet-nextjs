@@ -31,7 +31,7 @@ export default function Hero() {
             <div className="container">
                 <div className="row align-items-center">
 
-                    {/* LEFT COLUMN */}
+
                     <div className="col-md-6">
                         <motion.h1
                             className="text-white"
@@ -60,7 +60,7 @@ export default function Hero() {
                             className="pt-3 pb-2"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 2.2, duration: 0.8 }} // Pehle typing khatam ho phir ye aaye
+                            transition={{ delay: 2.2, duration: 0.8 }}
                         >
                             From Seed to Series D, we help high-growth startups simplify their story, accelerate GTM, and drive adoption - with videos built to convert, not just impress.
                         </motion.p>
@@ -69,7 +69,7 @@ export default function Hero() {
                             className="btn-wrapper"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 2.8 }} // Buttons p ke baad ayenge
+                            transition={{ delay: 2.8 }}
                         >
                             <a href="/get-a-quote" className="btn-anim btn-red me-3" data-hover="Get A Quote">
                                 <span className="btn-text">Get A Quote</span>
@@ -79,13 +79,13 @@ export default function Hero() {
                             </a>
                         </motion.div>
 
-                        {/* ✅ LOGOS ANIMATION (Delayed) */}
+
                         <motion.div
                             className="d-flex mt-3"
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{
-                                delay: 3.5, // Jab typing aur baqi content aa jaye tab ye logos ayenge
+                                delay: 3.5,
                                 duration: 0.5
                             }}
                         >
@@ -94,7 +94,7 @@ export default function Hero() {
                         </motion.div>
                     </div>
 
-                    {/* RIGHT COLUMN (Video) */}
+
                     <motion.div
                         className="col-md-6"
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -122,7 +122,7 @@ export default function Hero() {
                         variants={{
                             hidden: {},
                             visible: {
-                                transition: { staggerChildren: 0.3 } // images ke beech delay
+                                transition: { staggerChildren: 0.3 }
                             },
                         }}
                     >
@@ -137,9 +137,9 @@ export default function Hero() {
                             ].map((src, index) => (
                                 <motion.li
                                     key={index}
-                                    initial={{ opacity: 0, x: 50 }}  // start from right
-                                    animate={{ opacity: 1, x: 0 }}   // fade in to original position
-                                    transition={{ duration: 1.5 }}   // animation speed (change kar sakte ho)
+                                    initial={{ opacity: 0, x: 50 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 1.5 }}
                                 >
                                     <img src={src} alt="" />
                                 </motion.li>

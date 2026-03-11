@@ -1,8 +1,9 @@
-import AboutHero from "../components/AboutHero";
 import AboutLeftCon from "../components/AboutLeftCon";
 import AboutRightCon from "../components/AboutRightCon";
 import ContactForm from "../components/ContactForm";
 import Faqs from "../components/Faqs";
+import faqs from "@/data/faqs/aboutFaqs.json"
+import ServiceHero from "../components/ServiceHero";
 
 export const metadata = {
     title: "About Us - Creative Triplet",
@@ -16,10 +17,17 @@ export const metadata = {
 export default function AboutUs() {
     return (
         <>
-            <AboutHero />
+            <ServiceHero Heading={"The Creative Triplet Story"}
+                Paragraph={
+
+                    "A little animation studio that could (and did!)"
+
+                }
+                paraclass="about-hero-para"
+                bgImage={"/assets/images/about-us/About-Us-Page-banner-1.png"} />
             <AboutRightCon />
             <AboutLeftCon />
-            <Faqs />
+            <Faqs faqs={faqs} />
             <ContactForm />
         </>
     )

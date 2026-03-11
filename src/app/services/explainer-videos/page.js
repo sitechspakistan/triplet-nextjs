@@ -5,6 +5,7 @@ import ShadowLeftSec from "@/app/components/ShadowLeftSec";
 import ShadowRightSec from "@/app/components/ShadowRightSec";
 import TextSec from "@/app/components/TextSec";
 import PortfolioSlider from "@/app/components/PortfolioSlider";
+import faqs from "@/data/faqs/explainerFaqs.json"
 
 export const metadata = {
     title: "Explainer Videos - Creative Triplet",
@@ -86,7 +87,7 @@ export default function ExplainerVideos() {
             />
 
             <PortfolioSlider />
-            <Faqs />
+            <Faqs faqs={faqs} />
             <ContactForm />
 
 

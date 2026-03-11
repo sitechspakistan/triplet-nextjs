@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from "next/navigation";
-import { useEffect } from "react"; // 1. useEffect import karein
+import { useEffect } from "react";
 
 export default function Header() {
     useEffect(() => {
@@ -19,14 +19,6 @@ export default function Header() {
     }, []);
 
     const pathname = usePathname();
-
-    // useEffect(() => {
-    //     // 2. Bootstrap JS ko client-side par load karein
-    //     typeof document !== "undefined"
-    //         ? require("bootstrap/dist/js/bootstrap.bundle.min.js")
-    //         : null;
-    // }, []);
-
     useEffect(() => {
         const offcanvasElement = document.getElementById("mobileOffcanvas");
 
@@ -112,7 +104,7 @@ export default function Header() {
                             <li className="nav-item"><Link className="nav-link" href="/process">Process</Link></li>
                             <li className="nav-item"><Link className="nav-link" href="/about-us">About Us</Link></li>
                             <li className="nav-item"><Link className="nav-link" href="/reviews">Reviews</Link></li>
-                            <li><button className="hero-btn btn-warning w-100">Get Link Quote</button></li>
+                            <li><button className="hero-btn w-100">Get a Quote</button></li>
                         </ul>
                     </div>
                 </div>
