@@ -1019,54 +1019,160 @@ main {
 }
 
 .next-step {
-    background-color: #F99E1C;
-    border: none;
-    color: white;
+    position: relative;
+    display: inline-block;
     padding: 10px 30px;
+    /* font-weight: bold; */
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    border: transparent;
+    background-color: #F99E1C;
     float: right;
     border-radius: 28px;
-    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+}
 
+.next-step .btntxt {
+    display: block;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.3s ease, color 0.3s ease;
+}
+
+.next-step::after {
+    content: attr(data-hover);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transform: translateY(0);
+    transition: transform 0.5s ease, top 0.5s ease;
+}
+
+.next-step:hover .btntxt {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.next-step:hover::after {
+    top: 0;
+    transform: translateY(45%);
 }
 
 .next-step:hover {
     background-color: rgb(242, 98, 62);
-    border: none;
+
 }
 
 .previous-btn {
-    background-color: rgb(242, 98, 62);
-    border: none;
+    position: relative;
+    display: inline-block;
     padding: 10px 30px;
-    border-radius: 28px;
+    /* font-weight: bold; */
+    font-family: "Be Vietnam Pro", sans-serif;
     font-size: 16px;
-
-    color: white;
-}
-
-.previous-btn a {
     text-decoration: none;
-    color: white;
+    overflow: hidden;
+    color: #fff;
+    border: transparent;
+    background-color: rgb(242, 98, 62);
+    /* float: right; */
+    border-radius: 28px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
 }
+
+.previous-btn .btntxt {
+    display: block;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.3s ease, color 0.3s ease;
+}
+
+.previous-btn::after {
+    content: attr(data-hover);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    transform: translateY(0);
+    transition: transform 0.5s ease, top 0.5s ease;
+}
+
+.previous-btn:hover .btntxt {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.previous-btn:hover::after {
+    top: 0;
+    transform: translateY(45%);
+}
+
+.previous-btn:hover {
+    background-color: #F99E1C;
+
+}
+
 
 .req-quote {
-    background-color: #F99E1C;
-    border: none;
+    position: relative;
+    display: inline-block;
     padding: 10px 30px;
+    /* font-weight: bold; */
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    border: transparent;
+    background-color: #F99E1C;
     float: right;
     border-radius: 28px;
-    font-size: 16px;
-    color: white;
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
 }
 
-.req-quote a {
-    text-decoration: none;
+.req-quote .btntxt {
+    display: block;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.3s ease, color 0.3s ease;
+}
+
+.req-quote::after {
+    content: attr(data-hover);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
     color: white;
+    transform: translateY(0);
+    transition: transform 0.5s ease, top 0.5s ease;
+}
+
+.req-quote:hover .btntxt {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.req-quote:hover::after {
+    top: 0;
+    transform: translateY(45%);
 }
 
 .req-quote:hover {
     background-color: rgb(242, 98, 62);
-    border: none;
+
 }
 
 .input-wrapper {
@@ -2311,6 +2417,23 @@ main {
         flex-direction: column-reverse;
     }
 
+    .quote-content h1 {
+        font-size: 32px;
+    }
+
+    .quote-content p {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .quote-hero-section {
+
+        padding: 0px 0;
+    }
+
+    #quoteStepTwo textarea {
+        margin-top: 28px;
+    }
 }
 
 @media (max-width: 1024px) {

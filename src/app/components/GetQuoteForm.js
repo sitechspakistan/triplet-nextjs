@@ -92,9 +92,10 @@ export default function GetQuoteForm() {
                                 )}
                                 {/* <LoadingBar progress={progress} /> */}
                                 <button
-                                    type="button"
+                                    type=" button"
                                     className="next-step"
                                     // disabled={!service}
+                                    data-hover="Next"
                                     onClick={() => {
                                         if (!service) {
                                             setAttempted(true); // red border + message dikhao
@@ -105,7 +106,7 @@ export default function GetQuoteForm() {
 
                                     }}
                                 >
-                                    Next
+                                    <span className="btntxt">Next</span>
                                 </button>
                             </div>
                         </div>
@@ -162,6 +163,7 @@ export default function GetQuoteForm() {
                             <button
                                 type="button"
                                 className="previous-btn"
+                                data-hover="Previous"
                                 onClick={() => {
                                     setStep(1);
                                     setAttempted(false);
@@ -170,11 +172,11 @@ export default function GetQuoteForm() {
 
                                 }}
                             >
-                                Previous
+                                <span className="btntxt">Previous</span>
                             </button>
 
-                            <button type="submit" className="req-quote">
-                                Request Quote
+                            <button type="submit" className="req-quote" data-hover="Request Quote">
+                                <span className="btntxt">Request Quote</span>
                             </button>
 
                         </div>
