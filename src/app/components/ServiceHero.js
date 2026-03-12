@@ -13,7 +13,7 @@ export default function ServiceHero({ Heading, Paragraph, bgImage, paraclass }) 
                                 className="pt-3 pb-2"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 2.2, duration: 0.8 }}
+                                transition={{ delay: 0.5, duration: 0.8 }}
                             >
                                 {Heading}
 
@@ -22,7 +22,7 @@ export default function ServiceHero({ Heading, Paragraph, bgImage, paraclass }) 
                                 className={`${paraclass} pt-3 pb-2`}
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 2.2, duration: 0.8 }}
+                                transition={{ delay: 1, duration: 0.8 }}
                             >
                                 {Paragraph}
                             </motion.p>

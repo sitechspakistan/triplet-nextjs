@@ -37,7 +37,7 @@ export default function Hero() {
                             className="pt-3 pb-2"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 2.2, duration: 0.8 }}
+                            transition={{ delay: 0, duration: 0.8 }}
                         >
                             {sentence1}
                             <motion.span className="content-color typing-span" variants={letterVariants}>
@@ -50,7 +50,7 @@ export default function Hero() {
                             className="pt-3 pb-2"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 2.2, duration: 0.8 }}
+                            transition={{ delay: 0.5, duration: 0.8 }}
                         >
                             From Seed to Series D, we help high-growth startups simplify their story, accelerate GTM, and drive adoption - with videos built to convert, not just impress.
                         </motion.p>
@@ -59,7 +59,7 @@ export default function Hero() {
                             className="btn-wrapper"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 2.8 }}
+                            transition={{ delay: 1 }}
                         >
                             <a href="/get-a-quote" className="btn-anim btn-red me-3" data-hover="Get A Quote">
                                 <span className="btn-text">Get A Quote</span>
@@ -75,7 +75,7 @@ export default function Hero() {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{
-                                delay: 3.5,
+                                delay: 1.5,
                                 duration: 0.5
                             }}
                         >
