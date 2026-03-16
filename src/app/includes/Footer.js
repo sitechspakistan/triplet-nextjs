@@ -30,7 +30,7 @@ export default function Footer() {
                                 <li className="pb-3"><Link href="tel:+18177534447">+1 (817) 753 4447</Link></li>
 
                                 <h2 className="mb-0">Email us Directly</h2>
-                                <li className="pb-3"><Link href="mailto:hello@creativetriplet.com">hello@creativetriplet.com</Link></li>
+                                <li className="pb-3"><Link href="mailto:info@creativetriplet.com">info@creativetriplet.com</Link></li>
 
                                 <h2 className="mb-0">Address</h2>
                                 <li className="pb-3"><Link href="#">Fort Worth, Texas, United States of America</Link></li>
