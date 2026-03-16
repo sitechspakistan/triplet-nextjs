@@ -2042,7 +2042,7 @@ main {
     opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .fixed-top {
         background-color: none;
         /* z-index: 11111; */
@@ -2448,4 +2448,184 @@ main {
         column-count: 1;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 1030px) {
+
+    .navbar-nav {
+        padding-left: 0px;
+    }
+
+    .hero-section h1 {
+        font-size: 22px;
+        padding-top: 0 !important;
+        margin-top: 10px;
+
+    }
+
+    .hero-section p {
+        margin: 0 0 0px;
+        font-weight: normal;
+        padding-top: 0 !important;
+        padding-bottom: 10px !important;
+    }
+
+    .btn-anim {
+        padding: 10px 10px;
+
+    }
+
+    .btn-yellow {
+        padding: 10px 15px;
+    }
+
+    .hero-section ul {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 10px;
+        margin: 0px 0 0;
+        padding: 10px;
+    }
+
+    .hero-section ul li img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .right-revs .row {
+        flex-direction: column-reverse;
+    }
+
+    .contact-form .boxx img {
+        width: 100%;
+        height: 320px;
+    }
+
+    .contact-form .boxx {
+        padding: 30px 20px 10px 20px;
+    }
+
+    .fortune .numb {
+        font-size: 160px;
+        top: -51px;
+        right: 13px;
+    }
+
+    .fortune-two h3 {
+
+        padding-right: 0px;
+        font-size: 32px;
+    }
+
+    .fortune-two {
+        padding: 0;
+    }
+
+    .brands ul {
+
+        margin: -10px 0 60px;
+
+    }
+
+    .fortune p {
+
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .fortune h2 {
+
+        font-size: 44px;
+        font-weight: normal;
+    }
+
+    .foot-styl ul li a {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .service-page-item {
+        margin-bottom: 20px;
+    }
+
+    .service-content {
+        padding: 30px 0;
+        background-size: cover;
+    }
+
+    .service-hero-section h1 {
+        font-size: 30px;
+    }
+
+    .service-hero-section p {
+
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .textsec {
+        color: #c4c4c4;
+        padding: 10px 0px;
+        font-size: 22px;
+    }
+
+    .portfolio-section .portfolio-filters button {
+
+        font-size: 14px;
+    }
+
+    .quote-hero-section {
+        padding: 30px 0;
+    }
+
+    .quote-content h1 {
+        font-size: 30px;
+    }
+
+    .quote-content p {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    #quoteStepOne ul li img {
+
+        height: auto;
+
+    }
+
+    #quoteStepTwo textarea {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width:1200px) and (max-width: 1400px) {
+    .navbar-nav {
+        padding-left: 120px;
+    }
+
+    .hero-section h1 {
+
+        font-size: 34px;
+    }
+
+    .hero-section p {
+
+        font-weight: normal;
+    }
+
+    .hero-section ul {
+        gap: 0px;
+        margin: 00px 0px 0px;
+        padding: 4px;
+    }
+
+    .service-content {
+        padding: 50px 0;
+    }
+
+    .service-hero-section h1 {
+        font-size: 30px;
+
+    }
 }

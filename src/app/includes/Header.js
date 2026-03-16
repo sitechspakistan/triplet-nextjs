@@ -34,7 +34,7 @@ export default function Header() {
     return (
         <>
             <header className='pb-md-5'>
-                <nav className="navbar navbar-expand-lg fixed-top bg-sm-black">
+                <nav className="navbar navbar-expand-xl fixed-top bg-sm-black">
                     <div className="container">
                         {/* <!-- Logo --> */}
                         <Link className="navbar-brand" href="/">
@@ -42,13 +42,13 @@ export default function Header() {
                         </Link>
 
                         {/* <!-- Mobile Hamburger for Offcanvas --> */}
-                        <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        <button className="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
                         {/* <!-- Desktop Menu --> */}
-                        <div className="collapse navbar-collapse d-none d-lg-flex justify-content-center align-items-center">
+                        <div className="collapse navbar-collapse d-none d-xl-flex justify-content-center align-items-center">
                             <ul className="navbar-nav">
                                 <li className="nav-item"><Link className={`nav-link ${pathname === "/" ? "active" : ""}`}
                                     href="/" aria-current="page">Home</Link></li>
@@ -78,14 +78,14 @@ export default function Header() {
                 </nav>
 
                 {/* <!-- Offcanvas for Mobile --> */}
-                <div className="offcanvas offcanvas-end d-lg-none bg-dark " tabIndex="-1" id="mobileOffcanvas"
+                <div className="offcanvas offcanvas-end d-xl-none bg-dark " tabIndex="-1" id="mobileOffcanvas"
                     aria-labelledby="mobileOffcanvasLabel">
                     <div className="offcanvas-header">
                         <button type="button" className="btn-close text-reset text-end" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
-                        <ul className="navbar-nav d-lg-flex align-items-lg-center">
+                        <ul className="navbar-nav d-xl-flex align-items-xl-center">
                             <li className="nav-item"><Link className="nav-link" href="/">Home</Link></li>
                             <li>
                                 <Link className="nav-link" href="/services"
@@ -104,7 +104,7 @@ export default function Header() {
                             <li className="nav-item"><Link className="nav-link" href="/process">Process</Link></li>
                             <li className="nav-item"><Link className="nav-link" href="/about-us">About Us</Link></li>
                             <li className="nav-item"><Link className="nav-link" href="/reviews">Reviews</Link></li>
-                            <li><button className="hero-btn w-100">Get a Quote</button></li>
+                            <li><button className="hero-btn w-100 d-md-none">Get a Quote</button></li>
                         </ul>
                     </div>
                 </div>

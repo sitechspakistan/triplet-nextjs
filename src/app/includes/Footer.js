@@ -6,7 +6,7 @@ export default function Footer() {
             <footer className="foot-styl">
                 <div className="container">
                     <div className="row">
-                        <div className="col-6 col-xl-3">
+                        <div className="col-6 col-xl-3 col-md-3">
                             <h2>Links</h2>
                             <ul>
                                 <li><Link href="/portfolio">Portfolio</Link></li>
@@ -15,7 +15,7 @@ export default function Footer() {
                                 <li><Link href="/reviews">Reviews</Link></li>
                             </ul>
                         </div>
-                        <div className="col-6 col-xl-3">
+                        <div className="col-6 col-xl-3 col-md-3">
                             <h2>Services</h2>
                             <ul>
                                 <li><Link href="/services/explainer-videos">Explainer Videos</Link></li>
@@ -24,7 +24,7 @@ export default function Footer() {
                                 <li><Link href="/services/training-videos">Training Videos</Link></li>
                             </ul>
                         </div>
-                        <div className="col-12 col-xl-3 info-sec">
+                        <div className="col-12 col-xl-3 col-md-3 info-sec">
                             <ul className="text-white">
                                 <h2 className="mb-0">Call us Directly</h2>
                                 <li className="pb-3"><Link href="tel:+18177534447">+1 (817) 753 4447</Link></li>
@@ -36,7 +36,7 @@ export default function Footer() {
                                 <li className="pb-3"><Link href="#">Fort Worth, Texas, United States of America</Link></li>
                             </ul>
                         </div>
-                        <div className="col-12 col-xl-3">
+                        <div className="col-12 col-xl-3 col-md-3">
                             <div className="row">
                                 <div className="col-xl-6 col-6">
                                     <img src="/assets/images/footer/clutch-1.svg" alt="" />
@@ -54,7 +54,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className="mt-5 d-xl-flex justify-content-xl-between align-items-center">
+                    <div className="mt-5 d-xl-flex justify-content-xl-between align-items-center d-md-flex justify-content-md-between">
                         <span className="text-start fw-medium">© 2026 CreativeTriplet. All Rights Reserved.</span>
                         <div className="text-xl-end text-start">
                             <a href="https://www.facebook.com/creativetriplet/" target="blank"><i className="fa-brands fa-facebook-f"></i></a>

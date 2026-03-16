@@ -71,7 +71,7 @@ export default function Hero() {
 
 
                         <motion.div
-                            className="d-flex mt-3"
+                            className="d-flex mt-lg-3"
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{
@@ -91,7 +91,7 @@ export default function Hero() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="mt-5">
+                        <div className="mt-lg-5 mt-2">
                             <video
                                 className="elementor-video w-100"
                                 src="/assets/images/video/MP4_Without_Dots_Black-Background-1-1.mp4"

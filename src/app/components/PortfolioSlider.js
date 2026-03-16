@@ -16,6 +16,14 @@ export default function PortfolioSlider() {
         adaptiveHeight: true,
         responsive: [
             {
+                breakpoint: 1210,
+
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
