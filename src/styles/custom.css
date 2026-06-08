@@ -196,8 +196,8 @@ header nav.fixed-top {
     margin: auto;
     display: block;
     position: absolute;
-    top: -389px;
-    left: -60%;
+    top: -294px;
+    left: -55%;
 }
 
 .hero-section h1 {
@@ -421,12 +421,12 @@ header nav.fixed-top {
     /* background: radial-gradient(#05803c42 10%, #000000c4 60%, transparent); */
     background: radial-gradient(#02b5bc30 10%, #000000c4 60%, transparent);
     display: block;
-    top: 10%;
     background-size: cover;
     position: absolute;
-    right: -46%;
+    top: 10%;
+    right: -38%;
     height: 600px;
-    width: 73%;
+    width: 80%;
     margin: auto;
     z-index: -1;
 
@@ -1408,10 +1408,11 @@ main {
     /* background: radial-gradient(#00904259 10%, #000000c4 60%, transparent); */
     background: radial-gradient(#f25b424a 10%, #000000c4 60%, transparent);
     display: block;
-    top: 30%;
+
     background-size: cover;
     position: absolute;
-    right: -46%;
+    top: 30%;
+    right: -40%;
     height: 600px;
     width: 73%;
     margin: auto;
@@ -1560,34 +1561,30 @@ main {
     z-index: -1;
 }
 
-.section-shadow-right::before {
-
-    content: '';
-    background: radial-gradient(#02b5bc30 10%, #000000c4 60%, transparent);
-    display: block;
-    top: -65px;
-    background-size: cover;
-    position: absolute;
-    left: -65%;
-    height: 560px;
-    width: 100%;
-    margin: auto;
+.section-shadow-left:before {
+    content: "";
     z-index: -1;
-    /* overflow-x: hidden; */
+    background: radial-gradient(#02b5bc30 10%, #000000c4 60%, #0000) 0 0 / cover;
+    width: 100%;
+    height: 560px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: -70px;
+    left: -58%;
 }
 
-.section-shadow-left::before {
-    content: '';
-    background: radial-gradient(#f99e1c4a 10%, #000000c4 60%, transparent);
-    display: block;
-    top: -13%;
-    background-size: cover;
-    position: absolute;
-    right: -42%;
-    height: 560px;
-    width: 60%;
-    margin: auto;
+.section-shadow-right:before {
+    content: "";
     z-index: -1;
+    background: radial-gradient(#f99e1c4a 10%, #000000c4 60%, #0000) 0 0 / cover;
+    width: 80%;
+    height: 560px;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0%;
+    right: -42%;
 }
 
 .content-RL h2 {
@@ -2397,6 +2394,11 @@ main {
         padding-bottom: 0px !important;
     }
 
+    .service-page-item p {
+        font-size: 12px;
+        margin-top: 8px !important;
+    }
+
     .fortune {
         margin-top: 10px !important;
         /* margin-bottom: 20px !important; */
@@ -2404,6 +2406,8 @@ main {
 
     .pro-demo h3 {
         font-size: 24px;
+        padding: 0 !important;
+        margin: 0 !important;
 
 
     }
@@ -2433,6 +2437,12 @@ main {
 
     #quoteStepTwo textarea {
         margin-top: 28px;
+    }
+
+    .service-item-content a {
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
     }
 }
 

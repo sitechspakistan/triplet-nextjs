@@ -214,26 +214,26 @@ export default function Portfolio() {
                                         </button>
                                     ))}
                                 </div>
-
-                                {/* Mobile Dropdown */}
-                                <div className="d-block d-md-none">
-                                    <select
-                                        className="form-select"
-                                        value={filter}
-                                        onChange={(e) => setFilter(e.target.value)}
-                                    >
-                                        {categories.map((cat) => (
-                                            <option key={cat} value={cat}>
-                                                {cat}
-                                            </option>
-                                        ))}
-                                    </select>
-                                </div>
-
+                            </div>
+                            {/* Mobile Dropdown */}
+                            <div className="d-block d-md-none">
+                                <select
+                                    className="form-select"
+                                    value={filter}
+                                    onChange={(e) => setFilter(e.target.value)}
+                                >
+                                    {categories.map((cat) => (
+                                        <option key={cat} value={cat}>
+                                            {cat}
+                                        </option>
+                                    ))}
+                                </select>
                             </div>
 
                         </div>
+
                     </div>
+
                     <div className="row g-0">
                         <div className="col-12 g-0">
                             {/* Masonry */}
@@ -250,10 +250,10 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
             {/* Modal */}
-            <div
+            < div
                 className="modal fade"
                 id="portfolioModal"
                 tabIndex="-1"
@@ -275,7 +275,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
 
         </>
     )

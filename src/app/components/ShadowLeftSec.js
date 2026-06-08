@@ -9,15 +9,16 @@ export default function ShadowLeftSec({
     btnlink,
     Btntxt,
     datahov,
+    Class,
 }) {
     return (
-        <section className="section-shadow-left pb-3 content-RL overflow-hidden">
+        <section className={`${Class} pb-3 content-RL overflow-hidden`}>
             <div className="container">
                 <div className="row">
 
                     {/* LEFT CONTENT — fade from left */}
                     <motion.div
-                        className="col-xl-6"
+                        className="col-xl-6 d-flex justify-content-center flex-column align-items-start"
                         initial={{ opacity: 0, x: -80 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.2 }}

@@ -42,7 +42,7 @@ export default function ShadowRightSec({
 
                     {/* RIGHT CONTENT — fade from right (slight delay) */}
                     <motion.div
-                        className="col-xl-6"
+                        className="col-xl-6 d-flex justify-content-center flex-column align-items-start"
                         initial={{ opacity: 0, x: 80 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.2, delay: 0.2 }}

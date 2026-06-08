@@ -37,7 +37,7 @@ export default function ExplainerVideos() {
                             difference we can make?"
                 btnlink={"/get-a-quote"} Btntxt={"Free Creative Session"} datahov={"Free Creative Session"} />
 
-            <ShadowLeftSec VideoUrl={"/assets/images/explainer-video/explainer-image11.png"}
+            <ShadowLeftSec Class={"section-shadow-left"} VideoUrl={"/assets/images/explainer-video/explainer-image11.png"}
                 Heading={"Why Choose Creative Triplet?"}
                 Description="We're not just another animated explainer video company. We're a team of
                             dedicated
