@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation"; // Thank you page redirect ke liye
+import { useRouter } from "next/navigation";
 import PhoneInput from "./PhoneInput";
 import LoadingBar from "./LoadingBar";
 
@@ -30,15 +30,13 @@ export default function GetQuoteForm() {
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Ab yeh refresh ko perfectly rokega
+        e.preventDefault();
         setError("");
         setSuccess(false);
 
-        // 1. Phone Input se full number nikalna
+
         const phoneField = e.target.querySelector('input[name="phoneInput"]');
         const internationalPhone = phoneField?.dataset?.fullNumber || phoneField?.value || "";
-
-        // 2. Validation Check (Message Box optional rkha hai)
         const requiredFields = [formData.name, formData.email, internationalPhone];
 
         if (requiredFields.some(field => !field || !field.trim())) {
@@ -67,7 +65,7 @@ export default function GetQuoteForm() {
                 message: finalSubmissionData.message || "No message provided",
                 phone: finalSubmissionData.phone,
                 source: finalSubmissionData.source,
-                service: finalSubmissionData.service // Backend par selected video style bhejne ke liye
+                service: finalSubmissionData.service
             }),
         });
 
@@ -83,8 +81,7 @@ export default function GetQuoteForm() {
                 delete phoneField.dataset.fullNumber;
             }
             router.push("/thank-you");
-            // Agar alag Thank you page par bhejna chahein:
-            // router.push("/thank-you");
+
         } else {
             setError("Something went wrong. Please try again.");
         }
@@ -94,7 +91,7 @@ export default function GetQuoteForm() {
         e.preventDefault();
         const value = e.currentTarget.getAttribute("data-value");
         setService(value);
-        setAttempted(false); // Service select hote hi error red lines hat jayein
+        setAttempted(false);
     };
 
     return (
@@ -104,10 +101,9 @@ export default function GetQuoteForm() {
                 <h2>Project Info</h2>
                 <p>(Please Select A Style)</p>
 
-                {/* FIX 1: onSubmit lagaya taake function execution properly ho */}
+
                 <form id="getQuoteForm" onSubmit={handleSubmit} noValidate>
 
-                    {/* STEP ONE */}
                     {step === 1 && (
                         <div id="quoteStepOne">
                             <ul>
@@ -171,7 +167,6 @@ export default function GetQuoteForm() {
                         </div>
                     )}
 
-                    {/* STEP TWO */}
                     {step === 2 && (
                         <div id="quoteStepTwo">
                             <div className="row">
@@ -207,7 +202,6 @@ export default function GetQuoteForm() {
                                 </div>
 
                                 <div className="col-xl-12">
-                                    {/* FIX 2: name ko 'txt' se badal kar 'message' kiya */}
                                     <textarea
                                         name="message"
                                         className="mb-4"
@@ -231,7 +225,6 @@ export default function GetQuoteForm() {
                                 <span className="btntxt">Previous</span>
                             </button>
 
-                            {/* Is button par submit lagane se automatically upar wala handleSubmit chalega */}
                             <button type="submit" className="req-quote" data-hover="Request Quote">
                                 <span className="btntxt">Request Quote</span>
                             </button>

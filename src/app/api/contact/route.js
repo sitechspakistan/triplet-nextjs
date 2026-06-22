@@ -4,18 +4,20 @@ export async function POST(req) {
     try {
         const { name, email, message, budget, phone } = await req.json();
         const transporter = nodemailer.createTransport({
-            service: "gmail",
+            host: process.env.host,
+            port: 465,
+            secure: true,
             auth: {
-                user: "syedmmurtuza393@gmail.com",
-                pass: "engsgrftrfhkbxgu",
+                user: process.env.user,
+                pass: process.env.pass,
             },
         });
 
         const finalBudget = budget && budget.trim() !== "" ? budget : "Not Specified";
 
         await transporter.sendMail({
-            from: "syedmmurtuza393@gmail.com",
-            to: "syedmmurtuza393@gmail.com",
+            from: `"Webefy Today" <noreply@webefytoday.com>`,
+            to: "webefytoday@gmail.com",
             replyTo: email,
             subject: "New Message from Contact Form",
             html: `

@@ -6,6 +6,8 @@ export default function Portfolio() {
     const [videoUrl, setVideoUrl] = useState("");
     const [videoTitle, setVideoTitle] = useState("");
     const categories = ["All", "B2B", "B2C", "Education", "Health Care", "Information Technology"];
+    const [loadedCount, setLoadedCount] = useState(0);
+    const [isPageLoading, setIsPageLoading] = useState(true);
 
 
     const items = [
@@ -193,10 +195,58 @@ export default function Portfolio() {
         modal.show();
     };
 
+    useEffect(() => {
+        setLoadedCount(0);
+        setIsPageLoading(true);
+    }, [filter]);
+
+    useEffect(() => {
+        if (filteredItems.length > 0 && loadedCount >= filteredItems.length) {
+            setIsPageLoading(false);
+        }
+    }, [loadedCount, filteredItems]);
+
+    const handleImageLoad = () => {
+        setLoadedCount((prev) => prev + 1);
+    };
+    useEffect(() => {
+
+        if (isPageLoading && filteredItems.length > 0) {
+            const images = document.querySelectorAll('.portfolio-masonry img');
+            let currentLoaded = 0;
+
+            images.forEach((img) => {
+
+                if (img.complete) {
+                    currentLoaded++;
+                }
+            });
+            if (currentLoaded > 0) {
+                setLoadedCount(currentLoaded);
+            }
+        }
+    }, [filter, filteredItems, isPageLoading]);
     return (
         <>
-            <section className="portfolio-section">
-                <div className="container-fluid g-0">
+
+            <section className="portfolio-section position-relative" style={{ minHeight: "100px" }}>
+                {isPageLoading && (
+                    <div
+                        className="d-flex flex-column align-items-center justify-content-center bg-black text-white"
+                        style={{
+                            height: "60vh",
+                            width: "100%",
+                            transition: "all 0.3s ease"
+                        }}
+                    >
+                        <div className="spinner-border text-warning mb-3" role="status"></div>
+                        {/* <h5>Portfolio Items... ({loadedCount}/{filteredItems.length})</h5> */}
+                    </div>
+                )}
+                <div className={`container-fluid g-0 ${isPageLoading ? "opacity-0" : "opacity-100"} 
+                ${isPageLoading ? "invisible" : "visible"} ${isPageLoading ? "h-0" : "h-auto"} overflow-hidden`} style={{
+                        transition: "opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s ease"
+                    }}>
                     <div className="row g-0">
                         <div className="col-12 text-center">
                             {/* Filters */}
@@ -240,7 +290,12 @@ export default function Portfolio() {
                             <div className="portfolio-masonry">
                                 {filteredItems.map((item) => (
                                     <div key={item.id} className="portfolio-masonry-item video-thumb" onClick={() => openModal(item)}>
-                                        <img src={item.image} alt={item.title} />
+                                        <img
+                                            src={item.image}
+                                            alt={item.title}
+                                            onLoad={handleImageLoad}
+                                            loading="eager"
+                                        />
                                         <span className="play-btn">
                                             <i className="play-icon"></i>
                                         </span>

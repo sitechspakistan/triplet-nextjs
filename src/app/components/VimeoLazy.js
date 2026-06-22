@@ -5,27 +5,36 @@ export default function VimeoLazy({ videoId, hash }) {
   const wrapperRef = useRef(null);
   const [showIframe, setShowIframe] = useState(false);
   const [videoReady, setVideoReady] = useState(false);
+  const [minPosterTimePassed, setMinPosterTimePassed] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setShowIframe(true);
+
+          setTimeout(() => {
+            setMinPosterTimePassed(true);
+          }, 3000);
+
           observer.disconnect();
         }
       },
       {
-        threshold: 0.4, // load when 40% visible
+        rootMargin: "200px 0px",
+        threshold: 0.0,
       }
     );
 
     if (wrapperRef.current) {
+
       observer.observe(wrapperRef.current);
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [])
 
+  const isVideoFullyReady = videoReady && minPosterTimePassed;
   return (
     <div
       ref={wrapperRef}
@@ -37,7 +46,7 @@ export default function VimeoLazy({ videoId, hash }) {
       }}>
 
       {/* Poster */}
-      {!videoReady && (
+      {!isVideoFullyReady && (
         <img
           src={`/assets/images/Posters/${videoId}.jpg`}
           alt="Creative Triplet"
@@ -47,7 +56,8 @@ export default function VimeoLazy({ videoId, hash }) {
             left: 0,
             width: "100%",
             height: "100%",
-            objectFit: "cover"
+            objectFit: "cover",
+            transition: "opacity 0.5s ease"
           }}
         />
       )}
