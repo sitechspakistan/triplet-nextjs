@@ -2098,7 +2098,7 @@ main {
     border-radius: 50px;
     color: #fff;
     font-weight: 600;
-    background: linear-gradient(135deg, #f99e1c, #d40808);
+    background: #f29e1e;
     display: block;
 }
 
@@ -2117,7 +2117,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
 
-    background: linear-gradient(135deg, #f99e1c, #d40808);
+    background: #49b1b7;
 }
 
 .wb-header span i {
@@ -2267,7 +2267,7 @@ main {
     color: #fff;
     cursor: pointer;
     border-radius: 50%;
-    background: linear-gradient(135deg, #f99e1c, #d40808);
+    background: #f29e1e;
     display: block;
 }
 
@@ -2287,6 +2287,51 @@ main {
 .wb-close {
     cursor: pointer;
 }
+
+.thanks-msg {
+    color: green;
+    margin-top: 10px;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.error-msg {
+    color: red;
+    margin-top: 10px;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.success-msg {
+    background-color: #fff;
+    color: #000;
+    height: 300px;
+    width: 100%;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-msg h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: bold;
+}
+
+.success-msg p {
+    font-family: "be vietnam pro", sans-serif;
+}
+
+.success-msg .req-quote {
+    float: none;
+
+}
+
+.success-msg .req-quote:hover {
+    color: #fff;
+}
+
+
 
 @media screen and (max-width: 767px) {
     .fixed-top {
@@ -2525,7 +2570,7 @@ main {
     }
 
     .textsec {
-        padding: 30px 0px 10px 0px;
+        padding: 10px 0;
         font-size: 12px;
     }
 
@@ -2645,7 +2690,8 @@ main {
 
     .service-page-item p {
         font-size: 12px;
-        margin-top: 8px !important;
+        margin-top: 5px !important;
+        width: 100%;
     }
 
     .fortune {
@@ -2657,6 +2703,7 @@ main {
         font-size: 24px;
         padding: 0 !important;
         margin: 0 !important;
+        margin-top: 10px !important;
 
 
     }
@@ -2692,6 +2739,14 @@ main {
         font-size: 18px;
         padding: 0;
         margin: 0;
+    }
+
+    .wb-header h4 {
+        font-size: 24px;
+    }
+
+    .wb-chat-teaser {
+        z-index: 11111;
     }
 }
 
@@ -2889,45 +2944,30 @@ main {
     }
 }
 
-.thanks-msg {
-    color: green;
-    margin-top: 10px;
-    font-family: "Be Vietnam Pro", sans-serif;
+/* Embla Slider */
+.embla {
+    overflow: hidden;
 }
 
-.error-msg {
-    color: red;
-    margin-top: 10px;
-    font-family: "Be Vietnam Pro", sans-serif;
-
-}
-
-.success-msg {
-    background-color: #fff;
-    color: #000;
-    height: 300px;
-    width: 100%;
-    border-radius: 24px;
+.embla__container {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
 }
 
-.success-msg h1 {
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: bold;
+.embla__slide {
+    flex: 0 0 calc(33.333% - 0.67rem);
+    min-width: 0;
 }
 
-.success-msg p {
-    font-family: "be vietnam pro", sans-serif;
+@media (max-width: 992px) {
+    .embla__slide {
+        flex: 0 0 calc(50% - 0.5rem);
+    }
 }
 
-.success-msg .req-quote {
-    float: none;
-
-}
-
-.success-msg .req-quote:hover {
-    color: #fff;
+@media (max-width: 576px) {
+    .embla__slide {
+        flex: 0 0 100%;
+    }
 }

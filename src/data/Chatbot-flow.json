@@ -1,132 +1,178 @@
 {
     "welcome": {
-        "message": "Hi there 👋 I'm Webefy's AI Assistant. I'll help match you with the right solution in just a few quick questions. What are you looking for?",
+        "message": "Hi there 👋 I'm Creative Triplet's assistant. Let's find the perfect video for your business — just a few quick questions!",
         "step": "service_selection"
     },
     "services": [
         {
-            "id": "web",
-            "label": "🌐 Website Development",
-            "description": " - Landing pages, business sites, e-commerce"
+            "id": "explainer",
+            "label": "🎬 Explainer Video",
+            "description": " - Simplify your idea & convert visitors"
         },
         {
-            "id": "ai",
-            "label": "⚡ AI Automation",
-            "description": " - Workflows, chatbots, integrations"
+            "id": "training",
+            "label": "🎓 Training Video",
+            "description": " - Onboard teams & educate employees"
         },
         {
-            "id": "branding",
-            "label": "🎨 Branding & Identity",
-            "description": " - Logo, style guide, visual identity"
+            "id": "appdemo",
+            "label": "📱 App Demo Video",
+            "description": " - Showcase your app's features & flow"
         },
         {
-            "id": "other",
-            "label": "💬 Other Inquiry",
-            "description": " - Tell us what's on your mind"
+            "id": "product",
+            "label": "📦 Product Video",
+            "description": " - Highlight your product & drive sales"
         }
     ],
     "flows": {
-        "web": [
+        "explainer": [
             {
-                "id": "web_type",
-                "question": "What type of website do you need?",
+                "id": "explainer_goal",
+                "question": "What's the main goal of your explainer video?",
                 "type": "quick_reply",
                 "options": [
-                    "Business / Portfolio",
-                    "E-Commerce Store",
-                    "Restaurant / Food",
-                    "Clinic / Medical",
-                    "Real Estate",
+                    "Explain a product or service",
+                    "Increase conversions",
+                    "Pitch to investors",
+                    "Simplify a complex idea",
+                    "Brand awareness"
+                ]
+            },
+            {
+                "id": "explainer_style",
+                "question": "Do you have a preferred animation style?",
+                "type": "quick_reply",
+                "options": [
+                    "2D Animation",
+                    "Motion Graphics",
+                    "Whiteboard",
+                    "Character Animation",
+                    "Not sure — open to suggestions"
+                ]
+            },
+            {
+                "id": "explainer_length",
+                "question": "How long should the video be?",
+                "type": "quick_reply",
+                "options": [
+                    "Under 60 seconds",
+                    "60–90 seconds",
+                    "2 minutes",
+                    "2–3 minutes",
+                    "Not sure yet"
+                ]
+            }
+        ],
+        "training": [
+            {
+                "id": "training_audience",
+                "question": "Who is the training video for?",
+                "type": "quick_reply",
+                "options": [
+                    "New employees / onboarding",
+                    "Existing team upskilling",
+                    "Customer education",
+                    "Compliance & safety",
                     "Other"
                 ]
             },
             {
-                "id": "web_features",
-                "question": "Which features are important to you?",
+                "id": "training_format",
+                "question": "What format works best?",
                 "type": "quick_reply",
                 "options": [
-                    "Online Payments",
-                    "Booking System",
-                    "Blog / CMS",
-                    "WhatsApp Integration",
-                    "Custom Dashboard",
-                    "Just a Simple Site"
+                    "Animated / illustrated",
+                    "Screen recording + narration",
+                    "Talking head / presenter",
+                    "Mix of formats",
+                    "Not sure"
                 ]
             },
             {
-                "id": "web_existing",
-                "question": "Do you have an existing website?",
+                "id": "training_count",
+                "question": "How many training videos do you need?",
                 "type": "quick_reply",
                 "options": [
-                    "Yes, needs a redesign",
-                    "No, starting fresh",
-                    "I have a design ready"
+                    "Just 1",
+                    "2–5 videos",
+                    "5–10 videos",
+                    "10+ (series)",
+                    "Not decided yet"
                 ]
             }
         ],
-        "ai": [
+        "appdemo": [
             {
-                "id": "ai_goal",
-                "question": "What's the main goal for automation?",
+                "id": "appdemo_platform",
+                "question": "What platform is your app on?",
                 "type": "quick_reply",
                 "options": [
-                    "Save time on repetitive tasks",
-                    "Build a customer chatbot",
-                    "Connect my apps (CRM, Sheets, etc.)",
-                    "Generate AI content",
-                    "Something else"
+                    "iOS",
+                    "Android",
+                    "Web App",
+                    "iOS & Android",
+                    "All platforms"
                 ]
             },
             {
-                "id": "ai_tools",
-                "question": "Which tools are you currently using?",
+                "id": "appdemo_purpose",
+                "question": "What's this demo video for?",
                 "type": "quick_reply",
                 "options": [
-                    "Google Workspace",
-                    "HubSpot / Salesforce",
-                    "Shopify",
-                    "Custom software",
-                    "None yet"
-                ]
-            }
-        ],
-        "branding": [
-            {
-                "id": "brand_need",
-                "question": "What do you need help with?",
-                "type": "quick_reply",
-                "options": [
-                    "New logo only",
-                    "Full brand identity",
-                    "Brand refresh / redesign",
-                    "Social media kit",
-                    "All of the above"
+                    "App Store / Play Store listing",
+                    "Investor pitch",
+                    "Website homepage",
+                    "Social media ads",
+                    "Product launch"
                 ]
             },
             {
-                "id": "brand_stage",
-                "question": "Where is your business right now?",
+                "id": "appdemo_assets",
+                "question": "Do you have app screens / design files ready?",
                 "type": "quick_reply",
                 "options": [
-                    "Just starting out",
-                    "Established but rebranding",
-                    "Launching a new product",
-                    "Scaling up"
+                    "Yes, fully ready",
+                    "Partially ready",
+                    "App is live — can record",
+                    "Not yet, need help"
                 ]
             }
         ],
-        "other": [
+        "product": [
             {
-                "id": "other_topic",
-                "question": "What would you like to discuss?",
+                "id": "product_type",
+                "question": "What kind of product is it?",
                 "type": "quick_reply",
                 "options": [
-                    "Digital Marketing",
-                    "SEO",
-                    "Content Writing",
-                    "Consulting",
-                    "Partnership / Collab",
-                    "Something else"
+                    "Physical product",
+                    "SaaS / Software",
+                    "Food & Beverage",
+                    "Fashion / Lifestyle",
+                    "Other"
+                ]
+            },
+            {
+                "id": "product_purpose",
+                "question": "Where will you use this video?",
+                "type": "quick_reply",
+                "options": [
+                    "E-commerce listing (Amazon, Shopify)",
+                    "Social media ads",
+                    "Website hero section",
+                    "Trade show / presentation",
+                    "Multiple channels"
+                ]
+            },
+            {
+                "id": "product_assets",
+                "question": "Do you have existing product photos or footage?",
+                "type": "quick_reply",
+                "options": [
+                    "Yes, high quality assets ready",
+                    "Some assets available",
+                    "No — need full production",
+                    "Not sure what's needed"
                 ]
             }
         ]
@@ -140,7 +186,7 @@
         },
         {
             "id": "email",
-            "question": "What's the best email to reach you at?",
+            "question": "Best email to reach you at?",
             "type": "text",
             "placeholder": "you@example.com"
         },
@@ -152,33 +198,33 @@
         },
         {
             "id": "budget",
-            "question": "What's your approximate budget?",
+            "question": "What's your approximate budget for this project?",
             "type": "quick_reply",
             "options": [
                 "Under $500",
                 "$500 – $1,500",
                 "$1,500 – $5,000",
-                "$5,000 – $15,000",
-                "$15,000+",
+                "$5,000 – $10,000",
+                "$10,000+",
                 "Not sure yet"
             ]
         },
         {
             "id": "timeline",
-            "question": "When do you need this completed?",
+            "question": "When do you need the video delivered?",
             "type": "quick_reply",
             "options": [
-                "ASAP (within 2 weeks)",
-                "1 Month",
-                "2–3 Months",
+                "ASAP (rush project)",
+                "Within 2–4 weeks",
+                "1–2 months",
                 "Flexible / No rush"
             ]
         },
         {
             "id": "requirements",
-            "question": "Any extra details or specific requirements? (optional — press Send or skip)",
+            "question": "Anything else we should know? Script, references, special requests? (optional)",
             "type": "text",
-            "placeholder": "Tell us anything else...",
+            "placeholder": "Share any details, links, or references...",
             "optional": true
         }
     ]

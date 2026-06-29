@@ -1,10 +1,10 @@
 import ContactForm from "@/app/components/ContactForm";
 import Faqs from "@/app/components/Faqs";
+import PortfolioSlider from "@/app/components/PortfolioSlider";
 import ServiceHero from "@/app/components/ServiceHero";
 import ShadowLeftSec from "@/app/components/ShadowLeftSec";
 import ShadowRightSec from "@/app/components/ShadowRightSec";
 import TextSec from "@/app/components/TextSec";
-import PortfolioSlider from "@/app/components/PortfolioSlider";
 import faqs from "@/data/faqs/traingFaqs.json";
 
 export const metadata = {

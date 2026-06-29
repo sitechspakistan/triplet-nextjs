@@ -237,7 +237,7 @@ const ChatBot = () => {
                     <span className="wb-close" onClick={() => setMode('minimized')}>✖</span>
                     <div className="wb-gift"><img src='/assets/images/robot.png' /></div>
                     <h4>Hey there!</h4>
-                    <p>I'm Webefy AI Assistant.<br />How can I help you today?</p>
+                    <p>I'm Creative Triplet Assistant.<br />How can I help you today?</p>
                     <button className="wb-chat-btn" onClick={openChat}>Chat with me</button>
                 </div>
             )}
@@ -249,7 +249,7 @@ const ChatBot = () => {
                     <div className="wb-header">
                         <div className="wb-avatar"><img src='/assets/images/robot.png' /></div>
                         <div>
-                            <h4>Webefy AI Assistant</h4>
+                            <h4>Triplet’s Assistant</h4>
                             <span><i className='fas fa-circle'></i>Online</span>
                         </div>
                         <span className="wb-close" onClick={() => setMode('minimized')}>✖</span>

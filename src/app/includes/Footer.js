@@ -55,8 +55,8 @@ export default function Footer() {
                     </div>
 
                     <div className="mt-5 d-xl-flex justify-content-xl-between align-items-center d-md-flex justify-content-md-between">
-                        <span className="text-start fw-medium">© 2026 CreativeTriplet. All Rights Reserved.</span>
-                        <div className="text-xl-end text-start">
+                        <span className="d-block text-center d-md-inline-block text-md-start">© 2026 CreativeTriplet. All Rights Reserved.</span>
+                        <div className="text-xl-end text-center">
                             <a href="https://www.facebook.com/creativetriplet/" target="blank"><i className="fa-brands fa-facebook-f"></i></a>
                             <a href="https://www.instagram.com/creativetriplet/" target="blank"><i className="fa-brands fa-instagram"></i></a>
                             <a href="https://www.youtube.com/@CreativeTriplet" target="blank"><i className="fa-brands fa-youtube"></i></a>

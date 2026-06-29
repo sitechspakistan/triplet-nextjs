@@ -46,7 +46,7 @@ export async function POST(req) {
             .join("");
 
         await transporter.sendMail({
-            from: '"Webefy Today" <noreply@webefytoday.com>',
+            from: '"Creative Triplet" <noreply@webefytoday.com>',
             to: "webefytoday@gmail.com",
             replyTo: answers.email || "",
             subject: `New Chatbot Lead: ${label} — ${answers.name || "Unknown"}`,

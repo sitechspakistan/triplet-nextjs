@@ -1,99 +1,48 @@
 "use client";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import useEmblaCarousel from "embla-carousel-react";
+import { useEffect } from "react";
 
 export default function PortfolioSlider() {
-    const settings = {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true,
-        arrows: false,
-        dots: false,
-        adaptiveHeight: true,
-        responsive: [
-            {
-                breakpoint: 1210,
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
 
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    };
+    useEffect(() => {
+        if (!emblaApi) return;
+        const interval = setInterval(() => {
+            emblaApi.scrollNext();
+        }, 3000);
+        return () => clearInterval(interval);
+    }, [emblaApi]);
+
+    const videos = [
+        { src: "https://player.vimeo.com/video/672297683", title: "Video 1" },
+        { src: "https://player.vimeo.com/video/338241178", title: "Video 2" },
+        { src: "https://player.vimeo.com/video/668278734", title: "Video 3" },
+        { src: "https://player.vimeo.com/video/602227121", title: "Video 4" },
+        { src: "https://player.vimeo.com/video/746877725", title: "Video 5" },
+    ];
 
     return (
-        // <!-- grab a snack!  -->
         <section className="mt-5 mb-5 snack section-shadow-left">
             <div className="container">
                 <h2 className="text-center mb-4">Grab A Snack!</h2>
-                <div className="porfolio-slider pb-5">
-                    <Slider {...settings}>
-                        <div className="video-slide">
-                            <iframe
-                                src="https://player.vimeo.com/video/672297683"
-                                title="Video 1"
-                                allow="autoplay; fullscreen; picture-in-picture"
-                                frameBorder="0"
-                            />
-                        </div>
-
-                        <div className="video-slide">
-                            <iframe
-                                src="https://player.vimeo.com/video/338241178"
-                                title="Video 2"
-                                allow="autoplay; fullscreen; picture-in-picture"
-                                frameBorder="0"
-                            />
-                        </div>
-
-                        <div className="video-slide">
-                            <iframe
-                                src="https://player.vimeo.com/video/668278734"
-                                title="Video 3"
-                                allow="autoplay; fullscreen; picture-in-picture"
-                                frameBorder="0"
-                            />
-                        </div>
-
-                        <div className="video-slide">
-                            <iframe
-                                src="https://player.vimeo.com/video/602227121"
-                                title="Video 4"
-                                allow="autoplay; fullscreen; picture-in-picture"
-                                frameBorder="0"
-                            />
-                        </div>
-
-                        <div className="video-slide">
-                            <iframe
-                                src="https://player.vimeo.com/video/746877725"
-                                title="Video 5"
-                                allow="autoplay; fullscreen; picture-in-picture"
-                                frameBorder="0"
-                            />
-                        </div>
-                    </Slider>
+                <div className="embla pb-5" ref={emblaRef}>
+                    <div className="embla__container">
+                        {videos.map((video, i) => (
+                            <div className="embla__slide" key={i}>
+                                <div className="video-slide">
+                                    <iframe
+                                        src={video.src}
+                                        title={video.title}
+                                        allow="autoplay; fullscreen; picture-in-picture"
+                                        frameBorder="0"
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
