@@ -1,0 +1,200 @@
+/* ── Webefy Chatbot: Minimal additions only ── */
+
+/* Typing indicator */
+.wb-typing {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 14px;
+    width: fit-content;
+}
+
+.wb-typing span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #6b7280;
+    border-radius: 50%;
+    animation: wb-bounce 1.2s ease-in-out infinite;
+}
+
+.wb-typing span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.wb-typing span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes wb-bounce {
+
+    0%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-6px);
+    }
+}
+
+/* Bot group wrapper (question + buttons stacked) */
+.wb-bot-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+/* Service selection buttons */
+.wb-services {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 100%;
+}
+
+.wb-service-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 13px;
+    background: #fff;
+    border: 1.5px solid #e8eaf0;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.wb-service-btn:hover:not(:disabled) {
+    border-color: #6366f1;
+    background: #e0e7ff;
+}
+
+.wb-service-btn:disabled {
+    opacity: 0.45;
+    cursor: default;
+}
+
+.wb-service-label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.wb-service-desc {
+    font-size: 11px;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+/* Quick reply chips */
+.wb-quick-replies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.wb-reply-btn {
+    padding: 7px 13px;
+    background: #fff;
+    border: 1.5px solid #6366f1;
+    border-radius: 20px;
+    font-size: 12.5px;
+    color: #6366f1;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+}
+
+.wb-reply-btn:hover:not(:disabled) {
+    background: #6366f1;
+    color: #fff;
+}
+
+.wb-reply-btn:disabled,
+.wb-reply-btn--disabled {
+    border-color: #e8eaf0;
+    color: #9ca3af;
+    cursor: default;
+    background: transparent;
+}
+
+/* Success card */
+.wb-success-card {
+    background: linear-gradient(135deg, #f0fdf4, #e0e7ff);
+    border: 1.5px solid #bbf7d0;
+    border-radius: 16px;
+    padding: 20px 16px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.wb-success-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.wb-success-card h4 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.wb-success-card p {
+    margin: 0 0 6px;
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+.wb-success-sub {
+    font-size: 12px !important;
+    color: #9ca3af !important;
+}
+
+/* "Chat completed" footer note */
+.wb-done-note {
+    flex: 1;
+    font-size: 12.5px;
+    color: #6b7280;
+    text-align: center;
+    margin: 0;
+    padding: 6px 0;
+}
+
+/* Disabled input state */
+.wb-input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.wb-send:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+@media only screen and (max-width: 600px) {
+    .wb-chat-window {
+        width: 96%;
+        height: 90vh;
+        position: fixed;
+        bottom: 10px;
+        right: 7px;
+    }
+
+    .wb-minimized {
+        bottom: 93px;
+        right: 16px;
+    }
+
+    .wb-chat-teaser {
+        bottom: 10px;
+        right: 8px;
+    }
+}

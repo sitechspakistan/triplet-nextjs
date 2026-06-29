@@ -4,6 +4,7 @@ import "../styles/custom.css"
 import Header from "./includes/Header";
 import Footer from "./includes/Footer";
 import Link from "next/link";
+import ChatBot from "./components/ChatBot";
 
 
 export const metadata = {
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
 
         <main> {children} </main>
         <Footer />
+        <ChatBot />
 
         {/* <!-- call and booking icon  --> */}
         <div>
