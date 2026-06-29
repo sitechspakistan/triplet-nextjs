@@ -2196,8 +2196,8 @@ main {
     overflow: hidden;
     box-shadow: 0 20px 60px #00000026;
     position: fixed;
-    bottom: 0;
-    right: 0px;
+    bottom: 10px;
+    right: 10px;
     z-index: 99999;
 }
 
@@ -2221,9 +2221,7 @@ main {
 .wb-user {
     max-width: 80%;
     margin-left: auto;
-    background: linear-gradient(135deg,
-            #4f46e5,
-            #d946ef);
+    background: #49b1b7;
     color: #fff;
     padding: 14px;
     border-radius: 18px;
