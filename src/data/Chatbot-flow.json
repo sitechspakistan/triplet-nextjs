@@ -1,27 +1,27 @@
 {
     "welcome": {
-        "message": "Hi there 👋 I'm Creative Triplet's assistant. Let's find the perfect video for your business — just a few quick questions!",
+        "message": "Hi there I'm Creative Triplet's assistant. Let's find the perfect video for your business — just a few quick questions!",
         "step": "service_selection"
     },
     "services": [
         {
             "id": "explainer",
-            "label": "🎬 Explainer Video",
+            "label": "Explainer Video",
             "description": " - Simplify your idea & convert visitors"
         },
         {
             "id": "training",
-            "label": "🎓 Training Video",
+            "label": "Training Video",
             "description": " - Onboard teams & educate employees"
         },
         {
             "id": "appdemo",
-            "label": "📱 App Demo Video",
+            "label": "App Demo Video",
             "description": " - Showcase your app's features & flow"
         },
         {
             "id": "product",
-            "label": "📦 Product Video",
+            "label": "Product Video",
             "description": " - Highlight your product & drive sales"
         }
     ],

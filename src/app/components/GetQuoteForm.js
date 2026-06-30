@@ -127,15 +127,16 @@ export default function GetQuoteForm() {
                                                         transition: "border 0.2s ease"
                                                     }}
                                                 >
-                                                    <a
-                                                        href="javascript:;"
+                                                    <button
+                                                        type="button"
                                                         className="select-service"
                                                         data-value={item.title}
                                                         onClick={handleServiceSelect}
+                                                        style={{ background: "none", border: "none", padding: 0, width: "100%", cursor: "pointer" }}
                                                     >
                                                         <img src={`/assets/images/quote-form/${item.img}`} alt={item.title} />
                                                         <h3>{item.title}</h3>
-                                                    </a>
+                                                    </button>
                                                 </li>
                                             </div>
                                         );

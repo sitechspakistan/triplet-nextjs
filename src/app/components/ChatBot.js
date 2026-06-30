@@ -209,7 +209,7 @@ const ChatBot = () => {
             setIsSubmitting(false)
             await pushBot({
                 type: 'text',
-                content: '❌ Something went wrong. Please email us directly at info@webefytoday.com',
+                content: '❌ Something went wrong. Please email us directly at info@creativetriplet.com',
             })
         }
     }

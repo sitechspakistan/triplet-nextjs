@@ -88,10 +88,19 @@ export default function Header() {
                         <ul className="navbar-nav d-xl-flex align-items-xl-center">
                             <li className="nav-item"><Link className="nav-link" href="/">Home</Link></li>
                             <li>
-                                <Link className="nav-link" href="/services"
+                                <Link className="nav-link" id='service_dropdown' href="/services"
                                     role="button" aria-expanded="false">
                                     Services
-                                    <i className="ps-2 fa fa-chevron-down" data-bs-toggle="collapse" data-bs-target="#servicesCollapse" style={{ fontSize: '12px' }}></i> {/* <-- Carrot Icon */}
+                                    <i
+                                        className="ps-2 fa fa-chevron-down"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#servicesCollapse"
+                                        // style={{ fontSize: '12px' }}
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            e.stopPropagation();
+                                        }}
+                                    ></i>
                                 </Link>
                                 <ul className="collapse" id="servicesCollapse">
                                     <li><Link className="dropdown-item" href="/services/explainer-videos">Explainer Videos</Link></li>

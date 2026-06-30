@@ -5,7 +5,7 @@ import VimeoLazy from "./VimeoLazy";
 
 export default function RightContent({ videoUrl, videohash, title, content, btntxt, btnlink, btndata }) {
     return (
-        <section className="content-RL right-revs">
+        <section className="content-RL right-revs overflow-hidden">
             <div className="container">
                 <div className="row">
 

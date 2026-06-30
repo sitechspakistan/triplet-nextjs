@@ -55,7 +55,7 @@ export async function POST(req) {
     <body>
         <div style="font-size: 16px; font-weight: 500;">
             <p><strong>Service:</strong> ${label}</p>
-            <p><strong>Location:</strong> 📍 ${location}</p>
+            <p><strong>Location:</strong> ${location}</p>
             <hr style="border:none;border-top:1px solid #eee;margin:12px 0;" />
             ${answerRows}
         </div>
