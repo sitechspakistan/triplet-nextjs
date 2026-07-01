@@ -5,6 +5,7 @@ import Header from "./includes/Header";
 import Footer from "./includes/Footer";
 import Link from "next/link";
 import ChatBot from "./components/ChatBot";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 export const metadata = {
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
         <main> {children} </main>
         <Footer />
         <ChatBot />
+        <ScrollToTop />
 
         {/* <!-- call and booking icon  --> */}
         <div>

@@ -26,7 +26,7 @@ export default function PortfolioSlider() {
         <section className="mt-5 mb-5 snack section-shadow-left">
             <div className="container">
                 <h2 className="text-center mb-4">Grab A Snack!</h2>
-                <div className="embla pb-5" ref={emblaRef}>
+                <div className="embla pb-lg-5 pb-0" ref={emblaRef}>
                     <div className="embla__container">
                         {videos.map((video, i) => (
                             <div className="embla__slide" key={i}>

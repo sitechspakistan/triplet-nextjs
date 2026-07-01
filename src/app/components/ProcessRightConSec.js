@@ -12,7 +12,7 @@ export default function ProcessRightConSec({ image, heading, para, numb, classNa
             transition={{ duration: 0.8, ease: "easeOut" }}
         >
             <div className="container-fluid">
-                <div className="row gx-0">
+                <div className="row gx-0 ">
                     <div className="col-xl-6">
                         <div>
                             <img

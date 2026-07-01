@@ -3,7 +3,7 @@
 export default function Faqs({ faqs }) {
     // if (!faqs || !Array.isArray(faqs)) return null;
     return (
-        <section className="faqs pt-5">
+        <section className="faqs pt-lg-5 pt-0">
             <div className="container">
                 <h2 className="text-center pt-2 pb-4">Frequently Asked Questions</h2>
 

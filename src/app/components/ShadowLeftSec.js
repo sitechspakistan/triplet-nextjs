@@ -14,7 +14,7 @@ export default function ShadowLeftSec({
     return (
         <section className={`${Class} pb-3 content-RL overflow-hidden`}>
             <div className="container">
-                <div className="row">
+                <div className="row flex-column-reverse flex-md-row">
 
                     {/* LEFT CONTENT — fade from left */}
                     <motion.div

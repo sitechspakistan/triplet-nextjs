@@ -6,7 +6,7 @@ export default function ProcessLeftConSec({ image, heading, para, numb }) {
     return (
         <section className="content-left-sec mt-5 mb-5 pb-2">
             <div className="container overflow-hidden">
-                <div className="row">
+                <div className="row flex-column-reverse flex-md-row">
 
                     {/* LEFT CONTENT */}
                     <motion.div
