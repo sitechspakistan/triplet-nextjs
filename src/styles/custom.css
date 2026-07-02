@@ -2273,7 +2273,7 @@ main {
     z-index: 1111;
     position: fixed;
     bottom: 30px;
-    right: 20px;
+    right: 78px;
     box-shadow: 0 4px 8px #0000004d;
     border-radius: 50%;
     cursor: pointer;
@@ -2354,8 +2354,8 @@ main {
     transition: all .3s;
     display: flex;
     position: fixed;
-    bottom: 30px;
-    right: 80px;
+    bottom: 32px;
+    right: 20px;
     transform: translateY(10px);
 }
 
@@ -2389,6 +2389,37 @@ main {
     }
 }
 
+/* Embla Slider */
+.embla {
+    overflow: hidden;
+}
+
+.embla__container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.embla__slide {
+    flex: 0 0 calc(33.333% - 0.67rem);
+    min-width: 0;
+}
+
+@media (max-width: 992px) {
+    .embla__slide {
+        flex: 0 0 calc(50% - 0.5rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .embla__slide {
+        flex: 0 0 100%;
+    }
+}
+
+/* Embla Slider End here */
+
+/*main mobile media query Start Here ----- */
 @media screen and (max-width: 767px) {
     main {
         overflow: hidden;
@@ -2853,12 +2884,12 @@ main {
         background: #00000059;
     }
 
-    /* .accordion-button {
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 500;
-} */
+    .scroll-to-top-btn {
+        right: 10px;
+    }
 }
+
+/*main mobile media query end Here ------- */
 
 @media (max-width: 1024px) {
     .portfolio-masonry {
@@ -3021,6 +3052,10 @@ main {
     #quoteStepTwo textarea {
         margin-top: 20px;
     }
+
+    .scroll-to-top-btn {
+        right: 10px;
+    }
 }
 
 @media (min-width:1200px) and (max-width: 1400px) {
@@ -3051,33 +3086,5 @@ main {
     .service-hero-section h1 {
         font-size: 30px;
 
-    }
-}
-
-/* Embla Slider */
-.embla {
-    overflow: hidden;
-}
-
-.embla__container {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.embla__slide {
-    flex: 0 0 calc(33.333% - 0.67rem);
-    min-width: 0;
-}
-
-@media (max-width: 992px) {
-    .embla__slide {
-        flex: 0 0 calc(50% - 0.5rem);
-    }
-}
-
-@media (max-width: 576px) {
-    .embla__slide {
-        flex: 0 0 100%;
     }
 }
